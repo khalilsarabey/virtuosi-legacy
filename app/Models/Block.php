@@ -18,6 +18,8 @@ class Block extends Model implements HasMedia
     public $table = 'blocks';
 
     protected $casts = [
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
         'hide_title' => 'boolean',
         'active'     => 'boolean'
     ];
@@ -31,11 +33,6 @@ class Block extends Model implements HasMedia
         '2' => '2 Columns',
         '3' => '3 Columns',
         '4' => '4 Columns',
-    ];
-
-    protected $dates = [
-        'created_at',
-        'updated_at'
     ];
 
     protected $fillable = ['*'];
@@ -95,7 +92,6 @@ class Block extends Model implements HasMedia
         });
     }
 
-
     public function getImageAttribute()
     {
         return $this->getMedia('block_image')->map(function ($item) {
@@ -122,6 +118,5 @@ class Block extends Model implements HasMedia
     {
         return $this->belongsTo(Agency::class);
     }
-
 
 }

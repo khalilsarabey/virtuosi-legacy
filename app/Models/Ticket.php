@@ -42,11 +42,11 @@ class Ticket extends Model
         'price',
     ];
 
-    protected $dates = [
-        'date_of_birth',
-        'created_at',
-        'updated_at',
-        'deleted_at',
+    protected $casts = [
+        'date_of_birth' => 'datetime',
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+        'deleted_at' => 'datetime',
     ];
 
     protected $fillable = ['*'];

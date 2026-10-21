@@ -28,6 +28,12 @@ class Flight extends Model
     public $table = 'flights';
 
     protected $casts = [
+        'dep_date' => 'datetime',
+        'ret_dep_date' => 'datetime',
+        'expiry_date' => 'datetime',
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+        'deleted_at' => 'datetime',
         'agencies_permissions' => 'array',
         'whitelabel_permissions' => 'array'
     ];
@@ -89,15 +95,6 @@ class Flight extends Model
         'oneway_supplements',
         'multi_supplements',
         'seats',
-    ];
-
-    protected $dates = [
-        'dep_date',
-        'ret_dep_date',
-        'expiry_date',
-        'created_at',
-        'updated_at',
-        'deleted_at',
     ];
 
     protected $fillable = [

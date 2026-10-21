@@ -38,6 +38,8 @@ class Section extends Model implements HasMedia
     ];
 
     protected $casts = [
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
         'active' => 'boolean',
         'permissions' => 'array',
         'agencies_permissions' => 'array',
@@ -57,11 +59,6 @@ class Section extends Model implements HasMedia
         'permissions',
         'agencies_permissions',
         'whitelabel_permissions'
-    ];
-
-    protected $dates = [
-        'created_at',
-        'updated_at'
     ];
 
     public function registerMediaConversions(Media $media = null): void

@@ -53,10 +53,10 @@ class Booking extends Model
         'created_at',
     ];
 
-    protected $dates = [
-        'created_at',
-        'updated_at',
-        'deleted_at',
+    protected $casts = [
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+        'deleted_at' => 'datetime',
     ];
 
     protected $guarded = ['id'];

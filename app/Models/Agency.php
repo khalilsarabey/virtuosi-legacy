@@ -12,14 +12,11 @@ class Agency extends Model implements HasMedia
 {
     use InteractsWithMedia;
 
-    protected $dates = [
-        'created_at',
-        'updated_at'
-    ];
-
     protected $guarded = ['id'];
 
     protected $casts = [
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
         'properties' => 'array',
         'economy_classes' => 'array',
         'business_classes' => 'array',
@@ -84,7 +81,6 @@ class Agency extends Model implements HasMedia
             return $media;
         });
     }
-
 
     public function getSearchBgAttribute()
     {

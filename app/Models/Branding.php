@@ -9,9 +9,9 @@ class Branding extends Model
 {
     protected $fillable = ['*'];
 
-    protected $dates = [
-        'created_at',
-        'updated_at'
+    protected $casts = [
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
     ];
 
     public function user()

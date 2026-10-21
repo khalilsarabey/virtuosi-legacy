@@ -37,9 +37,9 @@ class AuditLog extends Model
         'created_at',
     ];
 
-    protected $dates = [
-        'created_at',
-        'updated_at',
+    protected $casts = [
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
     ];
 
     protected $fillable = [

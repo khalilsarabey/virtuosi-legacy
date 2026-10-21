@@ -33,6 +33,8 @@ class Category extends Model implements HasMedia
     ];
 
     protected $casts = [
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
         'permissions' => 'array',
         'hide_title' => 'boolean',
         'whitelabel_permissions' => 'array',
@@ -58,11 +60,6 @@ class Category extends Model implements HasMedia
     protected $appends = [
         'image',
         'banner',
-    ];
-
-    protected $dates = [
-        'created_at',
-        'updated_at'
     ];
 
     public function section()
