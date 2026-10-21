@@ -73,7 +73,7 @@ if (! function_exists('calculate_duration')) {
         if ($time2 < $time1) {
             $time2->addDay();
         }
-        $diffInMinutes = $time1->diffInMinutes($time2);
+        $diffInMinutes = (int) $time1->diffInMinutes($time2, true);
         $hours = floor($diffInMinutes / 60);
         $minutes = $diffInMinutes % 60;
         return "$hours:$minutes";
@@ -280,7 +280,7 @@ if (! function_exists('applyApiPackageRules')) {
         // Convert dates to Carbon for comparison
         $tripStart = $start_date ? \Carbon\Carbon::parse($start_date) : null;
         $tripEnd = $end_date ? \Carbon\Carbon::parse($end_date) : null;
-        $tripDuration = ($tripStart && $tripEnd) ? $tripStart->diffInDays($tripEnd) + 1 : null; // inclusive
+        $tripDuration = ($tripStart && $tripEnd) ? (int) $tripStart->diffInDays($tripEnd, true) + 1 : null; // inclusive
 
         $appliedRule = null;
         $finalTicketsPrice = $tickets_price;
@@ -466,7 +466,7 @@ if (! function_exists('applyPackageRules')) {
         $tripStart = $start_date ? \Carbon\Carbon::parse($start_date)->startOfDay() : null;
         $tripEnd = $end_date ? \Carbon\Carbon::parse($end_date)->startOfDay() : null;
 
-        $tripDuration = ($tripStart && $tripEnd) ? $tripStart->diffInDays($tripEnd) + 1 : null; // inclusive
+        $tripDuration = ($tripStart && $tripEnd) ? (int) $tripStart->diffInDays($tripEnd, true) + 1 : null; // inclusive
 
         $appliedRule = null;
         $finalTicketsPrice = $tickets_price;
@@ -1113,7 +1113,7 @@ if (! function_exists('calculateRoomPrice') ) {
 
             // Check for valid overlap and handle single-day booking case
             if ($overlappingStartDate->lte($overlappingEndDate)) {
-                $daysInPriceRange = $overlappingEndDate->diffInDays($overlappingStartDate) + 1;
+                $daysInPriceRange = (int) $overlappingEndDate->diffInDays($overlappingStartDate, true) + 1;
 
                 // Calculate price per day based on pricing type
                 $pricePerDay = calculatePricePerDay($price, $adultPricingType, $childPricingType, $infantPricingType, $numberOfAdults, $numberOfChildren, $numberOfInfants);

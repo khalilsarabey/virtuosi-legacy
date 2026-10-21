@@ -21,7 +21,7 @@
                 <div class="col-md-8"></div>
                 <div class="col-md-3">
                     <label class="form-label">Category Name</label>
-                    <input type="text" wire:model.defer="categoryName" class="form-control" />
+                    <input type="text" wire:model="categoryName" class="form-control" />
                 </div>
                 <div class="col-md-1">
                     <button class="btn btn-xs px-4 py-2 btn-secondary uppercase waves-effect" wire:click="save">Save</button>
@@ -44,7 +44,7 @@
                         <tr>
                             <td>
                                 @if($editingCategory && $categoryId == $category->id)
-                                    <input type="text" class="form-control d-inline-block" wire:model.defer="categoryName" />
+                                    <input type="text" class="form-control d-inline-block" wire:model="categoryName" />
                                     <button class="btn btn-xs px-4 py-2 btn-primary uppercase waves-effect ml-3" wire:click="update({{ $category->id }})">Save</button>
                                 @else
                                     {{ $category->name }}

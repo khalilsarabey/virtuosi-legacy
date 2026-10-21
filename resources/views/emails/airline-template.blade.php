@@ -138,7 +138,7 @@ $request = json_decode($booking->request, true);
                                             <span style="font-size:13px; color:#555;">{{ $stop['flight_number'] }}</span><br />
                                             <span style="font-size:11px; color:#555555;">
                                                 <?php
-                                                    $durationInMinutes = \Carbon\Carbon::parse($stop['departure_time'])->diffInMinutes(\Carbon\Carbon::parse($stop['arrival_time']));
+                                                    $durationInMinutes = (int) \Carbon\Carbon::parse($stop['departure_time'])->diffInMinutes(\Carbon\Carbon::parse($stop['arrival_time']), true);
                                                     if ($durationInMinutes < 60) {
                                                         // If less than an hour, display "in xx minutes"
                                                         $durationText = "{$durationInMinutes} minutes";
@@ -170,7 +170,7 @@ $request = json_decode($booking->request, true);
                                         {{ $payload['departure']['flight_number'] }}<br/>
                                         <span style="font-size:13px; color:#555555;">Flight Duration:
                                             <?php
-                                                $durationInMinutes = \Carbon\Carbon::parse($payload['departure']['departure_time'])->diffInMinutes(\Carbon\Carbon::parse($payload['departure']['arrival_time']));
+                                                $durationInMinutes = (int) \Carbon\Carbon::parse($payload['departure']['departure_time'])->diffInMinutes(\Carbon\Carbon::parse($payload['departure']['arrival_time']), true);
                                                 if ($durationInMinutes < 60) {
                                                     // If less than an hour, display "in xx minutes"
                                                     $durationText = "{$durationInMinutes} minutes";
@@ -226,7 +226,7 @@ $request = json_decode($booking->request, true);
                                                 <span style="font-size:13px; color:#555;">{{ $stop['flight_number'] }}</span><br />
                                                 <span style="font-size:11px; color:#555555;">
                                                 <?php
-                                                        $durationInMinutes = \Carbon\Carbon::parse($stop['departure_time'])->diffInMinutes(\Carbon\Carbon::parse($stop['arrival_time']));
+                                                        $durationInMinutes = (int) \Carbon\Carbon::parse($stop['departure_time'])->diffInMinutes(\Carbon\Carbon::parse($stop['arrival_time']), true);
                                                         if ($durationInMinutes < 60) {
                                                             // If less than an hour, display "in xx minutes"
                                                             $durationText = "{$durationInMinutes} minutes";
@@ -258,7 +258,7 @@ $request = json_decode($booking->request, true);
                                             {{ $payload['return']['flight_number'] }}<br/>
                                             <span style="font-size:13px; color:#555555;">Flight Duration:
                                             <?php
-                                                    $durationInMinutes = \Carbon\Carbon::parse($payload['return']['departure_time'])->diffInMinutes(\Carbon\Carbon::parse($payload['return']['arrival_time']));
+                                                    $durationInMinutes = (int) \Carbon\Carbon::parse($payload['return']['departure_time'])->diffInMinutes(\Carbon\Carbon::parse($payload['return']['arrival_time']), true);
                                                     if ($durationInMinutes < 60) {
                                                         // If less than an hour, display "in xx minutes"
                                                         $durationText = "{$durationInMinutes} minutes";

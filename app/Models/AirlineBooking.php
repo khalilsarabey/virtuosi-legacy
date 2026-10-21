@@ -28,7 +28,7 @@ class AirlineBooking extends Model
     {
         $dep = $this->dep_from_date;
         $arr = $this->dep_to_date;
-        $durationInMinutes = \Carbon\Carbon::parse($dep)->diffInMinutes(\Carbon\Carbon::parse($arr));
+        $durationInMinutes = (int) \Carbon\Carbon::parse($dep)->diffInMinutes(\Carbon\Carbon::parse($arr), true);
         if ($durationInMinutes < 60) {
             // If less than an hour, display "in xx minutes"
             $durationText = "{$durationInMinutes} minutes";
@@ -49,7 +49,7 @@ class AirlineBooking extends Model
     {
         $dep = $this->ret_from_date;
         $arr = $this->ret_to_date;
-        $durationInMinutes = \Carbon\Carbon::parse($dep)->diffInMinutes(\Carbon\Carbon::parse($arr));
+        $durationInMinutes = (int) \Carbon\Carbon::parse($dep)->diffInMinutes(\Carbon\Carbon::parse($arr), true);
         if ($durationInMinutes < 60) {
             // If less than an hour, display "in xx minutes"
             $durationText = "{$durationInMinutes} minutes";

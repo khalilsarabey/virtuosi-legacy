@@ -6,6 +6,7 @@ use \DateTimeInterface;
 use App\Support\HasAdvancedFilter;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Image\Enums\Fit;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
@@ -61,7 +62,7 @@ class Section extends Model implements HasMedia
         'whitelabel_permissions'
     ];
 
-    public function registerMediaConversions(Media $media = null): void
+    public function registerMediaConversions(?Media $media = null): void
     {
         $thumbnailWidth  = 50;
         $thumbnailHeight = 50;
@@ -72,11 +73,11 @@ class Section extends Model implements HasMedia
         $this->addMediaConversion('thumbnail')
             ->width($thumbnailWidth)
             ->height($thumbnailHeight)
-            ->fit('crop', $thumbnailWidth, $thumbnailHeight);
+            ->fit(Fit::Crop, $thumbnailWidth, $thumbnailHeight);
         $this->addMediaConversion('preview_thumbnail')
             ->width($thumbnailPreviewWidth)
             ->height($thumbnailPreviewHeight)
-            ->fit('crop', $thumbnailPreviewWidth, $thumbnailPreviewHeight);
+            ->fit(Fit::Crop, $thumbnailPreviewWidth, $thumbnailPreviewHeight);
     }
 
     public function getImageAttribute()

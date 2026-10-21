@@ -320,7 +320,7 @@
                                         <hr/>
                                         <label id="label-{{ $key }}-{{ $k }}">Select a Plan</label>
                                         <div id="plan-error-{{ $key }}-{{ $k }}" class="text-danger d-none">Plan is required</div>
-                                        <select id="select-{{ $key }}-{{ $k }}" name="meal_plan" wire:model="rooms.{{ $k }}.results.{{$key}}.meal_plan" class="form-control">
+                                        <select id="select-{{ $key }}-{{ $k }}" name="meal_plan" wire:model.live="rooms.{{ $k }}.results.{{$key}}.meal_plan" class="form-control">
                                             <option selected></option>
                                             @foreach($this->mealPlans as $a => $b)
                                                 <option value="{{ $a }}">{{ strtoupper($a) }}</option>

@@ -26,18 +26,18 @@
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="">Start Date</label>
-                                        <input type="date" wire:model="remainingSeatsSearches.{{$k}}.remainingSeatsStartDate" class="form-control">
+                                        <input type="date" wire:model.live="remainingSeatsSearches.{{$k}}.remainingSeatsStartDate" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="">End Date</label>
-                                        <input type="date" class="form-control" wire:model="remainingSeatsSearches.{{$k}}.remainingSeatsEndDate">
+                                        <input type="date" class="form-control" wire:model.live="remainingSeatsSearches.{{$k}}.remainingSeatsEndDate">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <label for="">Airline</label>
-                                    <x-select2 wire:model="remainingSeatsSearches.{{$k}}.remainingSeatAirline" class="form-control w-100" id="filter-airline{{ $k }}">
+                                    <x-select2 wire:model.live="remainingSeatsSearches.{{$k}}.remainingSeatAirline" class="form-control w-100" id="filter-airline{{ $k }}">
                                         <option></option>
                                         @foreach($airlines as $key => $value)
                                             <option value="{{ $key }}">{{ $value }}</option>
@@ -47,7 +47,7 @@
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="">From</label>
-                                        <x-select2 wire:model="remainingSeatsSearches.{{$k}}.remainingSeatFrom">
+                                        <x-select2 wire:model.live="remainingSeatsSearches.{{$k}}.remainingSeatFrom">
                                             <option></option>
                                             @foreach($locations as $v)
                                                 <option value="{{ $v }}">{{ $v }}</option>
@@ -58,7 +58,7 @@
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="">To</label>
-                                        <x-select2 wire:model="remainingSeatsSearches.{{$k}}.remainingSeatTo">
+                                        <x-select2 wire:model.live="remainingSeatsSearches.{{$k}}.remainingSeatTo">
                                             <option></option>
                                             @foreach($locations as $v)
                                                 <option value="{{ $v }}">{{ $v }}</option>
@@ -69,7 +69,7 @@
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="">Type</label>
-                                        <select class="form-control w-100" wire:model="remainingSeatsSearches.{{$k}}.remainingSeatType">
+                                        <select class="form-control w-100" wire:model.live="remainingSeatsSearches.{{$k}}.remainingSeatType">
                                             <option value="oneway">One Way</option>
                                             <option value="fixed">Fixed</option>
                                         </select>
@@ -201,37 +201,37 @@
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="">From Booking Date</label>
-                                        <input type="date" wire:model.defer="filter.from_date" class="form-control">
+                                        <input type="date" wire:model="filter.from_date" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="">To Booking Date</label>
-                                        <input type="date" class="form-control" wire:model.defer="filter.to_date">
+                                        <input type="date" class="form-control" wire:model="filter.to_date">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="">Airline</label>
-                                        <x-select-list class="form-control w-100" id="airline" name="airline" :options="$airlines" wire:model="filter.airline" />
+                                        <x-select-list class="form-control w-100" id="airline" name="airline" :options="$airlines" wire:model.live="filter.airline" />
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="">Departure</label>
-                                        <x-select-list class="form-control w-100" id="dep_from" name="dep_from" :options="$locations" wire:model="filter.departure" />
+                                        <x-select-list class="form-control w-100" id="dep_from" name="dep_from" :options="$locations" wire:model.live="filter.departure" />
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="">Destination</label>
-                                        <x-select-list class="form-control w-100" id="dep_to" name="dep_to" :options="$locations" wire:model="filter.destination" />
+                                        <x-select-list class="form-control w-100" id="dep_to" name="dep_to" :options="$locations" wire:model.live="filter.destination" />
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="">Status</label>
-                                        <x-select-list class="form-control w-100" id="status" name="status" :options="['Confirmed' => 'Confirmed', 'On Hold' => 'On Hold', 'Deleted' => 'Deleted']" wire:model="filter.status" />
+                                        <x-select-list class="form-control w-100" id="status" name="status" :options="['Confirmed' => 'Confirmed', 'On Hold' => 'On Hold', 'Deleted' => 'Deleted']" wire:model.live="filter.status" />
                                     </div>
                                 </div>
 

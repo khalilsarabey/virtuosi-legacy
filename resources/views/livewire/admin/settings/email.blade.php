@@ -17,56 +17,56 @@
             </div>
         @endif
         <div class="container-fluid mb-4">
-            <form wire:submit.prevent="submit" class="pt-3">
+            <form wire:submit="submit" class="pt-3">
                 <div class="row">
                     <div class="col-12">
                         <div class="text-danger text-center my-5">Do not change anything unless you know what you're doing.</div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label class="{{ $errors->has('agency.mail_host') ? 'text-danger' : '' }}">HOST</label>
-                        <input placeholder="ex: mail.mydomain.com" wire:model.defer="agency.mail_host" type="text" required name="mail_host" class="form-control"/>
+                        <input placeholder="ex: mail.mydomain.com" wire:model="agency.mail_host" type="text" required name="mail_host" class="form-control"/>
                         <div class="validation-message">
                             {{ $errors->first('agency.mail_host') }}
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label class="{{ $errors->has('agency.mail_port') ? 'text-danger' : '' }}">SMTP PORT</label>
-                        <input wire:model.defer="agency.mail_port" type="number" required name="mail_port" class="form-control" />
+                        <input wire:model="agency.mail_port" type="number" required name="mail_port" class="form-control" />
                         <div class="validation-message">
                             {{ $errors->first('agency.mail_port') }}
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label class="{{ $errors->has('agency.mail_encryption') ? 'text-danger' : '' }}">ENCRYPTION</label>
-                        <input wire:model.defer="agency.mail_encryption" type="text" required name="mail_encryption" class="form-control"/>
+                        <input wire:model="agency.mail_encryption" type="text" required name="mail_encryption" class="form-control"/>
                         <div class="validation-message">
                             {{ $errors->first('agency.mail_encryption') }}
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label class="{{ $errors->has('agency.mail_username') ? 'text-danger' : '' }}">USERNAME</label>
-                        <input wire:model.defer="agency.mail_username" type="text" required name="mail_username" class="form-control"/>
+                        <input wire:model="agency.mail_username" type="text" required name="mail_username" class="form-control"/>
                         <div class="validation-message">
                             {{ $errors->first('agency.mail_username') }}
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label class="{{ $errors->has('agency.mail_password') ? 'text-danger' : '' }}">PASSWORD</label>
-                        <input wire:model.defer="agency.mail_password" type="text" required name="mail_password" class="form-control"/>
+                        <input wire:model="agency.mail_password" type="text" required name="mail_password" class="form-control"/>
                         <div class="validation-message">
                             {{ $errors->first('agency.mail_password') }}
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label class="{{ $errors->has('agency.mail_sender_name') ? 'text-danger' : '' }}">SENDER NAME</label>
-                        <input wire:model.defer="agency.mail_sender_name" type="text" required name="mail_sender_name" class="form-control"/>
+                        <input wire:model="agency.mail_sender_name" type="text" required name="mail_sender_name" class="form-control"/>
                         <div class="validation-message">
                             {{ $errors->first('agency.mail_sender_name') }}
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label class="{{ $errors->has('agency.mail_sender_email') ? 'text-danger' : '' }}">SENDER EMAIL</label>
-                        <input wire:model.defer="agency.mail_sender_email" type="text" required name="mail_sender_email" class="form-control"/>
+                        <input wire:model="agency.mail_sender_email" type="text" required name="mail_sender_email" class="form-control"/>
                         <div class="validation-message">
                             {{ $errors->first('agency.mail_sender_email') }}
                         </div>
@@ -75,7 +75,7 @@
                 <hr/>
                 <div class="row mt-5">
                     <div class="col-3">
-                        <input type="email" class="form-control" placeholder="Enter an email to receive the test" wire:model.defer="testEmail" />
+                        <input type="email" class="form-control" placeholder="Enter an email to receive the test" wire:model="testEmail" />
                         <div class="validation-message text-danger">
                             {{ $errors->first('testEmail') }}
                         </div>

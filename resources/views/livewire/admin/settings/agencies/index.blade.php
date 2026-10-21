@@ -25,7 +25,7 @@
                                 Assign
                             </button>
                         </div>
-                        <select class="form-control" wire:model="class">
+                        <select class="form-control" wire:model.live="class">
                             <option value="">Select</option>
                             @foreach($classes as $c)
                                 <option value="{{ $c->id }}">{{ $c->name }}</option>
@@ -56,7 +56,7 @@
                             <tr>
                                 <td>
                                     <label>
-                                    <input type="checkbox" class="form-check-inline" wire:model.defer="selected" value="{{ $agency->id }}" />
+                                    <input type="checkbox" class="form-check-inline" wire:model="selected" value="{{ $agency->id }}" />
                                     {{ $agency->name }}
                                     </label>
                                 </td>

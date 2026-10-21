@@ -17,40 +17,40 @@
             <div class="mt-5 row">
                 <div class="col-md-6">
                     <label>Select Agency:</label>
-                    <x-select-list id="agencies" name="agencies" wire:model="selectedAgency" :options="$agencies"></x-select-list>
+                    <x-select-list id="agencies" name="agencies" wire:model.live="selectedAgency" :options="$agencies"></x-select-list>
                 </div>
                 <div class="col-md-6">
                     <div class="{{ $selectedAgency ? '' : 'd-none' }}">
                         <label>Select Airline</label>
-                        <x-select-list id="airlines" wire:model="selectedAirline" name="airlines" :options="$airlines"></x-select-list>
+                        <x-select-list id="airlines" wire:model.live="selectedAirline" name="airlines" :options="$airlines"></x-select-list>
                     </div>
                 </div>
             </div>
         </div>
         @if($selectedAgency && $selectedAirline)
-            <div wire:submit.prevent="save" class="container-fluid">
+            <div wire:submit="save" class="container-fluid">
                 <form class="row">
                     <div class="col-12">
                         <div class="row">
                             <div class="col">
                                 <label class="form-label" for="selling_commission">Selling Commission</label>
-                                <input step=".01" type="number" class="form-control" id="selling_commission" wire:model.defer="pricings.selling_commission" />
+                                <input step=".01" type="number" class="form-control" id="selling_commission" wire:model="pricings.selling_commission" />
                             </div>
                             <div class="col">
                                 <label class="form-label" for="selling_service_fee">Selling Service Fee</label>
-                                <input step=".01" type="number" class="form-control" id="selling_service_fee" wire:model.defer="pricings.selling_service_fee" />
+                                <input step=".01" type="number" class="form-control" id="selling_service_fee" wire:model="pricings.selling_service_fee" />
                             </div>
                             <div class="col">
                                 <label class="form-label" for="selling_fixed_fee">Selling Fixed Fee</label>
-                                <input step=".01" type="number" class="form-control" id="selling_fixed_fee" wire:model.defer="pricings.selling_fixed_fee" />
+                                <input step=".01" type="number" class="form-control" id="selling_fixed_fee" wire:model="pricings.selling_fixed_fee" />
                             </div>
                             <div class="col">
                                 <label class="form-label" for="net_commission">Net Commission</label>
-                                <input step=".01" type="number" class="form-control" id="net_commission" wire:model.defer="pricings.net_commission" />
+                                <input step=".01" type="number" class="form-control" id="net_commission" wire:model="pricings.net_commission" />
                             </div>
                             <div class="col">
                                 <label class="form-label" for="net_service_fee">Net Service Fee</label>
-                                <input step=".01" type="number" class="form-control" id="net_service_fee" wire:model.defer="pricings.net_service_fee" />
+                                <input step=".01" type="number" class="form-control" id="net_service_fee" wire:model="pricings.net_service_fee" />
                             </div>
                         </div>
                     </div>

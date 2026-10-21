@@ -33,11 +33,11 @@
             <div class="row">
                 <div class="col">
                     <label class="font-weight-bold">REFERENCE NUMBER</label>
-                    <input type="text" class="form-control" placeholder="Reference Number" wire:model.defer="reference" />
+                    <input type="text" class="form-control" placeholder="Reference Number" wire:model="reference" />
                 </div>
                 <div class="col">
                     <label class="font-weight-bold">BOOKING DATE</label>
-                    <input type="date" class="form-control" placeholder="Booking Date" wire:model.defer="booking_date"/>
+                    <input type="date" class="form-control" placeholder="Booking Date" wire:model="booking_date"/>
                 </div>
                 <div class="col-md-2 d-flex align-items-end">
                     <label class="font-weight-bold"></label>

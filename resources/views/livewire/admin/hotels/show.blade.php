@@ -18,23 +18,23 @@
             <div class="row mt-3">
                 <div class="col-md-2 mt-3">
                     <label>Season</label>
-                    <x-select-list class="form-control" id="filter_season" name="filter_season" :options="$seasons" wire:model="filter.season" />
+                    <x-select-list class="form-control" id="filter_season" name="filter_season" :options="$seasons" wire:model.live="filter.season" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>From</label>
-                    <input type="date" name="filter_from" class="form-control" wire:model="filter.from" />
+                    <input type="date" name="filter_from" class="form-control" wire:model.live="filter.from" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>To</label>
-                    <input type="date" name="filter_to" class="form-control" wire:model="filter.to" />
+                    <input type="date" name="filter_to" class="form-control" wire:model.live="filter.to" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Room Type</label>
-                    <x-select-list class="form-control" id="filter_room_type" name="filter_room_type" :options="$roomTypes" wire:model="filter.room_type" />
+                    <x-select-list class="form-control" id="filter_room_type" name="filter_room_type" :options="$roomTypes" wire:model.live="filter.room_type" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Room Status</label>
-                    <x-select-list class="form-control" id="filter_room_status" name="filter_room_status" :options="['active' => 'Active', 'inactive' => 'Inactive']" wire:model="filter.room_status" />
+                    <x-select-list class="form-control" id="filter_room_status" name="filter_room_status" :options="['active' => 'Active', 'inactive' => 'Inactive']" wire:model.live="filter.room_status" />
                 </div>
                 <div class="col-md-2 d-flex align-items-end justify-content-end text-right">
                     <div class="mt-3">

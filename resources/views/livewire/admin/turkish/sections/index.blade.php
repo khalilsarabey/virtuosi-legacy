@@ -48,7 +48,7 @@
                                 <td>
                                     @if($renameId == $des->id)
                                         <div class="d-flex">
-                                            <input type="text" class="form-control" wire:model.defer="newName" />
+                                            <input type="text" class="form-control" wire:model="newName" />
                                             <button wire:click="saveNewName({{ $des->id }})" class="btn btn-sm btn-outline-primary ml-3">Update Name</button>
                                         </div>
                                     @else

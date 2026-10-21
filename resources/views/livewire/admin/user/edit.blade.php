@@ -16,13 +16,13 @@
                     <div class="alert alert-danger">{{ $error }}</div>
                 @endforeach
             @endif
-            <form wire:submit.prevent="submit" class="pt-3">
+            <form wire:submit="submit" class="pt-3">
                 <div class="row">
                     @if($user->type)
                         @if($user->type == 'agency' || auth()->user()->type == 'white-admin')
                             <div class="col d-flex align-items-center mb-4 mt-3">
                                 <div class="form-check">
-                                    <input class="form-check-input" wire:model="user.restricted" type="checkbox" name="restricted" id="restricted">
+                                    <input class="form-check-input" wire:model.live="user.restricted" type="checkbox" name="restricted" id="restricted">
                                     <label class="form-check-label mt-1" for="restricted">Can only perform on hold bookings</label>
                                 </div>
                             </div>
@@ -32,7 +32,7 @@
                                     @if(config('features.autopricing'))
                                         <div class="col d-flex align-items-center mb-4 mt-3">
                                             <div class="form-check">
-                                                <input class="form-check-input" wire:model="user.auto_pricing" type="checkbox" name="auto_pricing" id="auto_pricing">
+                                                <input class="form-check-input" wire:model.live="user.auto_pricing" type="checkbox" name="auto_pricing" id="auto_pricing">
                                                 <label class="form-check-label mt-1" for="auto_pricing">Can access auto pricing</label>
                                             </div>
                                         </div>
@@ -66,7 +66,7 @@
                         <div class="col">
                             <div class="form-group {{ $errors->has('user.name') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="name">{{ trans('cruds.user.fields.name') }}</label>
-                                <input class="form-control" type="text" name="name" id="name" required wire:model.defer="user.name">
+                                <input class="form-control" type="text" name="name" id="name" required wire:model="user.name">
                                 <div class="text-danger">
                                     {{ $errors->first('user.name') }}
                                 </div>
@@ -75,7 +75,7 @@
                         <div class="col">
                             <div class="form-group {{ $errors->has('user.email') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="email">{{ trans('cruds.user.fields.email') }}</label>
-                                <input class="form-control" type="email" name="email" id="email" required wire:model.defer="user.email">
+                                <input class="form-control" type="email" name="email" id="email" required wire:model="user.email">
                                 <div class="text-danger">
                                     {{ $errors->first('user.email') }}
                                 </div>
@@ -85,7 +85,7 @@
                             <div class="col">
                                 <div class="form-group {{ $errors->has('user.balance') ? 'invalid' : '' }}">
                                     <label class="form-label" for="balance">{{ trans('cruds.user.fields.balance') }}</label>
-                                    <input class="form-control" type="number" name="balance" id="balance" wire:model.defer="user.balance" step="0.01">
+                                    <input class="form-control" type="number" name="balance" id="balance" wire:model="user.balance" step="0.01">
                                     <div class="text-danger">
                                         {{ $errors->first('user.balance') }}
                                     </div>
@@ -98,7 +98,7 @@
                         <div class="col">
                             <div class="form-group {{ $errors->has('user.active') ? 'invalid' : '' }}">
                                 <label class="form-label" for="active">{{ trans('cruds.user.fields.active') }}</label>
-                                <select class="form-control" wire:model="user.active" step="1">
+                                <select class="form-control" wire:model.live="user.active" step="1">
                                     <option value="1">Yes</option>
                                     <option value="0">No</option>
                                 </select>
@@ -110,7 +110,7 @@
                         <div class="col">
                             <div class="form-group {{ $errors->has('user.password') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="password">{{ trans('cruds.user.fields.password') }}</label>
-                                <input class="form-control" type="text" name="password" id="password" wire:model.debounce.500ms="password" placeholder="6 or more characters">
+                                <input class="form-control" type="text" name="password" id="password" wire:model.live.debounce.500ms="password" placeholder="6 or more characters">
                                 <progress value="{{ $strengthScore }}" max="4" class="w-100"></progress>
                                 <div><small>{{ $strengthLevels[$strengthScore] ?? 'Weak' }}</small></div>
                                 <div class="validation-message">
@@ -130,7 +130,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group {{ $errors->has('user.air_arabia_markup') ? 'invalid' : '' }}">
                                             <label class="form-label" for="air_arabia_markup">Air Arabia Markup</label>
-                                            <input class="form-control" type="number" name="air_arabia_markup" id="air_arabia_markup" wire:model.defer="user.air_arabia_markup" step="0.01">
+                                            <input class="form-control" type="number" name="air_arabia_markup" id="air_arabia_markup" wire:model="user.air_arabia_markup" step="0.01">
                                             <div class="validation-message text-danger">
                                                 {{ $errors->first('user.air_arabia_markup') }}
                                             </div>
@@ -139,7 +139,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group {{ $errors->has('user.air_arabia_markup_type') ? 'invalid' : '' }}">
                                             <label class="form-label" for="air_arabia_markup_type">Markup Type</label>
-                                            <select class="form-control" wire:model="user.air_arabia_markup_type">
+                                            <select class="form-control" wire:model.live="user.air_arabia_markup_type">
                                                 <option></option>
                                                 <option value="percentage">Percentage</option>
                                                 <option value="fixed">Fixed</option>
@@ -152,7 +152,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group {{ $errors->has('user.fly_dubai_markup') ? 'invalid' : '' }}">
                                             <label class="form-label" for="fly_dubai_markup">Fly Dubai Markup</label>
-                                            <input class="form-control" type="number" name="fly_dubai_markup" id="fly_dubai_markup" wire:model.defer="user.fly_dubai_markup" step="0.01">
+                                            <input class="form-control" type="number" name="fly_dubai_markup" id="fly_dubai_markup" wire:model="user.fly_dubai_markup" step="0.01">
                                             <div class="validation-message text-danger">
                                                 {{ $errors->first('user.fly_dubai_markup') }}
                                             </div>
@@ -161,7 +161,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group {{ $errors->has('user.fly_dubai_markup_type') ? 'invalid' : '' }}">
                                             <label class="form-label" for="fly_dubai_markup_type">Markup Type</label>
-                                            <select class="form-control" wire:model="user.fly_dubai_markup_type">
+                                            <select class="form-control" wire:model.live="user.fly_dubai_markup_type">
                                                 <option></option>
                                                 <option value="percentage">Percentage</option>
                                                 <option value="fixed">Fixed</option>
@@ -182,7 +182,7 @@
                                     @foreach($connections as $connection)
     <div class="col-md-3">
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="{{ $connection->id }}" id="blocked_connection_{{ $connection->id }}" wire:model="blocked_connections">
+            <input class="form-check-input" type="checkbox" value="{{ $connection->id }}" id="blocked_connection_{{ $connection->id }}" wire:model.live="blocked_connections">
             <label class="form-check-label mt-3 pt-1" for="blocked_connection_{{ $connection->id }}">
                 {{ $connection->name }}
             </label>

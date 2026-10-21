@@ -20,12 +20,12 @@
             <div class="mt-5 row">
                 <div class="col-md-6">
                     <label>Select Agency:</label>
-                    <x-select-list id="agencies" name="agencies" wire:model="selectedAgency" :options="$agencies"></x-select-list>
+                    <x-select-list id="agencies" name="agencies" wire:model.live="selectedAgency" :options="$agencies"></x-select-list>
                 </div>
                 <div class="col-md-6">
                     <div class="{{ $selectedAgency ? '' : 'd-none' }}">
                         <label>Select Destination</label>
-                        <x-select-list id="airlines" wire:model="selectedDestination" name="destinations" :options="$destinations"></x-select-list>
+                        <x-select-list id="airlines" wire:model.live="selectedDestination" name="destinations" :options="$destinations"></x-select-list>
                     </div>
                 </div>
             </div>
@@ -257,27 +257,27 @@
                         <div class="row">
                             <div class="col-6">
                                 <label>Class Name</label>
-                                <input type="text" class="form-control" placeholder="" wire:model.defer="class_name" />
+                                <input type="text" class="form-control" placeholder="" wire:model="class_name" />
                             </div>
                             <div class="col-6">
                                 <label>Selling Commission</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="selling_commission" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="selling_commission" />
                             </div>
                             <div class="col-6">
                                 <label>Selling Service Fee</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="selling_service_fee" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="selling_service_fee" />
                             </div>
                             <div class="col-6">
                                 <label>Selling Fixed Fee</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="selling_fixed_fee" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="selling_fixed_fee" />
                             </div>
                             <div class="col-6">
                                 <label>Net Commission</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="net_commission" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="net_commission" />
                             </div>
                             <div class="col-6">
                                 <label>Net Service Fee</label>
-                                <input step=".01"  type="number" class="form-control" placeholder="" wire:model.defer="net_service_fee" />
+                                <input step=".01"  type="number" class="form-control" placeholder="" wire:model="net_service_fee" />
                             </div>
                         </div>
                     </div>
@@ -301,27 +301,27 @@
                         <div class="row">
                             <div class="col-6">
                                 <label>Class Name</label>
-                                <input type="text" class="form-control" placeholder="" wire:model.defer="class_name" />
+                                <input type="text" class="form-control" placeholder="" wire:model="class_name" />
                             </div>
                             <div class="col-6">
                                 <label>Selling Commission</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="selling_commission" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="selling_commission" />
                             </div>
                             <div class="col-6">
                                 <label>Selling Service Fee</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="selling_service_fee" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="selling_service_fee" />
                             </div>
                             <div class="col-6">
                                 <label>Selling Fixed Fee</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="selling_fixed_fee" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="selling_fixed_fee" />
                             </div>
                             <div class="col-6">
                                 <label>Net Commission</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="net_commission" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="net_commission" />
                             </div>
                             <div class="col-6">
                                 <label>Net Service Fee</label>
-                                <input step=".01"  type="number" class="form-control" placeholder="" wire:model.defer="net_service_fee" />
+                                <input step=".01"  type="number" class="form-control" placeholder="" wire:model="net_service_fee" />
                             </div>
                         </div>
                     </div>

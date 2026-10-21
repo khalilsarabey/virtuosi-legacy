@@ -20,31 +20,31 @@
             <div class="row mt-3">
                 <div class="col mt-3">
                     <label>Agency / User</label>
-                    <x-select-list class="form-control w-100" id="agencies" name="agencies" :options="$agencies" wire:model="filters.user_id" />
+                    <x-select-list class="form-control w-100" id="agencies" name="agencies" :options="$agencies" wire:model.live="filters.user_id" />
                 </div>
                 <div class="col mt-3">
                     <label>Hotel</label>
-                    <x-select-list class="form-control w-100" id="hotel" name="hotel" :options="$hotels_list" wire:model="filters.hotel_id" />
+                    <x-select-list class="form-control w-100" id="hotel" name="hotel" :options="$hotels_list" wire:model.live="filters.hotel_id" />
                 </div>
                 <div class="col mt-3">
                     <label>From Date</label>
-                    <input type="date" name="dep_date" id="dep_date" class="form-control" wire:model="filters.dep_date" />
+                    <input type="date" name="dep_date" id="dep_date" class="form-control" wire:model.live="filters.dep_date" />
                 </div>
                 <div class="col mt-3">
                     <label>To Date</label>
-                    <input type="date" name="ret_date" id="ret_date" class="form-control" wire:model="filters.ret_date" />
+                    <input type="date" name="ret_date" id="ret_date" class="form-control" wire:model.live="filters.ret_date" />
                 </div>
                 <div class="col mt-3">
                     <label>Reference Number</label>
-                    <input type="text" class="form-control" wire:model="filters.reference" />
+                    <input type="text" class="form-control" wire:model.live="filters.reference" />
                 </div>
                 <div class="col mt-3">
                     <label>From Booking Date</label>
-                    <input type="date" class="form-control" wire:model="filters.from_created_at" />
+                    <input type="date" class="form-control" wire:model.live="filters.from_created_at" />
                 </div>
                 <div class="col mt-3">
                     <label>To Booking Date</label>
-                    <input type="date" class="form-control" wire:model="filters.to_created_at" />
+                    <input type="date" class="form-control" wire:model.live="filters.to_created_at" />
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="ml-auto col-md-1 mt-3">
                     <label>Per Page</label>
-                    <select wire:model="perPage" class="form-control form-control-sm w-100">
+                    <select wire:model.live="perPage" class="form-control form-control-sm w-100">
                         @foreach($paginationOptions as $value)
                             <option value="{{ $value }}">{{ $value }}</option>
                         @endforeach

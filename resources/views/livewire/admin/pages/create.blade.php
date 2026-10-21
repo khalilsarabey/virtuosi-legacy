@@ -11,19 +11,19 @@
             </div>
         </div>
         <div class="container-fluid">
-            <form wire:submit.prevent="createPage">
+            <form wire:submit="createPage">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="title" class="form-label">Title</label>
-                            <input type="text" class="form-control" id="title" wire:model="title">
+                            <input type="text" class="form-control" id="title" wire:model.live="title">
                             @error('title') <span class="text-danger">{{ $message }}</span> @enderror
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="status" class="form-label">Status</label>
-                            <select class="form-control" id="status" wire:model="status">
+                            <select class="form-control" id="status" wire:model.live="status">
                                 <option value="1">Active</option>
                                 <option value="0">Inactive</option>
                             </select>

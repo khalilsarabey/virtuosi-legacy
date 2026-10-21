@@ -16,11 +16,11 @@
             </div>
         </div>
         <div class="container-fluid mb-4">
-            <form wire:submit.prevent="submit" class="pt-3">
+            <form wire:submit="submit" class="pt-3">
                 <div class="row">
                     <div class="col-md-3 form-group {{ $errors->has('airline.name') ? 'invalid' : '' }}">
                         <label class="form-label required" for="name">{{ trans('cruds.airline.fields.name') }}</label>
-                        <input class="form-control" type="text" name="name" id="name" required wire:model.defer="airline.name">
+                        <input class="form-control" type="text" name="name" id="name" required wire:model="airline.name">
                         <div class="validation-message">
                             {{ $errors->first('airline.name') }}
                         </div>
@@ -30,21 +30,21 @@
                     </div>
                     <div class="col-md-3 form-group {{ $errors->has('airline.icao') ? 'invalid' : '' }}">
                         <label class="form-label" for="icao">Code</label>
-                        <input maxlength="3" class="form-control" type="text" name="icao" id="icao" wire:model.defer="airline.icao">
+                        <input maxlength="3" class="form-control" type="text" name="icao" id="icao" wire:model="airline.icao">
                         <div class="validation-message">
                             {{ $errors->first('airline.icao') }}
                         </div>
                     </div>
                     <div class="col-md-3 form-group {{ $errors->has('airline.country') ? 'invalid' : '' }}">
                         <label class="form-label required" for="country">{{ trans('cruds.airline.fields.country') }}</label>
-                        <input class="form-control" type="text" name="country" id="country" required wire:model.defer="airline.country">
+                        <input class="form-control" type="text" name="country" id="country" required wire:model="airline.country">
                         <div class="validation-message">
                             {{ $errors->first('airline.country') }}
                         </div>
                     </div>
                     <div class="col-md-3 d-flex align-items-end form-group {{ $errors->has('airline.combinable') ? 'invalid' : '' }}">
                         <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" id="combinable" wire:model.defer="airline.combinable">
+                            <input class="form-check-input" type="checkbox" id="combinable" wire:model="airline.combinable">
                             <label class="form-check-label mt-1" for="combinable">
                                 Combinable
                             </label>

@@ -1,6 +1,6 @@
 <div>
     <x-hotels-menu menu="hotels" />
-    <form wire:submit.prevent="save">
+    <form wire:submit="save">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-9 pr-0">
@@ -30,24 +30,24 @@
                             <div class="col">
                                 <label>Room Type</label>
                                 <x-select-list class="form-control" required id="roomTypes" name="roomTypes"
-                                               wire:model="room.room_type_id"
+                                               wire:model.live="room.room_type_id"
                                                :options="$this->listsForFields['roomTypes']"/>
                             </div>
                             <div class="col">
                                 <label>Availability</label>
                                 <x-flatpickr from="{{ $room['start_date'] ?? '' }}" to="{{ $room['end_date'] ?? '' }}"
                                              mode="range" months="2" min="{{ $room['start_date'] ?? '' }}"
-                                             wire:model="availability" required class="form-control"
-                                             id="room_start_date" wire:model="available" name="room_start_date"
+                                             wire:model.live="availability" required class="form-control"
+                                             id="room_start_date" wire:model.live="available" name="room_start_date"
                                              picker="date" />
                             </div>
                             <div class="col">
                                 <label>Number of Units</label>
-                                <input type="number" required min="1" class="form-control" wire:model.defer="room.units"/>
+                                <input type="number" required min="1" class="form-control" wire:model="room.units"/>
                             </div>
                             <div class="col">
                                 <label>Status</label>
-                                <select wire:model="room.active" class="form-control">
+                                <select wire:model.live="room.active" class="form-control">
                                     <option value="1">Active</option>
                                     <option value="0">Inactive</option>
                                 </select>
@@ -83,7 +83,7 @@
                             </div>
                             <div class="col-md-3">
                                 <label>Dynamic Pricing</label>
-                                <select required wire:model="rule.adult.pricing" class="form-control form-control-sm">
+                                <select required wire:model.live="rule.adult.pricing" class="form-control form-control-sm">
                                     <option value="fixed">Price per Person</option>
                                     <option value="total">Price for Total People</option>
                                     <option value="each">Price for Each Person</option>
@@ -91,7 +91,7 @@
                             </div>
                             <div class="col-md-3">
                                 <label>Capacity</label>
-                                <select required class="form-control form-control-sm" wire:model="rule.adult.capacity">
+                                <select required class="form-control form-control-sm" wire:model.live="rule.adult.capacity">
                                     <option value="0">0</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -103,7 +103,7 @@
                             </div>
                             <div class="col-md-3">
                                 <label>Extra Beds</label>
-                                <select wire:model="rule.adult.extra_beds" class="form-control form-control-sm">
+                                <select wire:model.live="rule.adult.extra_beds" class="form-control form-control-sm">
                                     <option value="">None</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -119,7 +119,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <label>Dynamic Pricing</label>
-                                    <select wire:model="rule.child.pricing" class="form-control form-control-sm" required>
+                                    <select wire:model.live="rule.child.pricing" class="form-control form-control-sm" required>
                                         <option value="fixed">Price per Person</option>
                                         <option value="total">Price for Total People</option>
                                         <option value="each">Price for Each Person</option>
@@ -127,7 +127,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <label>Capacity</label>
-                                    <select class="form-control form-control-sm" wire:model="rule.child.capacity" required>
+                                    <select class="form-control form-control-sm" wire:model.live="rule.child.capacity" required>
                                         <option value="0">0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -139,7 +139,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <label>Extra Beds</label>
-                                    <select wire:model="rule.child.extra_beds" class="form-control form-control-sm">
+                                    <select wire:model.live="rule.child.extra_beds" class="form-control form-control-sm">
                                         <option value="">None</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -155,7 +155,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <label>Charge</label>
-                                    <select wire:model="rule.infant.pricing" class="form-control form-control-sm" required>
+                                    <select wire:model.live="rule.infant.pricing" class="form-control form-control-sm" required>
                                         <option value="free">Free</option>
                                         <option value="fixed">Price per Person</option>
                                         <option value="total">Price for Total People</option>
@@ -164,7 +164,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <label>Capacity</label>
-                                    <select class="form-control form-control-sm" wire:model="rule.infant.capacity" required>
+                                    <select class="form-control form-control-sm" wire:model.live="rule.infant.capacity" required>
                                         <option value="0">0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -193,7 +193,7 @@
                                 <div class="row">
                                     <div class="col-11">
                                         <label>Date</label>
-                                        <x-flatpickr wire:model="prices.{{$key}}.date"
+                                        <x-flatpickr wire:model.live="prices.{{$key}}.date"
                                                      mode="range"
                                                      months="3"
                                                      min="{{ isset($prices[$key - 1]['end_date']) ? \Carbon\Carbon::createFromFormat('d-m-Y', $prices[$key - 1]['end_date'])->addDay()->format('d-m-Y') : $room['start_date'] }}"
@@ -210,7 +210,7 @@
                                     @if($rule['adult']['pricing'] == 'fixed')
                                         <div class="col-md-2">
                                             <label>Adult</label>
-                                            <input required type="text" wire:model.defer="prices.{{$key}}.adult_1" class="form-control"/>
+                                            <input required type="text" wire:model="prices.{{$key}}.adult_1" class="form-control"/>
                                         </div>
                                     @endif
 
@@ -218,7 +218,7 @@
                                         @for($i = 0; $i < $rule['adult']['capacity']; $i++)
                                             <div class="col-md-2">
                                                 <label>{{ numberToWords($i+1) }} Adult{{ $i > 0 ? 's' : '' }}</label>
-                                                <input required type="text" wire:model.defer="prices.{{$key}}.adult_{{  $i+1 }}" class="form-control"/>
+                                                <input required type="text" wire:model="prices.{{$key}}.adult_{{  $i+1 }}" class="form-control"/>
                                             </div>
                                         @endfor
                                     @endif
@@ -228,7 +228,7 @@
                                             <div class="col-md-2">
                                                 <label>{{ numberToWords($i+1, true) }} Adult</label>
                                                 <input required type="text"
-                                                       wire:model.defer="prices.{{$key}}.adult_{{  $i+1 }}"
+                                                       wire:model="prices.{{$key}}.adult_{{  $i+1 }}"
                                                        class="form-control"/>
                                             </div>
                                         @endfor
@@ -238,7 +238,7 @@
                                         @if($rule['child']['pricing'] == 'fixed')
                                             <div class="col-md-2">
                                                 <label>Child</label>
-                                                <input required type="text" wire:model.defer="prices.{{$key}}.child_1"
+                                                <input required type="text" wire:model="prices.{{$key}}.child_1"
                                                        class="form-control"/>
                                             </div>
                                         @endif
@@ -249,7 +249,7 @@
                                                     <label>{{ numberToWords($i+1) }}
                                                         Child{{ $i > 0 ? 'ren' : '' }}</label>
                                                     <input required type="text"
-                                                           wire:model.defer="prices.{{$key}}.child_{{  $i+1 }}"
+                                                           wire:model="prices.{{$key}}.child_{{  $i+1 }}"
                                                            class="form-control"/>
                                                 </div>
                                             @endfor
@@ -260,7 +260,7 @@
                                                 <div class="col-md-2">
                                                     <label>{{ numberToWords($i+1, true) }} Child</label>
                                                     <input required type="text"
-                                                           wire:model.defer="prices.{{$key}}.child_{{  $i+1 }}"
+                                                           wire:model="prices.{{$key}}.child_{{  $i+1 }}"
                                                            class="form-control"/>
                                                 </div>
                                             @endfor
@@ -270,7 +270,7 @@
                                         @if($rule['infant']['pricing'] == 'fixed')
                                                 <div class="col-md-2">
                                                     <label>Infant</label>
-                                                    <input required type="text" wire:model.defer="prices.{{$key}}.infant_1"
+                                                    <input required type="text" wire:model="prices.{{$key}}.infant_1"
                                                            class="form-control"/>
                                                 </div>
                                             @endif
@@ -281,7 +281,7 @@
                                                         <label>{{ numberToWords($i+1) }}
                                                             Infant{{ $i > 0 ? 's' : '' }}</label>
                                                         <input required type="text"
-                                                               wire:model.defer="prices.{{$key}}.infant_{{  $i+1 }}"
+                                                               wire:model="prices.{{$key}}.infant_{{  $i+1 }}"
                                                                class="form-control"/>
                                                     </div>
                                                 @endfor
@@ -292,7 +292,7 @@
                                                     <div class="col-md-2">
                                                         <label>{{ numberToWords($i+1, true) }} Infant</label>
                                                         <input required type="text"
-                                                               wire:model.defer="prices.{{$key}}.infant_{{  $i+1 }}"
+                                                               wire:model="prices.{{$key}}.infant_{{  $i+1 }}"
                                                                class="form-control"/>
                                                     </div>
                                                 @endfor
@@ -337,7 +337,7 @@
                                             <div class="terms-scrollable">
                                                 @foreach($feature->children as $child)
                                                     <div class="form-check">
-                                                        <input class="form-check-input" wire:model="selectedFeatures"
+                                                        <input class="form-check-input" wire:model.live="selectedFeatures"
                                                                value="{{ $child->id }}" type="checkbox"
                                                                id="{{ $child->id }}">
                                                         <label class="form-check-label mt-0 mb-1 pt-1"

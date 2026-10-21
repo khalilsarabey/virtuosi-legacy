@@ -16,7 +16,7 @@
                             </h6>
                         </div>
                     </div>
-                    <form wire:submit.prevent="save">
+                    <form wire:submit="save">
                         @csrf
                         <div class="row">
                             @if($errors->hasAny())
@@ -27,13 +27,13 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Title (Used for display purposes only)</label>
-                                    <input type="text" wire:model.defer="title" class="form-control" required>
+                                    <input type="text" wire:model="title" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Status</label>
-                                    <select wire:model="status" class="form-control">
+                                    <select wire:model.live="status" class="form-control">
                                         <option value="1">Active</option>
                                         <option value="0">Inactive</option>
                                     </select>
@@ -42,13 +42,13 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>From Date</label>
-                                        <input type="date" wire:model="start_date" class="form-control">
+                                        <input type="date" wire:model.live="start_date" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>To Date</label>
-                                        <input type="date" wire:model="end_date" class="form-control">
+                                        <input type="date" wire:model.live="end_date" class="form-control">
                                     </div>
                                 </div>
                         </div>
@@ -56,7 +56,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label>Apply only when duration is</label>
-                                    <select wire:model="duration_type" class="form-control">
+                                    <select wire:model.live="duration_type" class="form-control">
                                         <option value="any">Any</option>
                                         <option value="less_than">Less Than</option>
                                         <option value="greater_than">Greater Than</option>
@@ -67,7 +67,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label>Trip Duration in Days</label>
-                                    <input type="number" wire:model.defer="duration" class="form-control">
+                                    <input type="number" wire:model="duration" class="form-control">
                                 </div>
                             </div>
                             @endif
@@ -79,7 +79,7 @@
                                         id="hotel_ids"
                                         name="hotel_ids"
                                         :options="$hotels_list"
-                                        wire:model="hotel_ids"
+                                        wire:model.live="hotel_ids"
                                         multiple
                                         placeholder="Select hotels (leave empty for all)"
                                     />
@@ -99,19 +99,19 @@
                                                 </div>
                                                 <div class="col">
                                                     <label>Amount Type</label>
-                                                    <select class="form-control" wire:model="sub_rules.{{ $i }}.amount_type">
+                                                    <select class="form-control" wire:model.live="sub_rules.{{ $i }}.amount_type">
                                                         <option value="percentage">Percentage</option>
                                                         <option value="fixed">Fixed</option>
                                                     </select>
                                                 </div>
                                                 <div class="col">
                                                     <label>Amount</label>
-                                                    <input type="number" class="form-control" wire:model="sub_rules.{{ $i }}.amount">
+                                                    <input type="number" class="form-control" wire:model.live="sub_rules.{{ $i }}.amount">
                                                 </div>
                                                 @if(isset($subRule['amount_type']) && $subRule['amount_type'] == 'percentage')
                                                     <div class="col">
                                                         <label>Applicable To</label>
-                                                        <select class="form-control" wire:model="sub_rules.{{ $i }}.applicable_to">
+                                                        <select class="form-control" wire:model.live="sub_rules.{{ $i }}.applicable_to">
                                                             <option value="hotel">Hotel</option>
                                                             <option value="ticket">Ticket</option>
                                                             <option value="total">Total</option>
@@ -121,7 +121,7 @@
                                                 <div class="col d-flex align-self-center mt-4">
                                                     @if(isset($subRule['amount_type']) && $subRule['amount_type'] == 'fixed')
                                                         <div class="form-check">
-                                                            <input type="checkbox" class="form-check-input" wire:model="sub_rules.{{ $i }}.per_person" id="per_person_{{ $i }}">
+                                                            <input type="checkbox" class="form-check-input" wire:model.live="sub_rules.{{ $i }}.per_person" id="per_person_{{ $i }}">
                                                             <label class="form-check-label mt-1" for="per_person_{{ $i }}">Per Person</label>
                                                         </div>
                                                     @endif

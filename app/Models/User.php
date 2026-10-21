@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Spatie\Image\Enums\Fit;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
@@ -97,7 +98,7 @@ class User extends Authenticatable implements HasLocalePreference, HasMedia
     }
 
 
-    public function registerMediaConversions(Media $media = null): void
+    public function registerMediaConversions(?Media $media = null): void
     {
         $thumbnailWidth  = 50;
         $thumbnailHeight = 50;
@@ -108,11 +109,11 @@ class User extends Authenticatable implements HasLocalePreference, HasMedia
         $this->addMediaConversion('thumbnail')
             ->width($thumbnailWidth)
             ->height($thumbnailHeight)
-            ->fit('crop', $thumbnailWidth, $thumbnailHeight);
+            ->fit(Fit::Crop, $thumbnailWidth, $thumbnailHeight);
         $this->addMediaConversion('preview_thumbnail')
             ->width($thumbnailPreviewWidth)
             ->height($thumbnailPreviewHeight)
-            ->fit('crop', $thumbnailPreviewWidth, $thumbnailPreviewHeight);
+            ->fit(Fit::Crop, $thumbnailPreviewWidth, $thumbnailPreviewHeight);
     }
 
     public function bookings()

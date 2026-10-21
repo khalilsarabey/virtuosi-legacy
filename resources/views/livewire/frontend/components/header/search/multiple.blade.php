@@ -10,7 +10,7 @@
                     <div class="form-group">
                         <span class="la la-map-marker form-icon"></span>
                         <div class="input-items pl-5 pl-md-0">
-                            <select name="dep_from_code" wire:model="dep_from_code" class="form-control" required>
+                            <select name="dep_from_code" wire:model.live="dep_from_code" class="form-control" required>
                                 <option value disabled selected>Select</option>
                                 @foreach($fromList as $value => $key)
                                     <option value="{{ $key }}">{{ $value }}</option>
@@ -26,7 +26,7 @@
                     <div class="form-group">
                         <span class="la la-map-marker form-icon"></span>
                         <div class="input-items pl-5 pl-md-0">
-                            <select name="dep_to_code" wire:model="dep_to_code" class="form-control" {{ count($toList) ? '' : 'disabled' }} required>
+                            <select name="dep_to_code" wire:model.live="dep_to_code" class="form-control" {{ count($toList) ? '' : 'disabled' }} required>
                                 <option value disabled selected>Select</option>
                                 @foreach($toList as $value => $key)
                                     <option value="{{ $key }}">{{ $value }}</option>
@@ -41,7 +41,7 @@
                     <div class="label-text">Departure</div>
                     <div class="form-group">
                         <span class="la la-calendar form-icon"></span>
-                        <x-flatpickr id="charter-multi-date-pick-departure" value="{{ $dep_date }}" name="dep_date" disabled mode="single" min="today" required picker="date" wire:model="dep_date" wire:loading.attr="disabled" required />
+                        <x-flatpickr id="charter-multi-date-pick-departure" value="{{ $dep_date }}" name="dep_date" disabled mode="single" min="today" required picker="date" wire:model.live="dep_date" wire:loading.attr="disabled" required />
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                                         <label><i class="la la-user"></i> Adult</label>
                                         <div class="roundtrip-button-inc qtyBtn d-flex align-items-center">
                                             <div wire:click="dec('adults')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                            <input type="text" name="adults" wire:model="adults" readonly>
+                                            <input type="text" name="adults" wire:model.live="adults" readonly>
                                             <div wire:click="inc('adults')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                         </div>
                                     </div>
@@ -70,7 +70,7 @@
                                         <label><i class="la la-female"></i> Child</label>
                                         <div class="children roundtrip-button-inc qtyBtn d-flex align-items-center">
                                             <div  wire:click="dec('children')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                            <input type="text" name="children" wire:model="children" readonly>
+                                            <input type="text" name="children" wire:model.live="children" readonly>
                                             <div wire:click="inc('children')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                         </div>
                                     </div>
@@ -80,7 +80,7 @@
                                         <label><i class="la la-female"></i> Infant</label>
                                         <div class="infants roundtrip-button-inc qtyBtn d-flex align-items-center">
                                             <div wire:click="dec('infants')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                            <input type="text" name="infants" wire:model="infants" readonly>
+                                            <input type="text" name="infants" wire:model.live="infants" readonly>
                                             <div wire:click="inc('infants')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                         </div>
                                     </div>
@@ -106,7 +106,7 @@
                     <div class="form-group">
                         <span class="la la-map-marker form-icon"></span>
                         <div class="input-items pl-5 pl-md-0">
-                            <select name="ret_from_code" wire:model="ret_from_code" class="form-control" required>
+                            <select name="ret_from_code" wire:model.live="ret_from_code" class="form-control" required>
                                 <option value disabled selected>Select</option>
                                 @foreach($returnFromList as $value => $key)
                                     <option value="{{ $key }}">{{ $value }}</option>
@@ -122,7 +122,7 @@
                     <div class="form-group">
                         <span class="la la-map-marker form-icon"></span>
                         <div class="input-items pl-5 pl-md-0">
-                            <select name="ret_to_code" wire:model="ret_to_code" class="form-control" {{ count($returnToList) ? '' : 'disabled' }} required>
+                            <select name="ret_to_code" wire:model.live="ret_to_code" class="form-control" {{ count($returnToList) ? '' : 'disabled' }} required>
                                 <option value disabled selected>Select</option>
                                 @foreach($returnToList as $value => $key)
                                     <option value="{{ $key }}">{{ $value }}</option>
@@ -137,7 +137,7 @@
                     <label class="label-text">Departure</label>
                     <div class="form-group">
                         <span class="la la-calendar form-icon"></span>
-                        <x-flatpickr id="charter-multi-date-pick-return" value="{{ $ret_date }}" name="ret_date" disabled mode="single" min="today" required picker="date" wire:model="ret_date" wire:loading.attr="disabled" required />
+                        <x-flatpickr id="charter-multi-date-pick-return" value="{{ $ret_date }}" name="ret_date" disabled mode="single" min="today" required picker="date" wire:model.live="ret_date" wire:loading.attr="disabled" required />
                     </div>
                 </div>
             </div>

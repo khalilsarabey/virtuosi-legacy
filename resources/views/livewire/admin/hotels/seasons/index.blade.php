@@ -17,25 +17,25 @@
                     </button>
                 </div>
             </div>
-            @if($editSeason || $createSeason)
-                <form wire:submit.prevent="addRoom">
+            @if($editingSeason || $creatingSeason)
+                <form wire:submit="addRoom">
                     <div class="row mt-3 pb-3 bg-light">
                         <div class="col">
                             <label>Name</label>
-                            <input type="text" wire:model.defer="form.name" required class="form-control" />
+                            <input type="text" wire:model="form.name" required class="form-control" />
                         </div>
                         <div class="col">
                             <label>Start Date</label>
-                            <x-flatpickr required class="form-control" id="form_start_date" wire:model="form.start_date" name="form_start_date" picker="date" />
+                            <x-flatpickr required class="form-control" id="form_start_date" wire:model.live="form.start_date" name="form_start_date" picker="date" />
                         </div>
                         <div class="col">
                             <label>End Date</label>
-                            <x-flatpickr required class="form-control" id="room_start_date" wire:model="form.end_date" name="room_start_date" picker="date" />
+                            <x-flatpickr required class="form-control" id="room_start_date" wire:model.live="form.end_date" name="room_start_date" picker="date" />
                         </div>
                         <div class="col-md-2 d-flex align-items-center justify-content-center">
                             <div class="mt-3">
                                 <div class="form-check">
-                                    <input class="form-check-input" wire:model.defer="form.active" type="checkbox" role="switch" id="active">
+                                    <input class="form-check-input" wire:model="form.active" type="checkbox" role="switch" id="active">
                                     <label class="form-check-label pt-1" for="active">Active</label>
                                 </div>
                             </div>

@@ -16,46 +16,46 @@
             </div>
         </div>
         <div class="container-fluid mb-4">
-            <form wire:submit.prevent="submit" class="pt-3">
+            <form wire:submit="submit" class="pt-3">
                 <div class="row">
                     <div class="col-md-3 form-group {{ $errors->has('airline.name') ? 'invalid' : '' }}">
                         <label class="form-label required" for="name">{{ trans('cruds.airline.fields.name') }}</label>
-                        <input class="form-control" type="text" name="name" id="name" required wire:model.defer="airline.name">
+                        <input class="form-control" type="text" name="name" id="name" required wire:model="airline.name">
                         <div class="validation-message">
                             {{ $errors->first('airline.name') }}
                         </div>
                     </div>
                     <div class="col-md-3 form-group {{ $errors->has('airline.icao') ? 'invalid' : '' }}">
                         <label class="form-label" for="icao">ICAO Code</label>
-                        <input maxlength="3" class="form-control" type="text" name="icao" id="icao" wire:model.defer="airline.icao">
+                        <input maxlength="3" class="form-control" type="text" name="icao" id="icao" wire:model="airline.icao">
                         <div class="validation-message">
                             {{ $errors->first('airline.icao') }}
                         </div>
                     </div>
                     <div class="col-md-3 form-group {{ $errors->has('airline.iata') ? 'invalid' : '' }}">
                         <label class="form-label" for="iata">IATA Code</label>
-                        <input maxlength="3" class="form-control" type="text" name="iata" id="iata" wire:model.defer="airline.iata">
+                        <input maxlength="3" class="form-control" type="text" name="iata" id="iata" wire:model="airline.iata">
                         <div class="validation-message">
                             {{ $errors->first('airline.iata') }}
                         </div>
                     </div>
                     <div class="col-md-3 form-group {{ $errors->has('airline.sign') ? 'invalid' : '' }}">
                         <label class="form-label required" for="sign">Sign</label>
-                        <input class="form-control" type="text" name="sign" id="sign" required wire:model.defer="airline.sign">
+                        <input class="form-control" type="text" name="sign" id="sign" required wire:model="airline.sign">
                         <div class="validation-message">
                             {{ $errors->first('airline.sign') }}
                         </div>
                     </div>
                     <div class="col-md-3 form-group {{ $errors->has('airline.country') ? 'invalid' : '' }}">
                         <label class="form-label required" for="country">{{ trans('cruds.airline.fields.country') }}</label>
-                        <input class="form-control" type="text" name="country" id="country" required wire:model.defer="airline.country">
+                        <input class="form-control" type="text" name="country" id="country" required wire:model="airline.country">
                         <div class="validation-message">
                             {{ $errors->first('airline.country') }}
                         </div>
                     </div>
                     <div class="col-md-3 d-flex align-items-end form-group {{ $errors->has('airline.combinable') ? 'invalid' : '' }}">
                         <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" id="combinable" wire:model.defer="airline.combinable">
+                            <input class="form-check-input" type="checkbox" id="combinable" wire:model="airline.combinable">
                             <label class="form-check-label mt-1" for="combinable">
                                 Combinable
                             </label>
@@ -66,7 +66,7 @@
                     </div>
                     <div class="col-md-4 form-group">
                         <label class="form-label required" for="file">Logo</label>
-                        <input type="file" class="form-control" id="exampleInputName" wire:model="file">
+                        <input type="file" class="form-control" id="exampleInputName" wire:model.live="file">
                         @if ($file)
                             <img class="mt-3 img-fluid" src="{{ $file->temporaryUrl() }}" />
                         @endif

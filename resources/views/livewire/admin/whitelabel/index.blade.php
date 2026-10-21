@@ -53,7 +53,7 @@
                                     {{ $agency->name }}
                                 </td>
                                 <td>
-                                    {{ $agency->admin->name }}
+                                    {{ $agency->admin?->name }}
                                 </td>
                                 <td>
                                     <a class="link-light-blue" href="mailto:{{ $agency->email }}">
@@ -66,8 +66,8 @@
                                     {{ $agency->domain }}
                                 </td>
                                 <td>
-                                    @if($edit && $edit == $agency->id)
-                                        <input type="number" name="balance" class="form-control-sm" wire:model.defer="balance" required />
+                                    @if($editing && $editing == $agency->id)
+                                        <input type="number" name="balance" class="form-control-sm" wire:model="balance" required />
                                     @else
                                         ${{ $agency->balance }}
                                     @endif
@@ -77,7 +77,7 @@
                                 </td>
                                 <td>
                                     <div class="d-flex justify-content-end">
-                                        @if($edit && $edit == $agency->id)
+                                        @if($editing && $editing == $agency->id)
                                             <button type="button" class="btn btn-xs btn-success" wire:click="update">Update</button>
                                         @else
                                             @if($agency->status == 1)

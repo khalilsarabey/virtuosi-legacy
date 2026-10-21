@@ -10,20 +10,20 @@
                 </h6>
             </div>
         </div>
-        <form wire:submit.prevent="updatePage">
+        <form wire:submit="updatePage">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="title" class="form-label">Title</label>
-                            <input type="text" class="form-control" id="title" wire:model="title">
+                            <input type="text" class="form-control" id="title" wire:model.live="title">
                             @error('title') <span class="text-danger">{{ $message }}</span> @enderror
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="status" class="form-label">Status</label>
-                            <select class="form-control" id="status" wire:model="status">
+                            <select class="form-control" id="status" wire:model.live="status">
                                 <option value="1">Active</option>
                                 <option value="0">Inactive</option>
                             </select>
@@ -321,7 +321,7 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="sectionName">Section Name</label>
-                        <input type="text" class="form-control" id="sectionName" wire:model="sectionName" placeholder="Enter a descriptive name for this section">
+                        <input type="text" class="form-control" id="sectionName" wire:model.live="sectionName" placeholder="Enter a descriptive name for this section">
                     </div>
                     <div class="form-group mt-4">
                         <label class="d-block mb-3">Select Layout</label>
@@ -577,7 +577,7 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="image">Select Image</label>
-                        <input type="file" class="form-control-file" id="image" wire:model="tempImage">
+                        <input type="file" class="form-control-file" id="image" wire:model.live="tempImage">
                         @error('tempImage') <span class="text-danger">{{ $message }}</span> @enderror
                     </div>
                     @if ($tempImage)
@@ -611,7 +611,7 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="linkType">Link Type</label>
-                        <select class="form-control" id="linkType" wire:model="linkType">
+                        <select class="form-control" id="linkType" wire:model.live="linkType">
                             <option value="none">No Link</option>
                             <option value="category">Category Page</option>
                             <option value="custom">Custom URL</option>
@@ -621,7 +621,7 @@
                     @if ($linkType === 'category')
                         <div class="form-group">
                             <label for="categoryId">Select Category</label>
-                            <select class="form-control" id="categoryId" wire:model="selectedCategoryId">
+                            <select class="form-control" id="categoryId" wire:model.live="selectedCategoryId">
                                 <option value="">Select a category</option>
                                 @foreach ($categories as $category)
                                     <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -631,7 +631,7 @@
                     @elseif ($linkType === 'custom')
                         <div class="form-group">
                             <label for="customUrl">Custom URL</label>
-                            <input type="text" class="form-control" id="customUrl" wire:model="customUrl"
+                            <input type="text" class="form-control" id="customUrl" wire:model.live="customUrl"
                                    placeholder="[https://example.com](https://example.com)">
                         </div>
                     @endif
@@ -726,7 +726,7 @@
 
 @push('scripts')
         <script>
-            window.addEventListener('livewire:load', function () {
+            window.addEventListener('livewire:init', function () {
                 Livewire.on('showSectionModal', function () {
                     $('#sectionModal').modal('show');
                 });

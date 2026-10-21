@@ -31,7 +31,7 @@
                         </tr>
                         </thead>
                         <tbody  wire:sortable="updateRuleOrder">
-                            @foreach($rules as $index => $rule)
+                            @foreach($hotelRules as $index => $rule)
                                 <tr wire:sortable.item="{{ $rule->id }}" wire:key="rule-{{ $rule->id }}">
                                     <td wire:sortable.handle>
                                         <svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

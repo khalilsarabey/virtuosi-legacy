@@ -51,7 +51,7 @@
                         @forelse($contracts as $contract)
                             <tr>
                                 <td>
-                                    <input type="checkbox" value="{{ $contract->id }}" wire:model="selected">
+                                    <input type="checkbox" value="{{ $contract->id }}" wire:model.live="selected">
                                 </td>
                                 <td>
                                     {{ $contract->name }}

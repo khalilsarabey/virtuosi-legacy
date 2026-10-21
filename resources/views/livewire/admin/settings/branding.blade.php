@@ -20,18 +20,18 @@
             </div>
         @endif
         <div class="container-fluid mb-4">
-            <form wire:submit.prevent="submit" class="pt-3">
+            <form wire:submit="submit" class="pt-3">
                 <div class="row">
                     <div class="col-md-4 mb-3">
                         <label class="{{ $errors->has('agency.domain') ? 'text-danger' : '' }}">DOMAIN NAME <span class="text-danger">(eg: yourdomain.com)</span></label>
-                        <input wire:model.defer="agency.domain" type="text" required name="domain" class="form-control"/>
+                        <input wire:model="agency.domain" type="text" required name="domain" class="form-control"/>
                         <div class="validation-message">
                             {{ $errors->first('agency.domain') }}
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label class="{{ $errors->has('agency.name') ? 'text-danger' : '' }}">PLATFORM NAME</label>
-                        <input wire:model.defer="agency.name" type="text" required name="name"
+                        <input wire:model="agency.name" type="text" required name="name"
                                class="form-control"/>
                         <div class="validation-message">
                             {{ $errors->first('agency.name') }}
@@ -40,7 +40,7 @@
                     <div class="col-md-4 mb-3">
                         <label class="{{ $errors->has('agency.email') ? 'text-danger' : '' }}">PLATFORM
                             EMAIL</label>
-                        <input wire:model.defer="agency.email" type="email" required name="email"
+                        <input wire:model="agency.email" type="email" required name="email"
                                class="form-control"/>
                         <div class="validation-message">
                             {{ $errors->first('agency.email') }}
@@ -49,7 +49,7 @@
                     @if(config('app.saas_id') == 'tb2book')
                     <div class="col-md-4 mb-3">
                         <label class="{{ $errors->has('agency.email') ? 'text-danger' : '' }}">BOOKING ALERT MESSAGE</label>
-                        <textarea rows="6" wire:model.defer="agency.alert" type="text" name="alert" class="form-control">
+                        <textarea rows="6" wire:model="agency.alert" type="text" name="alert" class="form-control">
                             {{ $agency->alert }}
                         </textarea>
                         <div class="validation-message">
@@ -62,84 +62,84 @@
                 <div class="row">
                     <div class="col-md-2 mb-3">
                         <label class="{{ $errors->has('agency.primary_color') ? 'text-danger' : '' }}">PRIMARY COLOR</label>
-                        <input wire:model.defer="agency.primary_color" type="color" required name="primary_color" class="form-control"/>
+                        <input wire:model="agency.primary_color" type="color" required name="primary_color" class="form-control"/>
                         <div class="validation-message">
                             {{ $errors->first('agency.primary_color') }}
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label class="">SECONDARY COLOR</label>
-                        <input wire:model.defer="agency.secondary_color1" type="color" required name="secondary_color1" class="form-control"/>
+                        <input wire:model="agency.secondary_color1" type="color" required name="secondary_color1" class="form-control"/>
                         <div class="validation-message">
                             {{ $errors->first('agency.secondary_color1') }}
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label class="">SUCCESS COLOR</label>
-                        <input wire:model.defer="agency.color_success" type="color" required name="color_success" class="form-control"/>
+                        <input wire:model="agency.color_success" type="color" required name="color_success" class="form-control"/>
                         <div class="validation-message">
                             {{ $errors->first('agency.color_success') }}
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label class="">INFO COLOR</label>
-                        <input wire:model.defer="agency.color_info" type="color" required name="color_info" class="form-control"/>
+                        <input wire:model="agency.color_info" type="color" required name="color_info" class="form-control"/>
                         <div class="validation-message">
                             {{ $errors->first('agency.color_info') }}
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label class="">WARNING COLOR</label>
-                        <input wire:model.defer="agency.color_warning" type="color" required name="color_warning" class="form-control" />
+                        <input wire:model="agency.color_warning" type="color" required name="color_warning" class="form-control" />
                         <div class="validation-message">
                             {{ $errors->first('agency.color_warning') }}
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label class="">DANGER & ERROR COLOR</label>
-                        <input wire:model.defer="agency.color_danger" type="color" required name="color_danger" class="form-control" />
+                        <input wire:model="agency.color_danger" type="color" required name="color_danger" class="form-control" />
                         <div class="validation-message">
                             {{ $errors->first('agency.color_danger') }}
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label class="">LIGHT COLOR</label>
-                        <input wire:model.defer="agency.color_light" type="color" required name="color_light" class="form-control" />
+                        <input wire:model="agency.color_light" type="color" required name="color_light" class="form-control" />
                         <div class="validation-message">
                             {{ $errors->first('agency.color_light') }}
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label class="">FOOTER BACKGROUND</label>
-                        <input wire:model.defer="agency.color_footer_bg" type="color" required name="color_footer_bg" class="form-control" />
+                        <input wire:model="agency.color_footer_bg" type="color" required name="color_footer_bg" class="form-control" />
                         <div class="validation-message">
                             {{ $errors->first('agency.color_footer_bg') }}
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label class="">FOOTER LIGHT BACKGROUND</label>
-                        <input wire:model.defer="agency.color_footer_bg_light" type="color" required name="color_footer_bg_light" class="form-control" />
+                        <input wire:model="agency.color_footer_bg_light" type="color" required name="color_footer_bg_light" class="form-control" />
                         <div class="validation-message">
                             {{ $errors->first('agency.color_footer_bg_light') }}
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label class="">FOOTER TEXT COLOR</label>
-                        <input wire:model.defer="agency.color_footer_text" type="color" required name="color_footer_text" class="form-control" />
+                        <input wire:model="agency.color_footer_text" type="color" required name="color_footer_text" class="form-control" />
                         <div class="validation-message">
                             {{ $errors->first('agency.color_footer_text') }}
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label class="">FOOTER ICONS BACKGROUND</label>
-                        <input wire:model.defer="agency.color_footer_icons_bg" type="color" required name="color_footer_icons_bg" class="form-control" />
+                        <input wire:model="agency.color_footer_icons_bg" type="color" required name="color_footer_icons_bg" class="form-control" />
                         <div class="validation-message">
                             {{ $errors->first('agency.color_footer_icons_bg') }}
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label class="">FOOTER ICONS COLOR</label>
-                        <input wire:model.defer="agency.color_footer_icons_color" type="color" required name="color_footer_icons_color" class="form-control" />
+                        <input wire:model="agency.color_footer_icons_color" type="color" required name="color_footer_icons_color" class="form-control" />
                         <div class="validation-message">
                             {{ $errors->first('agency.color_footer_icons_color') }}
                         </div>
@@ -147,14 +147,14 @@
 
                     <div class="col-md-2">
                         <label class="">BODY BACKGROUND COLOR</label>
-                        <input wire:model.defer="agency.color_body_bg" type="color" required name="color_body_bg" class="form-control" />
+                        <input wire:model="agency.color_body_bg" type="color" required name="color_body_bg" class="form-control" />
                         <div class="validation-message">
                             {{ $errors->first('agency.color_body_bg') }}
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label class="">MENU COLOR</label>
-                        <input wire:model.defer="agency.color_top_menu" type="color" required name="color_top_menu" class="form-control" />
+                        <input wire:model="agency.color_top_menu" type="color" required name="color_top_menu" class="form-control" />
                         <div class="validation-message">
                             {{ $errors->first('agency.color_top_menu') }}
                         </div>

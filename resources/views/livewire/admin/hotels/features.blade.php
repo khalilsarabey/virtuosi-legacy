@@ -20,16 +20,16 @@
         </div>
         <div class="container-fluid">
             @if($showForm)
-                <form wire:submit.prevent="addRoom">
+                <form wire:submit="addRoom">
                     <div class="row mt-3 pb-3 bg-light">
                         <div class="col">
                             <label>Title</label>
-                            <input type="text" wire:model.defer="form.title" required class="form-control" />
+                            <input type="text" wire:model="form.title" required class="form-control" />
                         </div>
                         @if($action == 'add')
                         <div class="col">
                             <label>Type</label>
-                            <select wire:model="form.type" class="form-control form-select">
+                            <select wire:model.live="form.type" class="form-control form-select">
                                 <option value="hotel">Hotel</option>
                                 <option value="room">Room</option>
                             </select>

@@ -23,14 +23,14 @@
         @endif
         <div class="container-fluid mb-4">
             @if($create)
-            <form wire:submit.prevent="save" class="row">
+            <form wire:submit="save" class="row">
                 <div class="col-md-5">
                     <label>Name</label>
-                    <input type="text" name="name" class="form-control" wire:model="menu.name" required />
+                    <input type="text" name="name" class="form-control" wire:model.live="menu.name" required />
                 </div>
                 <div class="col-md-5">
                     <label>Link</label>
-                    <input type="url" name="name" class="form-control" wire:model="menu.link" required />
+                    <input type="url" name="name" class="form-control" wire:model.live="menu.link" required />
                 </div>
                 <div class="col-md-2 d-flex align-items-end">
                     <button type="submit" class="btn btn-success">Save</button>
@@ -67,14 +67,14 @@
                                 </td>
                                 <td>
                                     @if($editing == $item->id)
-                                        <input type="text" wire:model.defer="updatedMenu.name" class="form-control" value="{{ $item->name }}" />
+                                        <input type="text" wire:model="updatedMenu.name" class="form-control" value="{{ $item->name }}" />
                                     @else
                                         {{ $item->name }}
                                     @endif
                                 </td>
                                 <td>
                                     @if($editing == $item->id)
-                                        <input type="text" wire:model.defer="updatedMenu.link" class="form-control" value="{{ $item->link }}" />
+                                        <input type="text" wire:model="updatedMenu.link" class="form-control" value="{{ $item->link }}" />
                                     @else
                                         {{ $item->link }}
                                     @endif

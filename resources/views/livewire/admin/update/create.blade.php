@@ -18,10 +18,10 @@
         <div class="container-fluid mb-4">
             <div class="row">
                 <div class="col-12">
-                    <form wire:submit.prevent="submit" class="pt-3">
+                    <form wire:submit="submit" class="pt-3">
                         <div class="form-group {{ $errors->has('update.text') ? 'invalid' : '' }}">
                             <label class="form-label required" for="text">{{ trans('cruds.update.fields.text') }}</label>
-                            <input class="form-control" type="text" name="text" id="text" required wire:model.defer="update.text">
+                            <input class="form-control" type="text" name="text" id="text" required wire:model="update.text">
                             <div class="validation-message">
                                 {{ $errors->first('update.text') }}
                             </div>

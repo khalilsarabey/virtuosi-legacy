@@ -20,10 +20,10 @@
             <div class="container-fluid mb-4">
                 <div class="row">
                     <div class="col-12">
-                        <form wire:submit.prevent="submit" class="pt-3">
+                        <form wire:submit="submit" class="pt-3">
                             <div class="form-group {{ $errors->has('ticket.title') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="title">{{ trans('cruds.ticket.fields.title') }}</label>
-                                <select class="form-control" name="title" id="title" wire:model="ticket.title">
+                                <select class="form-control" name="title" id="title" wire:model.live="ticket.title">
                                     <option {{ $ticket->title == 'Mr.' ? 'selected' : '' }} value="Mr.">Mr.</option>
                                     <option {{ $ticket->title == 'Mrs.' ? 'selected' : '' }} value="Mrs.">Mrs.</option>
                                     <option {{ $ticket->title == 'Miss.' ? 'selected' : '' }} value="Miss.">Miss.</option>
@@ -33,7 +33,7 @@
                             </div>
                             <div class="form-group {{ $errors->has('ticket.first_name') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="first_name">{{ trans('cruds.ticket.fields.first_name') }}</label>
-                                <input class="form-control" type="text" name="first_name" id="first_name" required wire:model.defer="ticket.first_name">
+                                <input class="form-control" type="text" name="first_name" id="first_name" required wire:model="ticket.first_name">
                                 <div class="validation-message">
                                     {{ $errors->first('ticket.first_name') }}
                                 </div>
@@ -43,7 +43,7 @@
                             </div>
                             <div class="form-group {{ $errors->has('ticket.last_name') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="last_name">{{ trans('cruds.ticket.fields.last_name') }}</label>
-                                <input class="form-control" type="text" name="last_name" id="last_name" required wire:model.defer="ticket.last_name">
+                                <input class="form-control" type="text" name="last_name" id="last_name" required wire:model="ticket.last_name">
                                 <div class="validation-message">
                                     {{ $errors->first('ticket.last_name') }}
                                 </div>
@@ -53,7 +53,7 @@
                             </div>
                             <div class="form-group {{ $errors->has('ticket.date_of_birth') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="date_of_birth">{{ trans('cruds.ticket.fields.date_of_birth') }}</label>
-                                <x-date-picker class="form-control" required wire:model="ticket.date_of_birth" id="date_of_birth" name="date_of_birth" picker="date" />
+                                <x-date-picker class="form-control" required wire:model.live="ticket.date_of_birth" id="date_of_birth" name="date_of_birth" picker="date" />
                                 <div class="validation-message">
                                     {{ $errors->first('ticket.date_of_birth') }}
                                 </div>
@@ -63,14 +63,14 @@
                             </div>
                             <div class="form-group {{ $errors->has('ticket.phone') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="phone">{{ trans('cruds.ticket.fields.phone') }}</label>
-                                <input class="form-control" type="text" name="phone" id="phone" required wire:model.defer="ticket.phone">
+                                <input class="form-control" type="text" name="phone" id="phone" required wire:model="ticket.phone">
                                 <div class="validation-message">
                                     {{ $errors->first('ticket.phone') }}
                                 </div>
                             </div>
                             <div class="form-group {{ $errors->has('ticket.nationality') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="nationality">{{ trans('cruds.ticket.fields.nationality') }}</label>
-                                <input class="form-control" type="text" name="nationality" id="nationality" required wire:model.defer="ticket.nationality">
+                                <input class="form-control" type="text" name="nationality" id="nationality" required wire:model="ticket.nationality">
                                 <div class="validation-message">
                                     {{ $errors->first('ticket.nationality') }}
                                 </div>

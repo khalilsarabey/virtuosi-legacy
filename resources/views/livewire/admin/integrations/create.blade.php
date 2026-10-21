@@ -11,22 +11,22 @@
             </div>
         </div>
         <div class="container-fluid">
-            <form method="post" wire:submit.prevent="connect" class="row">
+            <form method="post" wire:submit="connect" class="row">
                 <div class="col-md-6">
                     <label>Name</label>
-                    <input type="text" class="form-control" name="name" wire:model="name" required />
+                    <input type="text" class="form-control" name="name" wire:model.live="name" required />
                 </div>
                 <div class="col-md-6">
                     <label>Host URL</label>
-                    <input type="url" class="form-control" name="url" wire:model="host" required />
+                    <input type="url" class="form-control" name="url" wire:model.live="host" required />
                 </div>
                 <div class="col-md-6">
                     <label>Email</label>
-                    <input type="email" class="form-control" name="email" wire:model="email" required />
+                    <input type="email" class="form-control" name="email" wire:model.live="email" required />
                 </div>
                 <div class="col-md-6">
                     <label>Password</label>
-                    <input type="text" class="form-control" name="password" wire:model="password" required />
+                    <input type="text" class="form-control" name="password" wire:model.live="password" required />
                 </div>
                 <div class="col-md-12 text-right">
                     <div>

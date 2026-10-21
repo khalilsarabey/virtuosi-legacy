@@ -1196,7 +1196,6 @@
             border: 0 !important;
         }
     </style>
-    <script src="/js/alpine.min.js"></script>
     <script src="/js/jquery.min.js"></script>
     <script>
         let baseurl = "https://{{get_domain()}}/";

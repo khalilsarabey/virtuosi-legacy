@@ -13,7 +13,7 @@
                 </h6>
                 @if($showForm)
                     <div class="ml-auto mr-3">
-                        <input type="text" class="form-control" wire:model.defer="serviceName" placeholder="Service Name">
+                        <input type="text" class="form-control" wire:model="serviceName" placeholder="Service Name">
                     </div>
                     <button type="button" wire:click="save" class="btn btn-xs px-4 py-2 btn-outline-primary uppercase waves-effect align-self-center">
                         Save Service

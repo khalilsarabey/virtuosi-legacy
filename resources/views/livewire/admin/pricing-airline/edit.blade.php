@@ -16,18 +16,18 @@
             </div>
         </div>
         <div class="container-fluid mb-4">
-            <form wire:submit.prevent="submit" class="pt-3">
+            <form wire:submit="submit" class="pt-3">
                 <div class="row">
                     <div class="col-md-6 form-group {{ $errors->has('airline.name') ? 'invalid' : '' }}">
                         <label class="form-label required" for="name">{{ trans('cruds.airline.fields.name') }}</label>
-                        <input class="form-control" type="text" name="name" id="name" required wire:model.defer="airline.name">
+                        <input class="form-control" type="text" name="name" id="name" required wire:model="airline.name">
                         <div class="validation-message">
                             {{ $errors->first('airline.name') }}
                         </div>
                     </div>
                     <div class="col-md-6 form-group {{ $errors->has('airline.tour_code') ? 'invalid' : '' }}">
                         <label class="form-label" for="tour_code">Tour Code</label>
-                        <input class="form-control" type="text" name="tour_code" id="tour_code" wire:model.defer="airline.tour_code">
+                        <input class="form-control" type="text" name="tour_code" id="tour_code" wire:model="airline.tour_code">
                         <div class="validation-message">
                             {{ $errors->first('airline.tour_code') }}
                         </div>
@@ -101,7 +101,7 @@
                         <div class="row">
                             <div class="col form-group {{ $errors->has('airline.default_selling_commission') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="default_selling_commission">Default Selling Commission</label>
-                                <input step=".01" class="form-control" required type="number" name="default_selling_commission" id="default_selling_commission" wire:model.defer="airline.default_selling_commission">
+                                <input step=".01" class="form-control" required type="number" name="default_selling_commission" id="default_selling_commission" wire:model="airline.default_selling_commission">
                                 <div class="validation-message">
                                     {{ $errors->first('airline.default_selling_commission') }}
                                 </div>
@@ -109,7 +109,7 @@
 
                             <div class="col form-group {{ $errors->has('airline.default_selling_service_fee') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="default_selling_service_fee">Default Selling Service Fee</label>
-                                <input step=".01" class="form-control" required type="number" name="default_selling_service_fee" id="default_selling_service_fee" wire:model.defer="airline.default_selling_service_fee">
+                                <input step=".01" class="form-control" required type="number" name="default_selling_service_fee" id="default_selling_service_fee" wire:model="airline.default_selling_service_fee">
                                 <div class="validation-message">
                                     {{ $errors->first('airline.default_selling_service_fee') }}
                                 </div>
@@ -117,7 +117,7 @@
 
                             <div class="col form-group {{ $errors->has('airline.default_selling_fixed_fee') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="default_selling_service_fee">Default Selling Fixed Fee</label>
-                                <input step=".01" class="form-control" required type="number" name="default_selling_fixed_fee" id="default_selling_fixed_fee" wire:model.defer="airline.default_selling_fixed_fee">
+                                <input step=".01" class="form-control" required type="number" name="default_selling_fixed_fee" id="default_selling_fixed_fee" wire:model="airline.default_selling_fixed_fee">
                                 <div class="validation-message">
                                     {{ $errors->first('airline.default_selling_fixed_fee') }}
                                 </div>
@@ -125,7 +125,7 @@
 
                             <div class="col form-group {{ $errors->has('airline.default_net_commission') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="default_selling_commission">Default Net Commission</label>
-                                <input step=".01" class="form-control" required type="number" name="default_net_commission" id="default_net_commission" wire:model.defer="airline.default_net_commission">
+                                <input step=".01" class="form-control" required type="number" name="default_net_commission" id="default_net_commission" wire:model="airline.default_net_commission">
                                 <div class="validation-message">
                                     {{ $errors->first('airline.default_net_commission') }}
                                 </div>
@@ -133,7 +133,7 @@
 
                             <div class="col form-group {{ $errors->has('airline.default_net_service_fee') ? 'invalid' : '' }}">
                                 <label class="form-label required" for="default_net_service_fee">Default Net Service Fee</label>
-                                <input step=".01" class="form-control" required type="number" name="default_net_service_fee" id="default_net_service_fee" wire:model.defer="airline.default_net_service_fee">
+                                <input step=".01" class="form-control" required type="number" name="default_net_service_fee" id="default_net_service_fee" wire:model="airline.default_net_service_fee">
                                 <div class="validation-message">
                                     {{ $errors->first('airline.default_selling_service_fee') }}
                                 </div>

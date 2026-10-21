@@ -64,7 +64,7 @@
                                                     <label class="label-text">Departure</label>
                                                     <div class="form-group">
                                                         <span class="la la-calendar form-icon"></span>
-                                                        <input wire:ignore id="start_date" onchange="updateMinDate()" class="roundtrip-date-pick-departure form-control bg-white" name="departure" type="date" wire:model="departure" value="{{ $departure }}" wire:loading.attr="disabled" required>
+                                                        <input wire:ignore id="start_date" onchange="updateMinDate()" class="roundtrip-date-pick-departure form-control bg-white" name="departure" type="date" wire:model.live="departure" value="{{ $departure }}" wire:loading.attr="disabled" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -73,7 +73,7 @@
                                                     <label class="label-text">Return</label>
                                                     <div class="form-group">
                                                         <span class="la la-calendar form-icon"></span>
-                                                        <input wire:ignore id="end_date" class="roundtrip-date-pick-return form-control bg-white" name="return" type="date" wire:model="return" value="{{ $return }}" wire:loading.attr="disabled" required>
+                                                        <input wire:ignore id="end_date" class="roundtrip-date-pick-return form-control bg-white" name="return" type="date" wire:model.live="return" value="{{ $return }}" wire:loading.attr="disabled" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -92,7 +92,7 @@
                                                                         <label><i class="la la-user"></i> Adult</label>
                                                                         <div class="roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                                             <div wire:click="dec('adult')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                                            <input type="text" name="adult" wire:model="adult">
+                                                                            <input type="text" name="adult" wire:model.live="adult">
                                                                             <div wire:click="inc('adult')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                                         </div>
                                                                     </div>
@@ -102,7 +102,7 @@
                                                                         <label><i class="la la-female"></i> Child</label>
                                                                         <div class="children roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                                             <div wire:click="dec('child')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                                            <input type="text" name="child" wire:model="child">
+                                                                            <input type="text" name="child" wire:model.live="child">
                                                                             <div wire:click="inc('child')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                                         </div>
                                                                     </div>
@@ -112,7 +112,7 @@
                                                                         <label><i class="la la-female"></i> Infant</label>
                                                                         <div class="infants roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                                             <div wire:click="dec('infant')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                                            <input type="text" name="infant" wire:model="infant">
+                                                                            <input type="text" name="infant" wire:model.live="infant">
                                                                             <div wire:click="inc('infant')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                                         </div>
                                                                     </div>
@@ -175,7 +175,7 @@
                                                     <label class="label-text">Departure</label>
                                                     <div class="form-group">
                                                         <span class="la la-calendar form-icon"></span>
-                                                        <input id="oneway_date" wire:ignore class="roundtrip-date-pick-departure form-control bg-white" name="departure" type="date" wire:model="departure" value="{{ $departure }}" wire:loading.attr="disabled" required>
+                                                        <input id="oneway_date" wire:ignore class="roundtrip-date-pick-departure form-control bg-white" name="departure" type="date" wire:model.live="departure" value="{{ $departure }}" wire:loading.attr="disabled" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -194,7 +194,7 @@
                                                                         <label><i class="la la-user"></i> Adult</label>
                                                                         <div class="roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                                             <div wire:click="dec('adult')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                                            <input type="text" name="adult" wire:model="adult">
+                                                                            <input type="text" name="adult" wire:model.live="adult">
                                                                             <div wire:click="inc('adult')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                                         </div>
                                                                     </div>
@@ -204,7 +204,7 @@
                                                                         <label><i class="la la-female"></i> Child</label>
                                                                         <div class="children roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                                             <div wire:click="dec('child')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                                            <input type="text" name="child" wire:model="child">
+                                                                            <input type="text" name="child" wire:model.live="child">
                                                                             <div wire:click="inc('child')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                                         </div>
                                                                     </div>
@@ -214,7 +214,7 @@
                                                                         <label><i class="la la-female"></i> Infant</label>
                                                                         <div class="infants roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                                             <div wire:click="dec('infant')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                                            <input type="text" name="infant" wire:model="infant">
+                                                                            <input type="text" name="infant" wire:model.live="infant">
                                                                             <div wire:click="inc('infant')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                                         </div>
                                                                     </div>

@@ -1,7 +1,7 @@
 <div>
     <x-hotels-menu menu="hotels" />
     <div class="container-fluid">
-        <form wire:submit.prevent="submit" class="pt-3">
+        <form wire:submit="submit" class="pt-3">
             <div class="row">
                 <div class="col-md-9">
                     <div class="p-4 admin-container shadow">
@@ -31,7 +31,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <label class="{{ $errors->has('hotel.name') ? 'text-danger' : '' }}" for="name">Name</label>
-                                        <input type="text" name="name" wire:model.defer="hotel.name" class="form-control" required />
+                                        <input type="text" name="name" wire:model="hotel.name" class="form-control" required />
                                         <div class="validation-message">
                                             {{ $errors->first('hotel.name') }}
                                         </div>
@@ -40,7 +40,7 @@
                                 <div class="row">
                                     <div class="col mt-4 mb-4">
                                         <label class="{{ $errors->has('hotel.rating') ? 'text-danger' : '' }}" for="rating">Rating</label>
-                                        <select wire:model="hotel.rating" class="form-control">
+                                        <select wire:model.live="hotel.rating" class="form-control">
                                             <option value="0">Not Applicable</option>
                                             <option value="1">1 Star</option>
                                             <option value="2">2 Stars</option>
@@ -54,18 +54,18 @@
                                     </div>
                                     <div class="col mt-4">
                                         <label class="{{ $errors->has('location') ? 'text-danger' : '' }}">City</label>
-                                        <x-select-list required class="form-control" id="location" name="location" wire:model="hotel.location" :options="$locations" />
+                                        <x-select-list required class="form-control" id="location" name="location" wire:model.live="hotel.location" :options="$locations" />
                                         <div class="validation-message">
                                             {{ $errors->first('hotel.location') }}
                                         </div>
                                     </div>
                                     <div class="col mt-4">
                                         <label>Check in time</label>
-                                        <x-date-picker required class="form-control" required wire:model.defer="hotel.check_in" id="check_in" name="check_in" picker="time" wire:ignore.self />
+                                        <x-date-picker required class="form-control" required wire:model="hotel.check_in" id="check_in" name="check_in" picker="time" wire:ignore.self />
                                     </div>
                                     <div class="col mt-4">
                                         <label>Check out time</label>
-                                        <x-date-picker required class="form-control" required wire:model.defer="hotel.check_out" id="check_out" name="check_out" picker="time" wire:ignore.self />
+                                        <x-date-picker required class="form-control" required wire:model="hotel.check_out" id="check_out" name="check_out" picker="time" wire:ignore.self />
                                     </div>
                                 </div>
 
@@ -76,7 +76,7 @@
                                         </label>
                                             <div class="input-group">
                                                 <span class="input-group-text bg-white border-right-0">$</span>
-                                                <input type="number" id="bb_value" class="form-control border-left-0" wire:model.defer="hotel.bb">
+                                                <input type="number" id="bb_value" class="form-control border-left-0" wire:model="hotel.bb">
                                             </div>
                                         </div>
                                     <div class="col-md-2 mb-3">
@@ -85,7 +85,7 @@
                                         </label>
                                             <div class="input-group">
                                                 <span class="input-group-text bg-white border-right-0">$</span>
-                                                <input type="number" id="hb_value" class="form-control border-left-0" wire:model.defer="hotel.hb">
+                                                <input type="number" id="hb_value" class="form-control border-left-0" wire:model="hotel.hb">
                                             </div>
                                         </div>
                                     <div class="col-md-2 mb-3">
@@ -94,7 +94,7 @@
                                         </label>
                                             <div class="input-group">
                                                 <span class="input-group-text bg-white border-right-0">$</span>
-                                                <input type="number" id="fb_value" class="form-control border-left-0" wire:model.defer="hotel.fb">
+                                                <input type="number" id="fb_value" class="form-control border-left-0" wire:model="hotel.fb">
                                             </div>
                                         </div>
                                     <div class="col-md-2 mb-3">
@@ -103,7 +103,7 @@
                                         </label>
                                             <div class="input-group">
                                                 <span class="input-group-text bg-white border-right-0">$</span>
-                                                <input type="number" id="ai_value" class="form-control border-left-0" wire:model.defer="hotel.ai">
+                                                <input type="number" id="ai_value" class="form-control border-left-0" wire:model="hotel.ai">
                                             </div>
                                         </div>
                                     <div class="col-md-2 mb-3">
@@ -112,7 +112,7 @@
                                         </label>
                                             <div class="input-group">
                                                 <span class="input-group-text bg-white border-right-0">$</span>
-                                                <input type="number" id="sai_value" class="form-control border-left-0" wire:model.defer="hotel.sai">
+                                                <input type="number" id="sai_value" class="form-control border-left-0" wire:model="hotel.sai">
                                             </div>
                                         </div>
                                     <div class="col-md-2 mb-3">
@@ -121,7 +121,7 @@
                                         </label>
                                             <div class="input-group">
                                                 <span class="input-group-text bg-white border-right-0">$</span>
-                                                <input type="number" id="uai_value" class="form-control border-left-0" wire:model.defer="hotel.uai">
+                                                <input type="number" id="uai_value" class="form-control border-left-0" wire:model="hotel.uai">
                                             </div>
                                         </div>
                                 </div>
@@ -129,7 +129,7 @@
                                 <div class="row">
                                     <div class="col-12 mt-4">
                                         <label class="{{ $errors->has('address') ? 'text-danger' : '' }}">Address</label>
-                                        <textarea rows="5   " required class="form-control" id="address" name="address" wire:model.defer="hotel.address"></textarea>
+                                        <textarea rows="5   " required class="form-control" id="address" name="address" wire:model="hotel.address"></textarea>
                                         <div class="validation-message">
                                             {{ $errors->first('hotel.location') }}
                                         </div>
@@ -147,7 +147,7 @@
                                                         $dispatch('input', quill.root.innerHTML);
                                                         });
                                                     "
-                                                wire:model.debounce.500ms="hotel.description"
+                                                wire:model.live.debounce.500ms="hotel.description"
                                             >
                                                 {!! $hotel->description !!}
                                             </div>
@@ -197,7 +197,7 @@
                         <div class="row mt-3">
                             <div class="col">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="confirmation" wire:model="hotel.confirmation" value="1">
+                                    <input class="form-check-input" type="checkbox" id="confirmation" wire:model.live="hotel.confirmation" value="1">
                                     <label class="form-check-label mt-0 mb-1 pt-1" for="confirmation">
                                         Booking requires confirmation
                                     </label>
@@ -205,7 +205,7 @@
                             </div>
                             <div class="col-12 mt-3">
                                 <label>HIDE FROM THE FOLLOWING USERS & AGENCIES</label>
-                                <x-select-list buttons multiple class="form-control" id="agencies_permissions" name="agencies_permissions" :options="$users" wire:model="hotel.agencies_permissions" />
+                                <x-select-list buttons multiple class="form-control" id="agencies_permissions" name="agencies_permissions" :options="$users" wire:model.live="hotel.agencies_permissions" />
                             </div>
                             <div class="col d-flex align-items-end justify-content-end">
                                 <div>
@@ -225,14 +225,14 @@
                         <div class="pb-3 w-100">
                             <div>
                                 <label class="{{ $errors->has('active') ? 'text-danger' : '' }}">Status</label>
-                                <x-select-list required class="form-control" id="active" name="active" wire:model="hotel.active" :options="['1' => 'Active', '0' => 'Inactive']" />
+                                <x-select-list required class="form-control" id="active" name="active" wire:model.live="hotel.active" :options="['1' => 'Active', '0' => 'Inactive']" />
                                 <div class="validation-message">
                                     {{ $errors->first('hotel.active') }}
                                 </div>
                             </div>
                             <div>
                                 <label class="{{ $errors->has('currency') ? 'text-danger' : '' }}">Currency</label>
-                                <x-select-list required class="form-control" id="currency" name="currency" wire:model="hotel.currency" :options="['usd' => 'USD', 'euro' => 'EURO']" />
+                                <x-select-list required class="form-control" id="currency" name="currency" wire:model.live="hotel.currency" :options="['usd' => 'USD', 'euro' => 'EURO']" />
                                 <div class="validation-message">
                                     {{ $errors->first('hotel.currency') }}
                                 </div>
@@ -249,7 +249,7 @@
                                         <div class="terms-scrollable">
                                             @foreach($feature->children as $child)
                                                 <div class="form-check">
-                                                    <input class="form-check-input" wire:model="selectedFeatures" value="{{ $child->id }}" type="checkbox" id="{{ $child->id }}">
+                                                    <input class="form-check-input" wire:model.live="selectedFeatures" value="{{ $child->id }}" type="checkbox" id="{{ $child->id }}">
                                                     <label class="form-check-label mt-0 mb-1 pt-1" for="{{ $child->id }}">
                                                         {{ $child->title }}
                                                     </label>

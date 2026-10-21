@@ -7,6 +7,7 @@ use DateTimeInterface;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\ImageOptimizer\Optimizers\Jpegoptim;
+use Spatie\Image\Enums\Fit;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
@@ -47,7 +48,7 @@ class Block extends Model implements HasMedia
         return $this->hasMany(Block::class, 'parent_id');
     }
 
-    public function registerMediaConversions(Media $media = null): void
+    public function registerMediaConversions(?Media $media = null): void
     {
         $thumbnailWidth  = 650;
         $thumbnailHeight = 650;
@@ -58,11 +59,11 @@ class Block extends Model implements HasMedia
         $this->addMediaConversion('thumbnail')
             ->width($thumbnailWidth)
             ->height($thumbnailHeight)
-            ->fit('crop', $thumbnailWidth, $thumbnailHeight);
+            ->fit(Fit::Crop, $thumbnailWidth, $thumbnailHeight);
         $this->addMediaConversion('preview_thumbnail')
             ->width($thumbnailPreviewWidth)
             ->height($thumbnailPreviewHeight)
-            ->fit('crop', $thumbnailPreviewWidth, $thumbnailPreviewHeight);
+            ->fit(Fit::Crop, $thumbnailPreviewWidth, $thumbnailPreviewHeight);
     }
 
     public function getLayoutLabelAttribute($value)

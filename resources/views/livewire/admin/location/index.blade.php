@@ -17,7 +17,7 @@
             <div class="row my-3">
                 <div class="col-md-2">
                     <label>Per page:</label>
-                    <select wire:model="perPage" class="form-control">
+                    <select wire:model.live="perPage" class="form-control">
                         @foreach($paginationOptions as $value)
                             <option value="{{ $value }}">{{ $value }}</option>
                         @endforeach
@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-md-2 ml-auto">
                     <label>Search:</label>
-                    <input type="text" wire:model.debounce.300ms="search" class="form-control" />
+                    <input type="text" wire:model.live.debounce.300ms="search" class="form-control" />
                 </div>
             </div>
             <div class="row">

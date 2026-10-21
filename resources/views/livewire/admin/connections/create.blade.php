@@ -38,19 +38,19 @@
                 @endif
                 <div class="col-md-3">
                     <label>Connection Name</label>
-                    <input type="text" class="form-control" wire:model.defer="connection.name" />
+                    <input type="text" class="form-control" wire:model="connection.name" />
                 </div>
                 <div class="col-md-3">
                     <label>HOST</label>
-                    <input type="text" class="form-control" wire:model.defer="connection.host" />
+                    <input type="text" class="form-control" wire:model="connection.host" />
                 </div>
                 <div class="col-md-3">
                     <label>Email</label>
-                    <input type="text" class="form-control" wire:model.defer="connection.email" />
+                    <input type="text" class="form-control" wire:model="connection.email" />
                 </div>
                 <div class="col-md-3">
                     <label>Password</label>
-                    <input type="text" class="form-control" wire:model.defer="connection.password" />
+                    <input type="text" class="form-control" wire:model="connection.password" />
                 </div>
                 <div class="col-12">
                     <div class="mt-2 text-danger font-size-14">Please note that your password will only be used once to connect to the other system. If for any reason you had to create another connection to the same system, you'll need to add your password again.</div>

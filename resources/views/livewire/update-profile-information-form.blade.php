@@ -4,10 +4,10 @@
     </h6>
 
     <div class="flex flex-wrap">
-        <form wire:submit.prevent="updateProfileInformation" class="w-full">
+        <form wire:submit="updateProfileInformation" class="w-full">
             <div class="form-group px-4">
                 <label class="form-label" for="name">{{ __('global.user_name') }}</label>
-                <input class="form-control" id="name" type="text" wire:model.defer="state.name" autocomplete="name">
+                <input class="form-control" id="name" type="text" wire:model="state.name" autocomplete="name">
                 @error('state.name')
                     <span class="text-red-500">{{ $message }}</span>
                 @enderror
@@ -15,7 +15,7 @@
 
             <div class="form-group px-4">
                 <label class="form-label" for="email">{{ __('global.login_email') }}</label>
-                <input class="form-control" id="email" type="text" wire:model.defer="state.email" autocomplete="email">
+                <input class="form-control" id="email" type="text" wire:model="state.email" autocomplete="email">
                 @error('state.email')
                     <span class="text-red-500">{{ $message }}</span>
                 @enderror

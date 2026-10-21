@@ -16,11 +16,11 @@
             </div>
         </div>
         <div class="container-fluid mb-4">
-            <form wire:submit.prevent="submit" class="row d-flex align-items-center">
+            <form wire:submit="submit" class="row d-flex align-items-center">
                 <div class="col-12 col-lg-3">
                     <div class="form-group {{ $errors->has('block.name') ? 'invalid' : '' }}">
                         <label class="form-label required" for="name">Name</label>
-                        <input class="form-control" type="text" name="name" id="name" required wire:model.defer="block.name">
+                        <input class="form-control" type="text" name="name" id="name" required wire:model="block.name">
                         <div class="validation-message">
                             {{ $errors->first('block.name') }}
                         </div>
@@ -29,7 +29,7 @@
                 <div class="col-12 col-lg-3">
                     <div class="form-group {{ $errors->has('block.layout') ? 'invalid' : '' }}">
                         <label class="form-label required">Layout</label>
-                        <select class="form-control" wire:model="block.layout">
+                        <select class="form-control" wire:model.live="block.layout">
                             <option value="null" disabled>{{ trans('global.pleaseSelect') }}...</option>
                             @foreach($this->listsForFields['layout'] as $key => $value)
                                 <option value="{{ $key }}">{{ $value }}</option>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-12 col-lg-3 d-flex align-items-center justify-content-center">
                     <div class="form-check form-switch {{ $errors->has('block.hide_title') ? 'invalid' : '' }}">
-                        <input class="form-check-input" type="checkbox" name="hide_title" id="hide_title" wire:model.defer="block.hide_title">
+                        <input class="form-check-input" type="checkbox" name="hide_title" id="hide_title" wire:model="block.hide_title">
                         <label class="form-check-label" for="hide_title">Hide Title</label>
                     </div>
                     <div class="validation-message">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-12 col-lg-3 d-flex align-items-center justify-content-center">
                     <div class="form-check form-switch {{ $errors->has('block.active') ? 'invalid' : '' }}">
-                        <input class="form-check-input" type="checkbox" name="active" id="active" wire:model.defer="block.active">
+                        <input class="form-check-input" type="checkbox" name="active" id="active" wire:model="block.active">
                         <label class="form-check-label" for="active">Active</label>
                     </div>
                     <div class="validation-message">

@@ -286,7 +286,7 @@ class HotelService implements HotelServiceInterface
         return [
             'hotel' => $hotel,
             'rooms' => $result,
-            'duration' => Carbon::parse($params['start_date'])->diffInDays(Carbon::parse($params['end_date'])),
+            'duration' => (int) Carbon::parse($params['start_date'])->diffInDays(Carbon::parse($params['end_date']), true),
             'rules' => $rules,
         ];
     }

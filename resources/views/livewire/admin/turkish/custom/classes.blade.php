@@ -3,27 +3,27 @@
         <div class="row mt-5">
             <div class="col-6">
                 <label>Class Name</label>
-                <input type="text" class="form-control" placeholder="" wire:model.defer="customData.{{ $k }}.class_name" />
+                <input type="text" class="form-control" placeholder="" wire:model="customData.{{ $k }}.class_name" />
             </div>
             <div class="col-6">
                 <label>Selling Commission</label>
-                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="customData.{{ $k }}.selling_commission" />
+                <input step=".01" type="number" class="form-control" placeholder="" wire:model="customData.{{ $k }}.selling_commission" />
             </div>
             <div class="col-6">
                 <label>Selling Service Fee</label>
-                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="customData.{{ $k }}.elling_service_fee" />
+                <input step=".01" type="number" class="form-control" placeholder="" wire:model="customData.{{ $k }}.elling_service_fee" />
             </div>
             <div class="col-6">
                 <label>Selling Fixed Fee</label>
-                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="customData.{{ $k }}.selling_fixed_fee" />
+                <input step=".01" type="number" class="form-control" placeholder="" wire:model="customData.{{ $k }}.selling_fixed_fee" />
             </div>
             <div class="col-6">
                 <label>Net Commission</label>
-                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="customData.{{ $k }}.net_commission" />
+                <input step=".01" type="number" class="form-control" placeholder="" wire:model="customData.{{ $k }}.net_commission" />
             </div>
             <div class="col-6">
                 <label>Net Service Fee</label>
-                <input step=".01"  type="number" class="form-control" placeholder="" wire:model.defer="customData.{{ $k }}.net_service_fee" />
+                <input step=".01"  type="number" class="form-control" placeholder="" wire:model="customData.{{ $k }}.net_service_fee" />
             </div>
         </div>
         <div class="col-12 text-right">

@@ -1420,7 +1420,6 @@
 </footer>
 
 @livewireScripts
-<script src="/js/alpine.min.js"></script>
 <script src="/js/jquery-ui.js"></script>
 <script src="/js/bootstrap.bundle.min.js"></script>
 <script src="/js/moment.min.js"></script>

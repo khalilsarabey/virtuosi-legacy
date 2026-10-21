@@ -25,7 +25,7 @@
                                 @csrf
                                 <div class="form-group mt-3">
                                     <label>Change your password</label>
-                                    <input type="text" class="form-control" wire:model="password" placeholder="Password" required autocomplete="current-password" name="password">
+                                    <input type="text" class="form-control" wire:model.live="password" placeholder="Password" required autocomplete="current-password" name="password">
                                     <progress value="{{ $strengthScore }}" max="4" class="w-100"></progress>
                                     @if($password)
                                         @if($strengthScore > 2)

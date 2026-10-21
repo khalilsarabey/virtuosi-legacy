@@ -44,7 +44,7 @@
             <div class="row">
                 @if(auth()->user()->type == 'admin' || auth()->user()->type == 'user')
                     <div class="col-md-4">
-                        <select id="agencies" class="select2 form-select form-control" wire:model="selectedAgency">
+                        <select id="agencies" class="select2 form-select form-control" wire:model.live="selectedAgency">
                             <option value="">Select Agency</option>
                             @foreach($agencies as $ag)
                                 <option value="{{ $ag->id }}">{{ $ag->name }}</option>
@@ -68,7 +68,7 @@
             <div class="row mt-3">
                 @if($selectedAgency)
                     <div class="col-md-4">
-                        <select id="categories" class="select2 form-select form-control" wire:model="selectedCategory">
+                        <select id="categories" class="select2 form-select form-control" wire:model.live="selectedCategory">
                             <option value="">Select Airline</option>
                             @foreach($turkish_sections as $turkish_section)
                                 <option value="turkish-{{ $turkish_section->id }}">{{ $turkish_section->title }}</option>
@@ -82,7 +82,7 @@
                 @if($selectedAgency && $selectedCategory)
                     @if($is_turkish)
                         <div class="col-md-4">
-                            <select id="aiport" class="select2 form-select form-control" wire:model="selectedAirport">
+                            <select id="aiport" class="select2 form-select form-control" wire:model.live="selectedAirport">
                                 <option value="">Select Airport</option>
                                     @foreach($airports as $air)
                                         <option value="{{ $air->id }}">{{ $air->code }}</option>
@@ -91,7 +91,7 @@
                         </div>
                     @else
                         <div class="col-md-4">
-                                <select id="airlines" class="select2 form-select form-control" wire:model="selectedAirline">
+                                <select id="airlines" class="select2 form-select form-control" wire:model.live="selectedAirline">
                                     <option value="">Select Airline</option>
                                     @foreach($airlines as $line)
                                         <option value="{{ $line->id }}">{{ $line->name }}</option>
@@ -102,7 +102,7 @@
                 @endif
                 @if($selectedAgency && $selectedCategory && $selectedAirport)
                     <div class="col-md-4">
-                        <select id="airport_class" class="select2 form-select form-control" wire:model="selectedAirportClass">
+                        <select id="airport_class" class="select2 form-select form-control" wire:model.live="selectedAirportClass">
                             <option value="">Select Class</option>
                                 @foreach($airportClasses as $k => $v)
                                     <option value="{{ $k }}">{{ $v }}</option>
@@ -118,11 +118,11 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <label class="form-label font-weight-bold text-uppercase font-size-15" for="base_fare">Base Fare</label>
-                                <input type="number" class="form-control" wire:model.defer="base_fare" name="base_fare" />
+                                <input type="number" class="form-control" wire:model="base_fare" name="base_fare" />
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label font-weight-bold text-uppercase font-size-15" for="total_fare">Total Fare</label>
-                                <input type="number" class="form-control" name="total_fare" wire:model.defer="total_fare" />
+                                <input type="number" class="form-control" name="total_fare" wire:model="total_fare" />
                             </div>
                             <div class="col-md-12 text-right">
                                 <div class="row">

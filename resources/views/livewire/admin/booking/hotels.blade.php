@@ -20,31 +20,31 @@
             <div class="row mt-3">
                 <div class="col mt-3">
                     <label>Agency / User</label>
-                    <x-select-list class="form-control w-100" id="agencies" name="agencies" :options="$agencies" wire:model="filters.user_id" />
+                    <x-select-list class="form-control w-100" id="agencies" name="agencies" :options="$agencies" wire:model.live="filters.user_id" />
                 </div>
                 <div class="col mt-3">
                     <label>Hotel</label>
-                    <x-select-list class="form-control w-100" id="hotels" name="hotels" :options="$hotels" wire:model="filters.hotel" />
+                    <x-select-list class="form-control w-100" id="hotels" name="hotels" :options="$hotels" wire:model.live="filters.hotel" />
                 </div>
                 <div class="col mt-3">
                     <label>Room Type</label>
-                    <x-select-list class="form-control w-100" id="airlines" name="airlines" :options="$types" wire:model="filters.type" />
+                    <x-select-list class="form-control w-100" id="airlines" name="airlines" :options="$types" wire:model.live="filters.type" />
                 </div>
                 <div class="col mt-3">
                     <label>Reference Number</label>
-                    <input type="text" class="form-control" wire:model="filters.reference" />
+                    <input type="text" class="form-control" wire:model.live="filters.reference" />
                 </div>
                 <div class="col mt-3">
                     <label>Check In Date</label>
-                    <input type="date" name="dep_date" id="dep_date" class="form-control" wire:model="filters.check_in" />
+                    <input type="date" name="dep_date" id="dep_date" class="form-control" wire:model.live="filters.check_in" />
                 </div>
                 <div class="col mt-3">
                     <label>Check Out Date</label>
-                    <input type="date" name="ret_date" id="ret_date" class="form-control" wire:model="filters.check_out" />
+                    <input type="date" name="ret_date" id="ret_date" class="form-control" wire:model.live="filters.check_out" />
                 </div>
                 <div class="col mt-3">
                     <label>Include Packages</label>
-                    <x-select-list class="form-control w-100" id="packages" name="packages" required :options="['1' => 'Yes', '0' => 'No']" wire:model="filters.packages" />
+                    <x-select-list class="form-control w-100" id="packages" name="packages" required :options="['1' => 'Yes', '0' => 'No']" wire:model.live="filters.packages" />
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="ml-auto col-md-1 mt-3">
                     <label>Per Page</label>
-                    <select wire:model="perPage" class="form-control form-control-sm w-100">
+                    <select wire:model.live="perPage" class="form-control form-control-sm w-100">
                         @foreach($paginationOptions as $value)
                             <option value="{{ $value }}">{{ $value }}</option>
                         @endforeach

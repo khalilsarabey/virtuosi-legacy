@@ -9,7 +9,6 @@
         } else if (el !== null) {
             el.classList.remove('invisible');
         }
-        Livewire.emit('{{ $attributes['wire:model'] }}', value);
     }
 
     @if($attributes['picker'] === 'date')

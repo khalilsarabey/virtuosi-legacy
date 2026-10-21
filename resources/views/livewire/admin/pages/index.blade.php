@@ -102,7 +102,7 @@
 
     @push('scripts')
         <script>
-            window.addEventListener('livewire:load', function () {
+            window.addEventListener('livewire:init', function () {
                 Livewire.on('showDeleteModal', function () {
                     $('#deleteModal').modal('show');
                 });

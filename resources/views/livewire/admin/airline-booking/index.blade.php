@@ -20,7 +20,7 @@
             <div class="row mt-3">
                 <div class="col-12 col-md-3 mt-3">
                     <label>Airline</label>
-                    <select class="form-control w-100" wire:model.defer="filters.airline" >
+                    <select class="form-control w-100" wire:model="filters.airline" >
                         <option></option>
                         <option value="AirArabia">AirArabia</option>
                         <option value="FlyDubai">FlyDubai</option>
@@ -28,19 +28,19 @@
                 </div>
                 <div class="col-12 col-md-3 mt-3">
                     <label>Agency / User</label>
-                    <x-select-list class="form-control w-100" id="agencies" name="agencies" :options="$agencies" wire:model.defer="filters.user_id" />
+                    <x-select-list class="form-control w-100" id="agencies" name="agencies" :options="$agencies" wire:model="filters.user_id" />
                 </div>
                 <div class="col-12 col-md-3 mt-3">
                     <label>From</label>
-                    <input type="text" class="form-control" wire:model.defer="filters.from" />
+                    <input type="text" class="form-control" wire:model="filters.from" />
                 </div>
                 <div class="col-12 col-md-3 mt-3">
                     <label>To</label>
-                    <input type="text" class="form-control" wire:model.defer="filters.to" />
+                    <input type="text" class="form-control" wire:model="filters.to" />
                 </div>
                 <div class="col-12 col-md-3 mt-3">
                     <label>Status</label>
-                    <select class="form-control w-100" wire:model.defer="filters.status">
+                    <select class="form-control w-100" wire:model="filters.status">
                         <option></option>
                         <option value="confirmed">confirmed</option>
                         <option value="pending">pending</option>
@@ -48,11 +48,11 @@
                 </div>
                 <div class="col-12 col-md-3 mt-3">
                     <label>Booking Date</label>
-                    <input class="form-control" type="date" wire:model.defer="filters.created_at" />
+                    <input class="form-control" type="date" wire:model="filters.created_at" />
                 </div>
                 <div class="col-12 col-md-3 mt-3">
                     <label>Departure Date</label>
-                    <input class="form-control" type="date" wire:model.defer="filters.dep_from_date" />
+                    <input class="form-control" type="date" wire:model="filters.dep_from_date" />
                 </div>
                 <div class="col-12 col-md-3 mt-3">
                     <label class="text-white">Search</label>
@@ -132,7 +132,7 @@
                             <tr>
                                 @if(auth()->user()->type != 'accounting')
                                 <td>
-                                    <input type="checkbox" value="{{ $booking->id }}" wire:model="selected" />
+                                    <input type="checkbox" value="{{ $booking->id }}" wire:model.live="selected" />
                                 </td>
                                 @endif
                                 <td>

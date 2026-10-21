@@ -25,15 +25,15 @@
                 </div>
                 <div class="col-md-2">
                     <label>Name</label>
-                    <input type="text" name="name" wire:model.defer="filters.name" class="form-control">
+                    <input type="text" name="name" wire:model="filters.name" class="form-control">
                 </div>
                 <div class="col-md-2">
                     <label>Location</label>
-                    <x-select-list required class="form-control" id="location" name="location" wire:model="filters.location" :options="$locations" />
+                    <x-select-list required class="form-control" id="location" name="location" wire:model.live="filters.location" :options="$locations" />
                 </div>
                 <div class="col-md-2">
                     <label>Status</label>
-                    <x-select-list required class="form-control" id="status" name="status" wire:model="filters.status" :options="['1' => 'Active', '0' => 'Inactive']" />
+                    <x-select-list required class="form-control" id="status" name="status" wire:model.live="filters.status" :options="['1' => 'Active', '0' => 'Inactive']" />
                 </div>
                 <div class="col-md-2">
                     <label>&nbsp;</label>
@@ -64,7 +64,7 @@
                                     {{ $hotel->name }}
                                 </td>
                                 <td class="text-center">
-                                    {{ $hotel->city->city }},{{ $hotel->city->country_code }},
+                                    {{ $hotel->city?->city }},{{ $hotel->city?->country_code }},
                                 </td>
                                 <td class="text-center">
                                     {!! $hotel->active == 1 ? '<span class="badge badge-success">Active</span>' : '<span class="badge badge-danger">Inactive</span>' !!}

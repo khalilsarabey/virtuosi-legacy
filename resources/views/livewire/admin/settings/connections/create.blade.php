@@ -27,28 +27,28 @@
         <div class="row">
             <div class="col-md-3">
                 <label>Connection Name</label>
-                <input wire:model.defer="data.name" type="text" class="form-control" />
+                <input wire:model="data.name" type="text" class="form-control" />
                 @error('data.name')
                     <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>
             <div class="col-md-3">
                 <label>URL</label>
-                <input wire:model.defer="data.host" {{ $validated ? 'disabled' : '' }} type="url" class="form-control" />
+                <input wire:model="data.host" {{ $validated ? 'disabled' : '' }} type="url" class="form-control" />
                 @error('data.host')
                     <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>
             <div class="col-md-3">
                 <label>Email</label>
-                <input wire:model.defer="data.email" {{ $validated ? 'disabled' : '' }} type="email" class="form-control" />
+                <input wire:model="data.email" {{ $validated ? 'disabled' : '' }} type="email" class="form-control" />
                 @error('data.email')
                 <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>
             <div class="col-md-3">
                 <label>Password</label>
-                <input wire:model.defer="data.password" {{ $validated ? 'disabled' : '' }} type="text" class="form-control" />
+                <input wire:model="data.password" {{ $validated ? 'disabled' : '' }} type="text" class="form-control" />
                 @error('data.password')
                 <span class="text-danger">{{ $message }}</span>
                 @enderror

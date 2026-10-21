@@ -130,27 +130,27 @@
                         <div class="row">
                             <div class="col-6">
                                 <label>Class Name</label>
-                                <input type="text" class="form-control" placeholder="" wire:model.defer="class_name" />
+                                <input type="text" class="form-control" placeholder="" wire:model="class_name" />
                             </div>
                             <div class="col-6">
                                 <label>Selling Commission</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="selling_commission" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="selling_commission" />
                             </div>
                             <div class="col-6">
                                 <label>Selling Service Fee</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="selling_service_fee" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="selling_service_fee" />
                             </div>
                             <div class="col-6">
                                 <label>Selling Fixed Fee</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="selling_fixed_fee" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="selling_fixed_fee" />
                             </div>
                             <div class="col-6">
                                 <label>Net Commission</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="net_commission" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="net_commission" />
                             </div>
                             <div class="col-6">
                                 <label>Net Service Fee</label>
-                                <input step=".01"  type="number" class="form-control" placeholder="" wire:model.defer="net_service_fee" />
+                                <input step=".01"  type="number" class="form-control" placeholder="" wire:model="net_service_fee" />
                             </div>
                         </div>
                     </div>
@@ -174,27 +174,27 @@
                         <div class="row">
                             <div class="col-6">
                                 <label>Class Name</label>
-                                <input type="text" class="form-control" placeholder="" wire:model.defer="class_name" />
+                                <input type="text" class="form-control" placeholder="" wire:model="class_name" />
                             </div>
                             <div class="col-6">
                                 <label>Selling Commission</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="selling_commission" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="selling_commission" />
                             </div>
                             <div class="col-6">
                                 <label>Selling Service Fee</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="selling_service_fee" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="selling_service_fee" />
                             </div>
                             <div class="col-6">
                                 <label>Selling Fixed Fee</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="selling_fixed_fee" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="selling_fixed_fee" />
                             </div>
                             <div class="col-6">
                                 <label>Net Commission</label>
-                                <input step=".01" type="number" class="form-control" placeholder="" wire:model.defer="net_commission" />
+                                <input step=".01" type="number" class="form-control" placeholder="" wire:model="net_commission" />
                             </div>
                             <div class="col-6">
                                 <label>Net Service Fee</label>
-                                <input step=".01"  type="number" class="form-control" placeholder="" wire:model.defer="net_service_fee" />
+                                <input step=".01"  type="number" class="form-control" placeholder="" wire:model="net_service_fee" />
                             </div>
                         </div>
                     </div>
@@ -219,7 +219,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <label>Destination Name</label>
-                                <input type="text" class="form-control" placeholder="" wire:model.defer="destination_name" />
+                                <input type="text" class="form-control" placeholder="" wire:model="destination_name" />
                             </div>
                             <div class="col-md-12">
                                 <label>Agency Remark</label>
@@ -302,7 +302,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <label>Destination Name</label>
-                                <input type="text" class="form-control" placeholder="" wire:model.defer="destination_name" />
+                                <input type="text" class="form-control" placeholder="" wire:model="destination_name" />
                             </div>
                             <div class="col-md-12">
                                 <label>Agency Remark</label>

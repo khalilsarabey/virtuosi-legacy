@@ -32,7 +32,7 @@ class RoomPrice extends Model
 
     public function getStayDurationAttribute()
     {
-        return $this->check_out->diffInDays($this->check_in);
+        return (int) $this->check_out->diffInDays($this->check_in, true);
     }
 
     public function room()

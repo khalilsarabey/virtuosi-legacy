@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-end">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="roundtrip" wire:model="roundtrip">
+                        <input class="form-check-input" type="checkbox" id="roundtrip" wire:model.live="roundtrip">
                         <label class="form-check-label mt-1" for="roundtrip">
                             Enable
                         </label>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-end">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="multiple" wire:model="multiple">
+                        <input class="form-check-input" type="checkbox" id="multiple" wire:model.live="multiple">
                         <label class="form-check-label mt-1" for="multiple">
                             Enable
                         </label>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-end">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="fixed" wire:model="fixed">
+                        <input class="form-check-input" type="checkbox" id="fixed" wire:model.live="fixed">
                         <label class="form-check-label mt-1" for="fixed">
                             Enable
                         </label>
@@ -69,7 +69,7 @@
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-end">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="oneway" wire:model="oneway">
+                        <input class="form-check-input" type="checkbox" id="oneway" wire:model.live="oneway">
                         <label class="form-check-label mt-1" for="oneway">
                             Enable
                         </label>
@@ -86,7 +86,7 @@
                     </div>
                     <div class="col-md-6 d-flex align-items-center justify-content-end">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="lowcost" wire:model="lowcost">
+                            <input class="form-check-input" type="checkbox" id="lowcost" wire:model.live="lowcost">
                             <label class="form-check-label mt-1" for="lowcost">
                                 Enable
                             </label>
@@ -103,7 +103,7 @@
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-end">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="hotels" wire:model="hotels">
+                        <input class="form-check-input" type="checkbox" id="hotels" wire:model.live="hotels">
                         <label class="form-check-label mt-1" for="hotels">
                             Enable
                         </label>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-end">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="packages" wire:model="packages">
+                        <input class="form-check-input" type="checkbox" id="packages" wire:model.live="packages">
                         <label class="form-check-label mt-1" for="packages">
                             Enable
                         </label>
@@ -137,7 +137,7 @@
                     </div>
                     <div class="col-md-6 d-flex align-items-center justify-content-end">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="autopricing" wire:model="autopricing">
+                            <input class="form-check-input" type="checkbox" id="autopricing" wire:model.live="autopricing">
                             <label class="form-check-label mt-1" for="autopricing">
                                 Enable
                             </label>
@@ -153,7 +153,7 @@
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-end">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="tawk" wire:model="tawk">
+                        <input class="form-check-input" type="checkbox" id="tawk" wire:model.live="tawk">
                         <label class="form-check-label mt-1" for="tawk">
                             Enable
                         </label>
@@ -162,14 +162,14 @@
                 @if($tawk)
                     <div class="col-md-4">
                         <label>API Key</label>
-                        <input type="text" class="form-control" name="tawkApi" wire:model="tawkApi"/>
+                        <input type="text" class="form-control" name="tawkApi" wire:model.live="tawkApi"/>
                         <div class="text-sm text-info mt-2">Please visit <a href="https://www.tawk.to">Tawk.to</a> and
                             signup for a free account to get your API key.
                         </div>
                     </div>
                     <div class="col-md-4">
                         <label>Widget ID</label>
-                        <input type="text" class="form-control" name="tawkApi" wire:model="tawkWidgetId"/>
+                        <input type="text" class="form-control" name="tawkApi" wire:model.live="tawkWidgetId"/>
                     </div>
                     <div class="col-md-4 d-flex align-items-end justify-content-end">
                         <button wire:click="save" class="btn btn-sm btn-primary">Save</button>

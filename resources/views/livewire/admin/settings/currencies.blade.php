@@ -22,7 +22,7 @@
             </div>
         @endif
         <div class="container-fluid mb-4">
-            <form wire:submit.prevent="submit" class="pt-3">
+            <form wire:submit="submit" class="pt-3">
                 <div class="row">
                     <div class="col-12">
                         <div class="alert alert-info">All conversion rates are in USD</div>
@@ -30,7 +30,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="euro">EURO CONVERSION RATE</label>
-                            <input type="number" class="form-control" step=".01" id="euro" wire:model.defer="agency.euro" required>
+                            <input type="number" class="form-control" step=".01" id="euro" wire:model="agency.euro" required>
                         </div>
                     </div>
                 </div>

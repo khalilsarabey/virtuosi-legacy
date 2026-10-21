@@ -18,10 +18,10 @@
         <div class="container-fluid mb-4">
             <div class="row">
                 <div class="col-12">
-                    <form wire:submit.prevent="submit" class="pt-3">
+                    <form wire:submit="submit" class="pt-3">
                         <div class="form-group {{ $errors->has('contract.name') ? 'invalid' : '' }}">
                             <label class="form-label required" for="name">{{ trans('cruds.contract.fields.name') }}</label>
-                            <input class="form-control" type="text" name="name" id="name" required wire:model.defer="contract.name">
+                            <input class="form-control" type="text" name="name" id="name" required wire:model="contract.name">
                             <div class="validation-message">
                                 {{ $errors->first('contract.name') }}
                             </div>
@@ -41,7 +41,7 @@
                                     $dispatch('input', quill.root.innerHTML);
                                     });
                                     "
-                                    wire:model.debounce.500ms="contract.content"
+                                    wire:model.live.debounce.500ms="contract.content"
                                 >
                                     {!! $contract->content !!}
                                 </div>

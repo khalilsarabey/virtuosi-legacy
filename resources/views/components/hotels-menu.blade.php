@@ -1,3 +1,4 @@
+@props(['menu' => null])
 <div class="admin-header position-relative" style="top: -50px;">
     <div class="container-fluid">
         <div class="row">

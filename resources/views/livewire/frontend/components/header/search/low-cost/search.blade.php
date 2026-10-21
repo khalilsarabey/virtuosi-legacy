@@ -51,7 +51,7 @@
                                                     <div class="form-group">
                                                         <span class="la la-map-marker form-icon"></span>
                                                         <div class="input-items pl-5 pl-md-0">
-                                                            <select name="from" wire:model="oneway.from" class="form-control" required>
+                                                            <select name="from" wire:model.live="oneway.from" class="form-control" required>
                                                                 <option value disabled selected>Select</option>
                                                                 @foreach($airports as $airport)
                                                                     <option value="{{ $airport->airport_code }}">{{ $airport->city }} - {{ $airport->airport }}</option>
@@ -67,7 +67,7 @@
                                                     <div class="form-group">
                                                         <span class="la la-map-marker form-icon"></span>
                                                         <div class="input-items pl-5 pl-md-0">
-                                                            <select name="to" wire:model="oneway.to" class="form-control" required>
+                                                            <select name="to" wire:model.live="oneway.to" class="form-control" required>
                                                                 <option value disabled selected>Select</option>
                                                                 @foreach($airports as $airport)
                                                                     <option value="{{ $airport->airport_code }}">{{ $airport->airport_code }}</option>
@@ -83,7 +83,7 @@
                                                 </div>
                                                 <div class="form-group" wire:ignore>
                                                     <span class="la la-calendar form-icon"></span>
-                                                    <input readonly="readonly" class="oneway-date-pick-departure form-control bg-white" name="departure" type="text" wire:model="oneway.departure" wire:loading.attr="disabled" required>
+                                                    <input readonly="readonly" class="oneway-date-pick-departure form-control bg-white" name="departure" type="text" wire:model.live="oneway.departure" wire:loading.attr="disabled" required>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-2">
@@ -101,7 +101,7 @@
                                                                         <label><i class="la la-user"></i> Adult</label>
                                                                         <div class="roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                                             <div wire:click="dec('oneway','adults')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                                            <input type="text" name="adult" wire:model="oneway.adults" >
+                                                                            <input type="text" name="adult" wire:model.live="oneway.adults" >
                                                                             <div wire:click="inc('oneway','adults')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                                         </div>
                                                                     </div>
@@ -111,7 +111,7 @@
                                                                         <label><i class="la la-female"></i> Child</label>
                                                                         <div class="children roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                                             <div  wire:click="dec('oneway','children')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                                            <input type="text" name="child" wire:model="oneway.children">
+                                                                            <input type="text" name="child" wire:model.live="oneway.children">
                                                                             <div wire:click="inc('oneway','children')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                                         </div>
                                                                     </div>
@@ -121,7 +121,7 @@
                                                                         <label><i class="la la-female"></i> Infant</label>
                                                                         <div class="infants roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                                             <div wire:click="dec('oneway','infants')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                                            <input type="text" name="infant" wire:model="oneway.infants">
+                                                                            <input type="text" name="infant" wire:model.live="oneway.infants">
                                                                             <div wire:click="inc('oneway','infants')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                                         </div>
                                                                     </div>

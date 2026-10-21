@@ -32,14 +32,14 @@
                         <hr/>
                     </div>
                     <div class="col-12">
-                        <form wire:submit.prevent="submit" class="pt-3 row">
+                        <form wire:submit="submit" class="pt-3 row">
                             @csrf
                             @foreach(collect($booking->getAttributes())->except(['id', 'payload', 'created_at', 'updated_at', 'reference']) as $key => $value)
                                 @if($key == 'dep_flight_id' || $key == 'ret_flight_id')
                                     @if($value)
                                         <div class="col-lg-2 form-group {{ $errors->has('ticket.title') ? 'invalid' : '' }}">
                                             <label>{{ $key }}</label>
-                                            <input required class="form-control" type="number" wire:model.defer="change.{{$key}}" name="{{ $key }}" value="{{ $value }}" />
+                                            <input required class="form-control" type="number" wire:model="change.{{$key}}" name="{{ $key }}" value="{{ $value }}" />
                                         </div>
                                     @endif
                                 @else

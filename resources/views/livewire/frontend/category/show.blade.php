@@ -155,7 +155,7 @@
                                                         <label><i class="la la-user"></i> Adult</label>
                                                         <div class="roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                             <div wire:click="decrement('adults', '{{$flight->type}}', '{{$flight->id}}')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                            <input disabled type="text" name="adults" wire:model="adults.{{$flight->id}}">
+                                                            <input disabled type="text" name="adults" wire:model.live="adults.{{$flight->id}}">
                                                             <div wire:ignore.self wire:click="increment('adults', '{{$flight->type}}', '{{$flight->id}}', {{ ($flight->seats - $flight->tickets_count) }})" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                         </div>
                                                     </div>
@@ -165,7 +165,7 @@
                                                         <label><i class="la la-female"></i> Child</label>
                                                         <div class="children roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                             <div wire:click="decrement('children', '{{$flight->type}}', '{{$flight->id}}')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                            <input disabled type="text" name="children" wire:model="children.{{$flight->id}}">
+                                                            <input disabled type="text" name="children" wire:model.live="children.{{$flight->id}}">
                                                             <div wire:ignore.self wire:click="increment('children', '{{$flight->type}}', '{{$flight->id}}', {{ ($flight->seats - $flight->tickets_count) }})" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                         </div>
                                                     </div>
@@ -175,7 +175,7 @@
                                                         <label><i class="la la-female"></i> Infant</label>
                                                         <div class="infants roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                             <div wire:click="decrement('infants', '{{$flight->type}}', '{{$flight->id}}')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                            <input disabled type="text" name="infants" wire:model="infants.{{$flight->id}}">
+                                                            <input disabled type="text" name="infants" wire:model.live="infants.{{$flight->id}}">
                                                             <div wire:ignore.self wire:click="increment('infants', '{{$flight->type}}', '{{$flight->id}}', {{ ($flight->seats - $flight->tickets_count) }})" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                         </div>
                                                     </div>

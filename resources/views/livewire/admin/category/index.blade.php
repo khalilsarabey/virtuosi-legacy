@@ -23,7 +23,7 @@
                 <div class="col-12">
                     <div class="form-group">
                         <label class="form-label">Filter by Section</label>
-                        <select wire:model="selectedSection" class="form-control">
+                        <select wire:model.live="selectedSection" class="form-control">
                             <option selected disabled value="null" disabled>Select...</option>
                             @foreach($sections as $key => $section)
                                 <option value="{{ $key }}">{{ $section }}</option>
@@ -67,7 +67,7 @@
                                     </svg>
                                 </td>
                                 <td style="width: 1%;">
-                                    <input type="checkbox" value="{{ $category->id }}" wire:model="selected">
+                                    <input type="checkbox" value="{{ $category->id }}" wire:model.live="selected">
                                 </td>
                                 <td style="width: 1%;">
                                     {{ $category->name }}

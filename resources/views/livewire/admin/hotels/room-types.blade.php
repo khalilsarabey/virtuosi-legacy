@@ -18,23 +18,23 @@
                 </div>
             </div>
             @if($showForm)
-                <form wire:submit.prevent="addRoom">
+                <form wire:submit="addRoom">
                     <div class="row mt-3 pb-3 bg-light">
                         <div class="col">
                             <label>Type</label>
-                            <input type="text" wire:model.defer="form.name" required class="form-control" />
+                            <input type="text" wire:model="form.name" required class="form-control" />
                         </div>
                         <div class="col">
                             <label>Adult Capacity</label>
-                            <input type="number" wire:model.defer="form.adult" required class="form-control" />
+                            <input type="number" wire:model="form.adult" required class="form-control" />
                         </div>
                         <div class="col">
                             <label>Child Capacity</label>
-                            <input type="number" wire:model.defer="form.child" required class="form-control" />
+                            <input type="number" wire:model="form.child" required class="form-control" />
                         </div>
                         <div class="col">
                             <label>Infant Capacity</label>
-                            <input type="number" wire:model.defer="form.infant" required class="form-control" />
+                            <input type="number" wire:model="form.infant" required class="form-control" />
                         </div>
                         <div class="col-md-1 d-flex align-items-end">
                             <button type="button" wire:click="save" class="btn btn-xs px-4 py-2 mb-1 w-100 btn-secondary uppercase waves-effect">

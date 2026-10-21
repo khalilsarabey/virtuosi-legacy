@@ -17,7 +17,7 @@
 
 @push('scripts')
     <script>
-        document.addEventListener("livewire:load", () => {
+        document.addEventListener("livewire:initialized", () => {
             let el = $('#{{ $attributes['id'] }}')
             let buttonsId = '#{{ $attributes['id'] }}-btn-container'
 
@@ -44,8 +44,8 @@
 
         initSelect()
 
-    Livewire.hook('message.processed', (message, component) => {
-        initSelect()
+    Livewire.hook('commit', ({ succeed }) => {
+        succeed(() => queueMicrotask(() => initSelect()))
     });
 
     el.on('change', function (e) {
@@ -53,7 +53,7 @@
         if (data === "") {
             data = null
         }
-@this.set('{{ $attributes['wire:model'] }}', data)
+@this.set('{{ $attributes->wire('model')->value() }}', data)
     });
 });
     </script>

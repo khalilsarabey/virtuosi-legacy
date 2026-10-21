@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-lg-6 mb-3">
                     <label>Password</label>
-                    <input type="password" name="password" id="password" class="form-control" wire:model.debounce.500ms="password" />
+                    <input type="password" name="password" id="password" class="form-control" wire:model.live.debounce.500ms="password" />
                     <progress value="{{ $strengthScore }}" max="4" class="w-100"></progress>
                     @if($password)
                         <div><small>{{ $strengthLevels[$strengthScore] }}</small></div>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col-lg-6 mb-3">
                     <label>Confirm Password</label>
-                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" wire:model.debounce.500ms="password_confirmation" />
+                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" wire:model.live.debounce.500ms="password_confirmation" />
                 </div>
                     <div class="col-12 text-right">
                         <button type="button" wire:click="generatePassword" class="btn btn-dark">Generate Password</button>

@@ -9,7 +9,7 @@
                     <div class="form-group">
                         <span class="la la-map-marker form-icon"></span>
                         <div class="input-items pl-5 pl-md-0">
-                            <select name="from" wire:model="destination" class="form-control" required>
+                            <select name="from" wire:model.live="destination" class="form-control" required>
                                 <option value selected>Select</option>
                                 @foreach($destinations as $destination)
                                     <option value="{{ $destination->location }}">{{ $destination->city?->city }}</option>
@@ -25,7 +25,7 @@
                     <div class="form-group">
                         <span class="la la-map-marker form-icon"></span>
                         <div class="input-items pl-5 pl-md-0">
-                            <select name="hotel" wire:model="hotel" class="form-control">
+                            <select name="hotel" wire:model.live="hotel" class="form-control">
                                 <option value selected>Select</option>
                                 @foreach($hotels as $k => $v)
                                     <option value="{{ $k }}">{{ $v }}</option>
@@ -38,7 +38,7 @@
             <div class="col-12 col-lg">
                 <div class="label-text">Date</div>
                 <div class="form-group">
-                    <x-flatpickr id="hotel-date-pick" wire:model="date" name="date" mode="range" min="today" months="2" required picker="date" disabled />
+                    <x-flatpickr id="hotel-date-pick" wire:model.live="date" name="date" mode="range" min="today" months="2" required picker="date" disabled />
                     <span class="la la-calendar form-icon"></span>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                                             <label><i class="la la-user"></i> Adult</label>
                                             <div class="roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                 <div wire:click="dec('adult', {{ $k }})" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                <input type="text" name="rooms[{{$k}}][adult]" wire:model="rooms.{{ $k }}.adult" >
+                                                <input type="text" name="rooms[{{$k}}][adult]" wire:model.live="rooms.{{ $k }}.adult" >
                                                 <div wire:click="inc('adult', {{ $k }})" class="qty qtyInc"><i class="la la-plus"></i></div>
                                             </div>
                                         </div>
@@ -74,7 +74,7 @@
                                             <label><i class="la la-female"></i> Child</label>
                                             <div class="children roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                 <div  wire:click="dec('child', {{ $k }})" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                <input type="text" name="rooms[{{$k}}][child]" wire:model="rooms.{{ $k }}.child">
+                                                <input type="text" name="rooms[{{$k}}][child]" wire:model.live="rooms.{{ $k }}.child">
                                                 <div wire:click="inc('child', {{ $k }})" class="qty qtyInc"><i class="la la-plus"></i></div>
                                             </div>
                                         </div>
@@ -84,7 +84,7 @@
                                             <label><i class="la la-female"></i> Infant</label>
                                             <div class="infants roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                 <div wire:click="dec('infant', {{ $k }})" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                <input type="text" name="rooms[{{$k}}][infant]" wire:model="rooms.{{ $k }}.infant">
+                                                <input type="text" name="rooms[{{$k}}][infant]" wire:model.live="rooms.{{ $k }}.infant">
                                                 <div wire:click="inc('infant', {{ $k }})" class="qty qtyInc"><i class="la la-plus"></i></div>
                                             </div>
                                         </div>

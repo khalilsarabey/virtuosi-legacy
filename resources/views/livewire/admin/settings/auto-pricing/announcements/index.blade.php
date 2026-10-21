@@ -75,17 +75,17 @@
                     <div class="row">
                         <div class="col-12">
                             <label>Title</label>
-                            <input type="text" class="form-control" placeholder="Title" wire:model.defer="title"  />
+                            <input type="text" class="form-control" placeholder="Title" wire:model="title"  />
                         </div>
                         <div class="col-6">
                             <div class="form-group form-check d-flex align-items-center mt-5 mb-5">
-                                <input type="checkbox" class="form-check-input " id="internal_announcement" wire:model.defer="internal">
+                                <input type="checkbox" class="form-check-input " id="internal_announcement" wire:model="internal">
                                 <label class="form-check-label mt-1" for="internal_announcement">Internal Announcement</label>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group form-check d-flex align-items-center mt-5 mb-5">
-                                <input type="checkbox" class="form-check-input " id="agencies_announcement"  wire:model.defer="agencies">
+                                <input type="checkbox" class="form-check-input " id="agencies_announcement"  wire:model="agencies">
                                 <label class="form-check-label mt-1" for="agencies_announcement">Agencies Announcement</label>
                             </div>
                         </div>
@@ -136,17 +136,17 @@
                             <div class="row">
                                 <div class="col-12">
                                     <label>Title</label>
-                                    <input type="text" class="form-control" placeholder="Title" wire:model.defer="title"  />
+                                    <input type="text" class="form-control" placeholder="Title" wire:model="title"  />
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group form-check d-flex align-items-center mt-5 mb-5">
-                                        <input type="checkbox" class="form-check-input " id="internal_announcement" wire:model.defer="internal">
+                                        <input type="checkbox" class="form-check-input " id="internal_announcement" wire:model="internal">
                                         <label class="form-check-label mt-1" for="internal_announcement">Internal Announcement</label>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group form-check d-flex align-items-center mt-5 mb-5">
-                                        <input type="checkbox" class="form-check-input " id="agencies_announcement"  wire:model.defer="agencies">
+                                        <input type="checkbox" class="form-check-input " id="agencies_announcement"  wire:model="agencies">
                                         <label class="form-check-label mt-1" for="agencies_announcement">Agencies Announcement</label>
                                     </div>
                                 </div>

@@ -25,14 +25,14 @@
                 </div>
                 <div class="col">
                     <label>Search:</label>
-                    <input type="text" wire:model.debounce.300ms="search" class="form-control"/>
+                    <input type="text" wire:model.live.debounce.300ms="search" class="form-control"/>
                 </div>
             </div>
             <hr/>
             <div class="row my-3">
                 <div class="col-md-2">
                     <label>Per page:</label>
-                    <select wire:model="perPage" class="form-control">
+                    <select wire:model.live="perPage" class="form-control">
                         @foreach($paginationOptions as $value)
                             <option value="{{ $value }}">{{ $value }}</option>
                         @endforeach
@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-md-3">
                     <label>Assign to Destination</label>
-                    <select class="form-control" wire:model="destination">
+                    <select class="form-control" wire:model.live="destination">
                         <option selected>Select Destination</option>
                         @foreach($destinations as $destination)
                             <option value="{{ $destination->id }}">{{ $destination->name }}</option>
@@ -77,7 +77,7 @@
                             <tr>
                                 <td>
                                     <label>
-                                        <input type="checkbox" class="form-check-inline" wire:model.defer="selected" value="{{ $airport->id }}" />
+                                        <input type="checkbox" class="form-check-inline" wire:model="selected" value="{{ $airport->id }}" />
                                         {{ $airport->code }}
                                     </label>
                                 </td>
@@ -128,11 +128,11 @@
                         <div class="row">
                             <div class="col-12">
                                 <label>Airport Code</label>
-                                <input type="text" class="form-control" placeholder="Airport Code" wire:model.defer="airport_name"  />
+                                <input type="text" class="form-control" placeholder="Airport Code" wire:model="airport_name"  />
                             </div>
                             <div class="col-md-12">
                                 <label>Assign to Destination</label>
-                                <select class="form-control" wire:model.defer="selected_destination">
+                                <select class="form-control" wire:model="selected_destination">
                                     <option selected>Select Destination</option>
                                     @foreach($destinations as $destination)
                                         <option value="{{ $destination->id }}">{{ $destination->name }}</option>
@@ -162,11 +162,11 @@
                         <div class="row">
                             <div class="col-12">
                                 <label>Airport Code</label>
-                                <input type="text" class="form-control" placeholder="Airport Code" wire:model.defer="airport_name"  />
+                                <input type="text" class="form-control" placeholder="Airport Code" wire:model="airport_name"  />
                             </div>
                             <div class="col-md-12">
                                 <label>Assign to Destination</label>
-                                <select class="form-control" wire:model.defer="selected_destination">
+                                <select class="form-control" wire:model="selected_destination">
                                     <option selected>Select Destination</option>
                                     @foreach($destinations as $destination)
                                         <option value="{{ $destination->id }}">{{ $destination->name }}</option>

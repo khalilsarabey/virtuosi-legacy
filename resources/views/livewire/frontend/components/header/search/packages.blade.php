@@ -10,7 +10,7 @@
                     <div class="form-group">
                         <span class="la la-map-marker form-icon"></span>
                         <div class="input-items pl-5 pl-md-0">
-                            <select name="dep_from_code" wire:model="dep_from_code" class="form-control" required>
+                            <select name="dep_from_code" wire:model.live="dep_from_code" class="form-control" required>
                                 <option value disabled selected>Select</option>
                                 @foreach($fromList as $value => $key)
                                     <option value="{{ $key }}">{{ $value }}</option>
@@ -26,7 +26,7 @@
                     <div class="form-group">
                         <span class="la la-map-marker form-icon"></span>
                         <div class="input-items pl-5 pl-md-0">
-                            <select name="dep_to_code" wire:model="dep_to_code" class="form-control" {{ count($toList) ? '' : 'disabled' }} required>
+                            <select name="dep_to_code" wire:model.live="dep_to_code" class="form-control" {{ count($toList) ? '' : 'disabled' }} required>
                                 <option value disabled selected>Select</option>
                                 @foreach($toList as $value => $key)
                                     <option value="{{ $key }}">{{ $value }}</option>
@@ -40,7 +40,7 @@
                 <div class="input-box" wire:ignore>
                     <label class="label-text">Departure</label>
                     <div class="form-group">
-                        <x-flatpickr id="package-date-pick-departure" name="dep_date" disabled mode="single" min="today" required picker="date" wire:model="dep_date" wire:loading.attr="disabled" required />
+                        <x-flatpickr id="package-date-pick-departure" name="dep_date" disabled mode="single" min="today" required picker="date" wire:model.live="dep_date" wire:loading.attr="disabled" required />
                         <span class="la la-calendar form-icon"></span>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                 <div class="input-box" wire:ignore>
                     <label class="label-text">Return</label>
                     <div class="form-group">
-                        <x-flatpickr id="package-date-pick-return" name="ret_date" value="{{ $ret_date }}" disabled mode="single" min="today" required picker="date" wire:model="ret_date" wire:loading.attr="disabled" required />
+                        <x-flatpickr id="package-date-pick-return" name="ret_date" value="{{ $ret_date }}" disabled mode="single" min="today" required picker="date" wire:model.live="ret_date" wire:loading.attr="disabled" required />
                         <span class="la la-calendar form-icon"></span>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                                             <label><i class="la la-user"></i> Adult</label>
                                             <div class="roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                 <div wire:click="dec('adult', {{ $k }})" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                <input type="text" name="rooms[{{$k}}][adult]" wire:model="rooms.{{ $k }}.adult" readonly>
+                                                <input type="text" name="rooms[{{$k}}][adult]" wire:model.live="rooms.{{ $k }}.adult" readonly>
                                                 <div wire:click="inc('adult', {{ $k }})" class="qty qtyInc"><i class="la la-plus"></i></div>
                                             </div>
                                         </div>
@@ -86,7 +86,7 @@
                                             <label><i class="la la-female"></i> Child</label>
                                             <div class="children roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                 <div  wire:click="dec('child', {{ $k }})" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                <input type="text" name="rooms[{{$k}}][child]" wire:model="rooms.{{ $k }}.child" readonly>
+                                                <input type="text" name="rooms[{{$k}}][child]" wire:model.live="rooms.{{ $k }}.child" readonly>
                                                 <div wire:click="inc('child', {{ $k }})" class="qty qtyInc"><i class="la la-plus"></i></div>
                                             </div>
                                         </div>
@@ -96,7 +96,7 @@
                                             <label><i class="la la-female"></i> Infant</label>
                                             <div class="infants roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                 <div wire:click="dec('infant', {{ $k }})" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                <input type="text" name="rooms[{{$k}}][infant]" wire:model="rooms.{{ $k }}.infant" readonly>
+                                                <input type="text" name="rooms[{{$k}}][infant]" wire:model.live="rooms.{{ $k }}.infant" readonly>
                                                 <div wire:click="inc('infant', {{ $k }})" class="qty qtyInc"><i class="la la-plus"></i></div>
                                             </div>
                                         </div>
@@ -112,9 +112,9 @@
                     </div>
                 </div>
             </div>
-            <input type="hidden" name="adults" wire:model="adults" />
-            <input type="hidden" name="infants" wire:model="infants"/>
-            <input type="hidden" name="children" wire:model="children" />
+            <input type="hidden" name="adults" wire:model.live="adults" />
+            <input type="hidden" name="infants" wire:model.live="infants"/>
+            <input type="hidden" name="children" wire:model.live="children" />
             <div class="col-12 col-lg-1">
                 <div class="btn-search text-center">
                     <button style="color:#fff" type="submit" id="submit" class="effect btn btn-primary btn-block btn-lg disable-styles" data-style="zoom-in">

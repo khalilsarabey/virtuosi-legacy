@@ -96,75 +96,75 @@
             <div class="row mt-3">
                 <div class="col-md-2 mt-3">
                     <label>Flight Type</label>
-                    <x-select-list class="form-control w-100" id="type" name="type" :options="$types" wire:model="filters.type" />
+                    <x-select-list class="form-control w-100" id="type" name="type" :options="$types" wire:model.live="filters.type" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Category</label>
-                    <x-select-list class="form-control w-100" id="category" name="category" :options="$categories" wire:model="filters.category" />
+                    <x-select-list class="form-control w-100" id="category" name="category" :options="$categories" wire:model.live="filters.category" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Agency / User</label>
-                    <x-select-list class="form-control w-100" id="agencies" name="agencies" :options="$agencies" wire:model="filters.user_id" />
+                    <x-select-list class="form-control w-100" id="agencies" name="agencies" :options="$agencies" wire:model.live="filters.user_id" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Search by Name</label>
-                    <input type="text" class="form-control" wire:model.debounce.300ms="filters.name" />
+                    <input type="text" class="form-control" wire:model.live.debounce.300ms="filters.name" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Departure From</label>
-                    <x-select-list class="form-control w-100" id="dep_from" name="dep_from" :options="$locations" wire:model="filters.dep_from" />
+                    <x-select-list class="form-control w-100" id="dep_from" name="dep_from" :options="$locations" wire:model.live="filters.dep_from" />
                 </div>
                 <div class="col-md-2 mt-3" wire:ignore>
                     <label>Departure To</label>
-                    <x-select-list class="form-control w-100" id="dep_to" name="dep_to" :options="$locations" wire:model="filters.dep_to" />
+                    <x-select-list class="form-control w-100" id="dep_to" name="dep_to" :options="$locations" wire:model.live="filters.dep_to" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Return From</label>
-                    <x-select-list class="form-control w-100" id="ret_from" name="ret_from" :options="$locations" wire:model="filters.ret_from" />
+                    <x-select-list class="form-control w-100" id="ret_from" name="ret_from" :options="$locations" wire:model.live="filters.ret_from" />
                 </div>
                 <div class="col-md-2 mt-3" wire:ignore>
                     <label>Return To</label>
-                    <x-select-list class="form-control w-100" id="ret_to" name="ret_to" :options="$locations" wire:model="filters.ret_to" />
+                    <x-select-list class="form-control w-100" id="ret_to" name="ret_to" :options="$locations" wire:model.live="filters.ret_to" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Departure Date</label>
-                    <input type="date" name="dep_date" id="dep_date" class="form-control" wire:model="filters.dep_date" />
+                    <input type="date" name="dep_date" id="dep_date" class="form-control" wire:model.live="filters.dep_date" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Return Date</label>
-                    <input type="date" name="ret_date" id="ret+date" class="form-control" wire:model="filters.ret_dep_date" />
+                    <input type="date" name="ret_date" id="ret+date" class="form-control" wire:model.live="filters.ret_dep_date" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Departure Flight Number</label>
-                    <input type="text" class="form-control" wire:model="filters.dep_flight_number" />
+                    <input type="text" class="form-control" wire:model.live="filters.dep_flight_number" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Return Flight Number</label>
-                    <input type="text" class="form-control" wire:model="filters.ret_flight_number" />
+                    <input type="text" class="form-control" wire:model.live="filters.ret_flight_number" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Reference Number</label>
-                    <input type="text" class="form-control" wire:model="filters.reference" />
+                    <input type="text" class="form-control" wire:model.live="filters.reference" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Booking Date</label>
-                    <input type="date" class="form-control" wire:model="filters.created_at" />
+                    <input type="date" class="form-control" wire:model.live="filters.created_at" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Airline</label>
-                    <x-select-list class="form-control w-100" id="airlines" name="airlines" :options="$airlines" wire:model="filters.airline" />
+                    <x-select-list class="form-control w-100" id="airlines" name="airlines" :options="$airlines" wire:model.live="filters.airline" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Include Packages</label>
-                    <x-select-list class="form-control w-100" id="packages" name="packages" required :options="['1' => 'Yes', '0' => 'No']" wire:model="filters.packages" />
+                    <x-select-list class="form-control w-100" id="packages" name="packages" required :options="['1' => 'Yes', '0' => 'No']" wire:model.live="filters.packages" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Source</label>
-                    <x-select-list class="form-control w-100" id="source" name="source" required :options="['local' => 'Local', 'connection' => 'Connections']" wire:model="filters.source" />
+                    <x-select-list class="form-control w-100" id="source" name="source" required :options="['local' => 'Local', 'connection' => 'Connections']" wire:model.live="filters.source" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Show Only</label>
-                    <x-select-list class="form-control w-100" id="show_only" name="show_only" required :options="['active' => 'Active Bookings', 'deleted' => 'Deleted Bookings']" wire:model="filters.show_only" />
+                    <x-select-list class="form-control w-100" id="show_only" name="show_only" required :options="['active' => 'Active Bookings', 'deleted' => 'Deleted Bookings']" wire:model.live="filters.show_only" />
                 </div>
             </div>
         </div>
@@ -182,7 +182,7 @@
                 </div>
                 <div class="ml-auto col-md-1 mt-3">
                     <label>Per Page</label>
-                    <select wire:model="perPage" class="form-control form-control-sm w-100">
+                    <select wire:model.live="perPage" class="form-control form-control-sm w-100">
                         @foreach($paginationOptions as $value)
                             <option value="{{ $value }}">{{ $value }}</option>
                         @endforeach
@@ -191,14 +191,14 @@
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Sort By</label>
-                    <select wire:model="sortBy" class="form-control form-control-sm w-100">
+                    <select wire:model.live="sortBy" class="form-control form-control-sm w-100">
                         <option value="dep_date">Departure</option>
                         <option value="created_at">Date Added</option>
                     </select>
                 </div>
                 <div class="col-md-1 mt-3">
                     <label>Sort</label>
-                    <select wire:model="sortDirection" class="form-control form-control-sm w-100">
+                    <select wire:model.live="sortDirection" class="form-control form-control-sm w-100">
                         <option value="ASC">Asc</option>
                         <option value="DESC">Desc</option>
                     </select>

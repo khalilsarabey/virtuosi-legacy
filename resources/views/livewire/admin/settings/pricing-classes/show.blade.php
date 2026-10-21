@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="container-fluid">
-            <form wire:submit.prevent="save">
+            <form wire:submit="save">
                 <div class="row">
                     <div class="col-12">
                         <table class="table table-index w-full">

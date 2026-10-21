@@ -11,13 +11,13 @@
             </div>
         </div>
         <div class="container-fluid mb-4">
-            <form wire:submit.prevent="submit" class="pt-3">
+            <form wire:submit="submit" class="pt-3">
                     @if(auth()->user()->type == 'admin' || auth()->user()->type == 'white-admin')
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group {{ $errors->has('integration.balance') ? 'invalid' : '' }}">
                                 <label class="form-label required">Balance</label>
-                                <input step="0.01" type="number" class="form-control" wire:model.defer="integration.balance">
+                                <input step="0.01" type="number" class="form-control" wire:model="integration.balance">
                                 <div class="validation-message">
                                     {{ $errors->first('integration.balance') }}
                                 </div>

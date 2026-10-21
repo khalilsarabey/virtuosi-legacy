@@ -1,7 +1,7 @@
 <div>
     <div wire:ignore.self class="modal fade" id="pricesModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="pricesModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-xl">
-            <form wire:submit.prevent="savePrices">
+            <form wire:submit="savePrices">
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="container-fluid">
@@ -17,19 +17,19 @@
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Seats</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.L.seats">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.L.seats">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Adult Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.L.adult">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.L.adult">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Child Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.L.child">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.L.child">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Infant Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.L.infant">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.L.infant">
                                 </div>
                             </div>
                             @if(config('features.hotels'))
@@ -40,15 +40,15 @@
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Adult Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.L.package_adult">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.L.package_adult">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Child Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.L.package_child">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.L.package_child">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Infant Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.L.package_infant">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.L.package_infant">
                                 </div>
                             </div>
                             @endif
@@ -58,19 +58,19 @@
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Seats</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.M.seats">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.M.seats">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Adult Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.M.adult">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.M.adult">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Child Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.M.child">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.M.child">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Infant Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.M.infant">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.M.infant">
                                 </div>
                             </div>
                             @if(config('features.hotels'))
@@ -81,15 +81,15 @@
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Adult Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.M.package_adult">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.M.package_adult">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Child Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.M.package_child">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.M.package_child">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Infant Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.M.package_infant">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.M.package_infant">
                                 </div>
                             </div>
                             @endif
@@ -99,19 +99,19 @@
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Seats</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.Y.seats">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.Y.seats">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Adult Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.Y.adult">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.Y.adult">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Child Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.Y.child">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.Y.child">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Infant Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.Y.infant">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.Y.infant">
                                 </div>
                             </div>
                             @if(config('features.hotels'))
@@ -122,15 +122,15 @@
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Adult Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.Y.package_adult">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.Y.package_adult">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Child Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.Y.package_child">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.Y.package_child">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Infant Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.prices.Y.package_infant">
+                                    <input type="number" class="form-control" wire:model="pricing.prices.Y.package_infant">
                                 </div>
                             </div>
                             @endif
@@ -141,19 +141,19 @@
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Seats</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.Z.seats">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.Z.seats">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Adult Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.Z.adult">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.Z.adult">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Child Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.Z.child">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.Z.child">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Infant Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.Z.infant">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.Z.infant">
                                 </div>
                             </div>
                             @if(config('features.hotels'))
@@ -164,15 +164,15 @@
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Adult Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.Z.package_adult">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.Z.package_adult">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Child Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.Z.package_child">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.Z.package_child">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Infant Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.Z.package_infant">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.Z.package_infant">
                                 </div>
                             </div>
                             @endif
@@ -182,19 +182,19 @@
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Seats</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.K.seats">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.K.seats">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Adult Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.K.adult">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.K.adult">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Child Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.K.child">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.K.child">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Infant Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.K.infant">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.K.infant">
                                 </div>
                             </div>
                             @if(config('features.hotels'))
@@ -205,15 +205,15 @@
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Adult Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.K.package_adult">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.K.package_adult">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Child Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.K.package_child">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.K.package_child">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Infant Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.K.package_infant">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.K.package_infant">
                                 </div>
                             </div>
                             @endif
@@ -223,19 +223,19 @@
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Seats</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.J.seats">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.J.seats">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Adult Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.J.adult">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.J.adult">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Child Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.J.child">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.J.child">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Infant Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.J.infant">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.J.infant">
                                 </div>
                             </div>
                             @if(config('features.hotels'))
@@ -246,15 +246,15 @@
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Adult Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.J.package_adult">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.J.package_adult">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Child Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.J.package_child">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.J.package_child">
                                 </div>
                                 <div class="col-2 col-lg">
                                     <label>Package Infant Price</label>
-                                    <input type="number" class="form-control" wire:model.defer="pricing.business_pricing.J.package_infant">
+                                    <input type="number" class="form-control" wire:model="pricing.business_pricing.J.package_infant">
                                 </div>
                             </div>
                             @endif
@@ -270,7 +270,7 @@
     </div>
     <div wire:ignore.self class="modal fade" id="supplementsModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="supplementsModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-            <form wire:submit.prevent="saveSupplements">
+            <form wire:submit="saveSupplements">
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="container-fluid">
@@ -282,15 +282,15 @@
                             <div class="row">
                                 <div class="col">
                                     <label>One Way Supplements</label>
-                                    <input type="number" class="form-control" wire:model.defer="supplements.oneway_supplements">
+                                    <input type="number" class="form-control" wire:model="supplements.oneway_supplements">
                                 </div>
                                 <div class="col">
                                     <label>Multi Supplements</label>
-                                    <input type="number" class="form-control" wire:model.defer="supplements.multi_supplements">
+                                    <input type="number" class="form-control" wire:model="supplements.multi_supplements">
                                 </div>
                                 <div class="col">
                                     <label>Mixed Airlines Supplements</label>
-                                    <input type="number" class="form-control" wire:model.defer="supplements.combinable_supplements">
+                                    <input type="number" class="form-control" wire:model="supplements.combinable_supplements">
                                 </div>
                             </div>
                         </div>
@@ -312,7 +312,7 @@
                             @foreach($categories as $category)
                             <div class="col-md-3">
                                 <div class="form-check">
-                                    <input class="form-check-input" value="{{ $category->id }}" wire:model.defer="selectedCategories" type="checkbox" id="categoryCheckbox-{{ $category->id }}">
+                                    <input class="form-check-input" value="{{ $category->id }}" wire:model="selectedCategories" type="checkbox" id="categoryCheckbox-{{ $category->id }}">
                                     <label class="form-check-label pt-1" for="categoryCheckbox-{{ $category->id }}">
                                         {{ $category->name }}
                                     </label>
@@ -358,48 +358,48 @@
             <div class="row mt-3">
                 <div class="col-md-2 mt-3">
                     <label>Flight Type</label>
-                    <x-select-list class="form-control" id="type" name="type" :options="$types" wire:model="type" />
+                    <x-select-list class="form-control" id="type" name="type" :options="$types" wire:model.live="type" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Airline</label>
-                    <x-select-list class="form-control" id="airline_id" name="airline_id" :options="$airlines" wire:model="airline_id" />
+                    <x-select-list class="form-control" id="airline_id" name="airline_id" :options="$airlines" wire:model.live="airline_id" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>From</label>
-                    <x-select-list class="form-control" id="from_id" name="from_id" :options="$locations" wire:model="dep_from_code" />
+                    <x-select-list class="form-control" id="from_id" name="from_id" :options="$locations" wire:model.live="dep_from_code" />
                 </div>
                 <div class="col-md-2 mt-3" wire:ignore>
                     <label>To</label>
-                    <x-select-list class="form-control" id="to_id" name="to_id" :options="$locations" wire:model="dep_to_code" />
+                    <x-select-list class="form-control" id="to_id" name="to_id" :options="$locations" wire:model.live="dep_to_code" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Departure Date</label>
-                    <input type="date" name="" class="form-control" wire:model="dep_date" />
+                    <input type="date" name="" class="form-control" wire:model.live="dep_date" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Return Date</label>
-                    <input {{ $type == 'oneway' ? 'disabled' : '' }} type="date" name="" class="form-control" wire:model="ret_dep_date" />
+                    <input {{ $type == 'oneway' ? 'disabled' : '' }} type="date" name="" class="form-control" wire:model.live="ret_dep_date" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Departure Flight Number</label>
-                    <input type="text" class="form-control" wire:model="dep_flight_number" />
+                    <input type="text" class="form-control" wire:model.live="dep_flight_number" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Return Flight Number</label>
-                    <input {{ $type == 'oneway' ? 'disabled' : '' }}  type="text" class="form-control" wire:model="ret_flight_number" />
+                    <input {{ $type == 'oneway' ? 'disabled' : '' }}  type="text" class="form-control" wire:model.live="ret_flight_number" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>From Departure Date</label>
-                    <input type="date" name="" class="form-control" wire:model="range_from_date" />
+                    <input type="date" name="" class="form-control" wire:model.live="range_from_date" />
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>To Departure Date</label>
-                    <input type="date" name="" class="form-control" wire:model="range_to_date" />
+                    <input type="date" name="" class="form-control" wire:model.live="range_to_date" />
                 </div>
                 <div class="col-md-2 mt-3 d-flex align-items-center justify-content-start">
                     <div>
                         <div class="form-check">
-                            <input class="form-check-input" wire:model="available_seats" type="checkbox" value="" id="flexCheckChecked">
+                            <input class="form-check-input" wire:model.live="available_seats" type="checkbox" value="" id="flexCheckChecked">
                             <label class="form-check-label pt-1" for="flexCheckChecked">
                                 Flights with available seats
                             </label>
@@ -419,7 +419,7 @@
             <div class="row my-3 border-top">
                 <div class="col-md-7 d-flex justify-content-start align-items-end">
                     <label class="mr-3">
-                        <input type="checkbox" wire:model="selectAll" value="1" /> Select All
+                        <input type="checkbox" wire:model.live="selectAll" value="1" /> Select All
                     </label>
                     @if($this->selectedCount)
                         <div class="bd-example">
@@ -434,7 +434,7 @@
                 </div>
                 <div class="ml-auto col-md-1 mt-3">
                     <label>Per Page</label>
-                    <select wire:model="perPage" class="form-control form-control-sm w-100">
+                    <select wire:model.live="perPage" class="form-control form-control-sm w-100">
                         @foreach($paginationOptions as $value)
                             <option value="{{ $value }}">{{ $value }}</option>
                         @endforeach
@@ -443,7 +443,7 @@
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Sort By</label>
-                    <select wire:model="sortBy" class="form-control form-control-sm w-100">
+                    <select wire:model.live="sortBy" class="form-control form-control-sm w-100">
                         <option value="dep_date">Departure</option>
                         <option value="created_at">Date Added</option>
                         <option value="active">Status</option>
@@ -451,7 +451,7 @@
                 </div>
                 <div class="col-md-2 mt-3">
                     <label>Sort Direction</label>
-                    <select wire:model="sortDirection" class="form-control form-control-sm w-100">
+                    <select wire:model.live="sortDirection" class="form-control form-control-sm w-100">
                         <option value="ASC">Asc</option>
                         <option value="DESC">Desc</option>
                     </select>
@@ -521,7 +521,7 @@
                             <tr class="toggle" @if($flight->seats - $flight->tickets_count == 0) style="background: rgba(207, 244, 252, .35)" @endif>
                                 <td style="width: 1%;" class="align-middle text-xs whitespace-nowrap disable-clickable-td">
                                     <label>
-                                        <input type="checkbox" value="{{ $flight->id }}" wire:model="selected" wire:loading.class="opacity-50">
+                                        <input type="checkbox" value="{{ $flight->id }}" wire:model.live="selected" wire:loading.class="opacity-50">
                                     </label>
                                 </td>
                                 <td style="width: 1%;" class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-sm whitespace-nowrap">
