@@ -1086,7 +1086,6 @@
     }
 
 </style>
-@livewireChartsScripts
 <script src="/js/main.js"></script>
 @yield('scripts')
 @stack('scripts')

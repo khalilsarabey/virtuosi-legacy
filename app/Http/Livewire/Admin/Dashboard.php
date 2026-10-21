@@ -9,7 +9,6 @@ use App\Models\Flight;
 use App\Models\Location;
 use App\Models\Ticket;
 use App\Models\User;
-use Asantibanez\LivewireCharts\Models\ColumnChartModel;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Livewire\Component;

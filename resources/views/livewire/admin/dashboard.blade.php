@@ -429,32 +429,6 @@
                         </div>
                     </div>
                     @endif
-                    @if(1 == 2)
-                    <div class="col-md-6 mt-5">
-                        <div style="background: white; border-radius: 10px; padding: 25px;">
-                            <div class="border-bottom-blueGray-200 w-100">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="header-card-title">
-                                        Bookings Per Year
-                                        <div wire:loading.delay="">
-                                            <div class="spinner-border spinner-border-sm text-primary" role="status">
-                                                <span class="visually-hidden"></span>
-                                            </div>
-                                        </div>
-                                    </h6>
-                                </div>
-                            </div>
-                            <select class="form-control" wire:model="year">
-                                <option value="2024">2024</option>
-                                <option value="2023">2023</option>
-                                <option value="2022">2022</option>
-                            </select>
-                            <div style="height: 32rem;">
-                                <livewire:livewire-column-chart :column-chart-model="$columnChartModel" key="{{ $columnChartModel->reactiveKey() }}" />
-                            </div>
-                        </div>
-                    </div>
-                    @endif
                 </div>
             @endif
         </div>

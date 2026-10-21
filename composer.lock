@@ -4,126 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b284fc290ddbffbe30ca2a5e363f483",
+    "content-hash": "008e6d8299c727de83f57e63f317b24d",
     "packages": [
-        {
-            "name": "asantibanez/livewire-charts",
-            "version": "v2.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/asantibanez/livewire-charts.git",
-                "reference": "9f9554314eb1c75c0f152f13ee236ee336e966c3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/asantibanez/livewire-charts/zipball/9f9554314eb1c75c0f152f13ee236ee336e966c3",
-                "reference": "9f9554314eb1c75c0f152f13ee236ee336e966c3",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "^7.0|^8.0|^9.0|^10.0",
-                "livewire/livewire": "^2.3",
-                "php": "^7.2|^7.3|^7.4|^8.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0",
-                "phpunit/phpunit": "^8.0|^9.5.10"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "LivewireCharts": "Asantibanez\\LivewireCharts\\LivewireChartsFacade"
-                    },
-                    "providers": [
-                        "Asantibanez\\LivewireCharts\\LivewireChartsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Asantibanez\\LivewireCharts\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andrés Santibáñez",
-                    "email": "santibanez.andres@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Livewire Charts",
-            "homepage": "https://github.com/asantibanez/livewire-charts",
-            "keywords": [
-                "asantibanez",
-                "livewire-charts"
-            ],
-            "support": {
-                "issues": "https://github.com/asantibanez/livewire-charts/issues",
-                "source": "https://github.com/asantibanez/livewire-charts/tree/v2.5.0"
-            },
-            "time": "2023-02-01T18:16:56+00:00"
-        },
-        {
-            "name": "asm89/stack-cors",
-            "version": "v2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/asm89/stack-cors.git",
-                "reference": "acf3142e6c5eafa378dc8ef3c069ab4558993f70"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/asm89/stack-cors/zipball/acf3142e6c5eafa378dc8ef3c069ab4558993f70",
-                "reference": "acf3142e6c5eafa378dc8ef3c069ab4558993f70",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.3|^8.0",
-                "symfony/http-foundation": "^5.3|^6|^7",
-                "symfony/http-kernel": "^5.3|^6|^7"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9",
-                "squizlabs/php_codesniffer": "^3.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Asm89\\Stack\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alexander",
-                    "email": "iam.asm89@gmail.com"
-                }
-            ],
-            "description": "Cross-origin resource sharing library and stack middleware",
-            "homepage": "https://github.com/asm89/stack-cors",
-            "keywords": [
-                "cors",
-                "stack"
-            ],
-            "support": {
-                "issues": "https://github.com/asm89/stack-cors/issues",
-                "source": "https://github.com/asm89/stack-cors/tree/v2.3.0"
-            },
-            "time": "2025-03-13T08:50:04+00:00"
-        },
         {
             "name": "bjeavons/zxcvbn-php",
             "version": "1.4.2",
@@ -1020,75 +902,6 @@
             "time": "2024-02-05T11:56:58+00:00"
         },
         {
-            "name": "dompdf/dompdf",
-            "version": "v1.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dompdf/dompdf.git",
-                "reference": "5031045d9640b38cfc14aac9667470df09c9e090"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/5031045d9640b38cfc14aac9667470df09c9e090",
-                "reference": "5031045d9640b38cfc14aac9667470df09c9e090",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "ext-mbstring": "*",
-                "phenx/php-font-lib": "^0.5.4",
-                "phenx/php-svg-lib": "^0.3.3 || ^0.4.0",
-                "php": "^7.1 || ^8.0"
-            },
-            "require-dev": {
-                "ext-json": "*",
-                "ext-zip": "*",
-                "mockery/mockery": "^1.3",
-                "phpunit/phpunit": "^7.5 || ^8 || ^9",
-                "squizlabs/php_codesniffer": "^3.5"
-            },
-            "suggest": {
-                "ext-gd": "Needed to process images",
-                "ext-gmagick": "Improves image processing performance",
-                "ext-imagick": "Improves image processing performance",
-                "ext-zlib": "Needed for pdf stream compression"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Dompdf\\": "src/"
-                },
-                "classmap": [
-                    "lib/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Ménager",
-                    "email": "fabien.menager@gmail.com"
-                },
-                {
-                    "name": "Brian Sweeney",
-                    "email": "eclecticgeek@gmail.com"
-                },
-                {
-                    "name": "Gabriel Bull",
-                    "email": "me@gabrielbull.com"
-                }
-            ],
-            "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
-            "homepage": "https://github.com/dompdf/dompdf",
-            "support": {
-                "issues": "https://github.com/dompdf/dompdf/issues",
-                "source": "https://github.com/dompdf/dompdf/tree/v1.2.2"
-            },
-            "time": "2022-04-27T13:50:54+00:00"
-        },
-        {
             "name": "dragonmantank/cron-expression",
             "version": "v3.4.0",
             "source": {
@@ -1280,86 +1093,6 @@
                 "source": "https://github.com/ezyang/htmlpurifier/tree/v4.18.0"
             },
             "time": "2024-11-01T03:51:45+00:00"
-        },
-        {
-            "name": "fruitcake/laravel-cors",
-            "version": "v2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fruitcake/laravel-cors.git",
-                "reference": "783a74f5e3431d7b9805be8afb60fd0a8f743534"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fruitcake/laravel-cors/zipball/783a74f5e3431d7b9805be8afb60fd0a8f743534",
-                "reference": "783a74f5e3431d7b9805be8afb60fd0a8f743534",
-                "shasum": ""
-            },
-            "require": {
-                "asm89/stack-cors": "^2.0.1",
-                "illuminate/contracts": "^6|^7|^8|^9",
-                "illuminate/support": "^6|^7|^8|^9",
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "laravel/framework": "^6|^7.24|^8",
-                "orchestra/testbench-dusk": "^4|^5|^6|^7",
-                "phpunit/phpunit": "^6|^7|^8|^9",
-                "squizlabs/php_codesniffer": "^3.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.1-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Fruitcake\\Cors\\CorsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Fruitcake\\Cors\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fruitcake",
-                    "homepage": "https://fruitcake.nl"
-                },
-                {
-                    "name": "Barry vd. Heuvel",
-                    "email": "barryvdh@gmail.com"
-                }
-            ],
-            "description": "Adds CORS (Cross-Origin Resource Sharing) headers support in your Laravel application",
-            "keywords": [
-                "api",
-                "cors",
-                "crossdomain",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/fruitcake/laravel-cors/issues",
-                "source": "https://github.com/fruitcake/laravel-cors/tree/v2.2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://fruitcake.nl",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/barryvdh",
-                    "type": "github"
-                }
-            ],
-            "abandoned": true,
-            "time": "2022-02-23T14:25:13+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -2440,50 +2173,6 @@
                 "source": "https://github.com/laravel/ui/tree/v3.4.6"
             },
             "time": "2022-05-20T13:38:08+00:00"
-        },
-        {
-            "name": "laraveldaily/laravel-charts",
-            "version": "0.1.29",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/LaravelDaily/laravel-charts.git",
-                "reference": "ed91d6e7dedabec8eb3c71cca0a22c8616faea01"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/LaravelDaily/laravel-charts/zipball/ed91d6e7dedabec8eb3c71cca0a22c8616faea01",
-                "reference": "ed91d6e7dedabec8eb3c71cca0a22c8616faea01",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "LaravelDaily\\LaravelCharts\\LaravelChartsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "LaravelDaily\\LaravelCharts\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Povilas Korop",
-                    "email": "povilas@laraveldaily.com"
-                }
-            ],
-            "description": "Create charts and reports from Laravel",
-            "support": {
-                "issues": "https://github.com/LaravelDaily/laravel-charts/issues",
-                "source": "https://github.com/LaravelDaily/laravel-charts/tree/0.1.29"
-            },
-            "time": "2022-01-04T04:41:41+00:00"
         },
         {
             "name": "league/commonmark",
@@ -3767,96 +3456,6 @@
             "time": "2024-11-21T10:36:35+00:00"
         },
         {
-            "name": "phenx/php-font-lib",
-            "version": "0.5.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dompdf/php-font-lib.git",
-                "reference": "a1681e9793040740a405ac5b189275059e2a9863"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dompdf/php-font-lib/zipball/a1681e9793040740a405ac5b189275059e2a9863",
-                "reference": "a1681e9793040740a405ac5b189275059e2a9863",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "^3 || ^4 || ^5 || ^6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "FontLib\\": "src/FontLib"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Ménager",
-                    "email": "fabien.menager@gmail.com"
-                }
-            ],
-            "description": "A library to read, parse, export and make subsets of different types of font files.",
-            "homepage": "https://github.com/PhenX/php-font-lib",
-            "support": {
-                "issues": "https://github.com/dompdf/php-font-lib/issues",
-                "source": "https://github.com/dompdf/php-font-lib/tree/0.5.6"
-            },
-            "time": "2024-01-29T14:45:26+00:00"
-        },
-        {
-            "name": "phenx/php-svg-lib",
-            "version": "0.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dompdf/php-svg-lib.git",
-                "reference": "4498b5df7b08e8469f0f8279651ea5de9626ed02"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dompdf/php-svg-lib/zipball/4498b5df7b08e8469f0f8279651ea5de9626ed02",
-                "reference": "4498b5df7b08e8469f0f8279651ea5de9626ed02",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": "^7.1 || ^7.2 || ^7.3 || ^7.4 || ^8.0",
-                "sabberworm/php-css-parser": "^8.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Svg\\": "src/Svg"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Ménager",
-                    "email": "fabien.menager@gmail.com"
-                }
-            ],
-            "description": "A library to read, parse and export to PDF SVG files.",
-            "homepage": "https://github.com/PhenX/php-svg-lib",
-            "support": {
-                "issues": "https://github.com/dompdf/php-svg-lib/issues",
-                "source": "https://github.com/dompdf/php-svg-lib/tree/0.4.1"
-            },
-            "time": "2022-03-07T12:52:04+00:00"
-        },
-        {
             "name": "phpoffice/phpspreadsheet",
             "version": "1.29.12",
             "source": {
@@ -4449,25 +4048,25 @@
         },
         {
             "name": "psr/simple-cache",
-            "version": "1.0.1",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
+                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/764e0b3939f5ca87cb904f570ef9be2d78a07865",
+                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=8.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "3.0.x-dev"
                 }
             },
             "autoload": {
@@ -4482,7 +4081,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common interfaces for simple caching",
@@ -4494,9 +4093,9 @@
                 "simple-cache"
             ],
             "support": {
-                "source": "https://github.com/php-fig/simple-cache/tree/master"
+                "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
             },
-            "time": "2017-10-23T01:57:42+00:00"
+            "time": "2021-10-29T13:26:27+00:00"
         },
         {
             "name": "psy/psysh",
@@ -4774,139 +4373,6 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.0"
             },
             "time": "2025-06-25T14:20:11+00:00"
-        },
-        {
-            "name": "sabberworm/php-css-parser",
-            "version": "v8.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MyIntervals/PHP-CSS-Parser.git",
-                "reference": "d8e916507b88e389e26d4ab03c904a082aa66bb9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/MyIntervals/PHP-CSS-Parser/zipball/d8e916507b88e389e26d4ab03c904a082aa66bb9",
-                "reference": "d8e916507b88e389e26d4ab03c904a082aa66bb9",
-                "shasum": ""
-            },
-            "require": {
-                "ext-iconv": "*",
-                "php": "^5.6.20 || ^7.0.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "5.7.27 || 6.5.14 || 7.5.20 || 8.5.41",
-                "rawr/cross-data-providers": "^2.0.0"
-            },
-            "suggest": {
-                "ext-mbstring": "for parsing UTF-8 CSS"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "9.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Sabberworm\\CSS\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Raphael Schweikert"
-                },
-                {
-                    "name": "Oliver Klee",
-                    "email": "github@oliverklee.de"
-                },
-                {
-                    "name": "Jake Hotson",
-                    "email": "jake.github@qzdesign.co.uk"
-                }
-            ],
-            "description": "Parser for CSS Files written in PHP",
-            "homepage": "https://www.sabberworm.com/blog/2010/6/10/php-css-parser",
-            "keywords": [
-                "css",
-                "parser",
-                "stylesheet"
-            ],
-            "support": {
-                "issues": "https://github.com/MyIntervals/PHP-CSS-Parser/issues",
-                "source": "https://github.com/MyIntervals/PHP-CSS-Parser/tree/v8.9.0"
-            },
-            "time": "2025-07-11T13:20:48+00:00"
-        },
-        {
-            "name": "spatie/async",
-            "version": "1.6.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/async.git",
-                "reference": "c270e692f6eabafb4312e1ecd44e062032785635"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/async/zipball/c270e692f6eabafb4312e1ecd44e062032785635",
-                "reference": "c270e692f6eabafb4312e1ecd44e062032785635",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/serializable-closure": "^1.0",
-                "php": "^7.4|^8.0",
-                "symfony/process": "^3.3 || ^4.0 || ^5.0 || ^6.0 || ^7.0"
-            },
-            "require-dev": {
-                "larapack/dd": "^1.1",
-                "phpunit/phpunit": "^7.5 || ^8.5.21 || ^9.0 || ^10.0",
-                "symfony/stopwatch": "^4.0 || ^5.0 || ^6.0 || ^7.0"
-            },
-            "suggest": {
-                "ext-pcntl": "Required to use async processes",
-                "ext-posix": "Required to use async processes"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "Spatie\\Async\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brent Roose",
-                    "email": "brent@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Asynchronous and parallel PHP with the PCNTL extension",
-            "homepage": "https://github.com/spatie/async",
-            "keywords": [
-                "async",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/async/issues",
-                "source": "https://github.com/spatie/async/tree/1.6.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-12-14T13:21:46+00:00"
         },
         {
             "name": "spatie/image",
@@ -7575,67 +7041,6 @@
             "time": "2024-11-21T01:49:47+00:00"
         },
         {
-            "name": "vxm/laravel-async",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vuongxuongminh/laravel-async.git",
-                "reference": "be78774b84530c95e51964ec271084b7b7c71e1c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vuongxuongminh/laravel-async/zipball/be78774b84530c95e51964ec271084b7b7c71e1c",
-                "reference": "be78774b84530c95e51964ec271084b7b7c71e1c",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "^9.0",
-                "php": "^8.1",
-                "spatie/async": "^1.5"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^7.0",
-                "symplify/easy-coding-standard": "^11.2"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Async": "VXM\\Async\\AsyncFacade"
-                    },
-                    "providers": [
-                        "VXM\\Async\\AsyncServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "VXM\\Async\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Vuong Xuong Minh",
-                    "email": "vuongxuongminh@gmail.com"
-                }
-            ],
-            "description": "Provide an easy way to run code asynchronously for Laravel",
-            "homepage": "https://github.com/vuongxuongminh/laravel-async",
-            "keywords": [
-                "laravel-async",
-                "vxm"
-            ],
-            "support": {
-                "issues": "https://github.com/vuongxuongminh/laravel-async/issues",
-                "source": "https://github.com/vuongxuongminh/laravel-async/tree/3.0.0"
-            },
-            "time": "2023-01-27T06:31:58+00:00"
-        },
-        {
             "name": "webmozart/assert",
             "version": "1.11.0",
             "source": {
@@ -8109,142 +7514,6 @@
                 }
             ],
             "time": "2024-02-06T14:42:33+00:00"
-        },
-        {
-            "name": "laravel/dusk",
-            "version": "v6.25.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/dusk.git",
-                "reference": "25a595ac3dc82089a91af10dd23b0d58fd3f6d0b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/dusk/zipball/25a595ac3dc82089a91af10dd23b0d58fd3f6d0b",
-                "reference": "25a595ac3dc82089a91af10dd23b0d58fd3f6d0b",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-zip": "*",
-                "illuminate/console": "^6.0|^7.0|^8.0|^9.0",
-                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
-                "nesbot/carbon": "^2.0",
-                "php": "^7.2|^8.0",
-                "php-webdriver/webdriver": "^1.9.0",
-                "symfony/console": "^4.3|^5.0|^6.0",
-                "symfony/finder": "^4.3|^5.0|^6.0",
-                "symfony/process": "^4.3|^5.0|^6.0",
-                "vlucas/phpdotenv": "^3.0|^4.0|^5.2"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "orchestra/testbench": "^4.16|^5.17.1|^6.12.1|^7.0",
-                "phpunit/phpunit": "^7.5.15|^8.4|^9.0"
-            },
-            "suggest": {
-                "ext-pcntl": "Used to gracefully terminate Dusk when tests are running."
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Laravel\\Dusk\\DuskServiceProvider"
-                    ]
-                },
-                "branch-alias": {
-                    "dev-master": "6.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laravel\\Dusk\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "Laravel Dusk provides simple end-to-end testing and browser automation.",
-            "keywords": [
-                "laravel",
-                "testing",
-                "webdriver"
-            ],
-            "support": {
-                "issues": "https://github.com/laravel/dusk/issues",
-                "source": "https://github.com/laravel/dusk/tree/v6.25.2"
-            },
-            "time": "2022-09-29T09:37:07+00:00"
-        },
-        {
-            "name": "laravel/sail",
-            "version": "v1.44.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/sail.git",
-                "reference": "a09097bd2a8a38e23ac472fa6a6cf5b0d1c1d3fe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/a09097bd2a8a38e23ac472fa6a6cf5b0d1c1d3fe",
-                "reference": "a09097bd2a8a38e23ac472fa6a6cf5b0d1c1d3fe",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/console": "^9.52.16|^10.0|^11.0|^12.0",
-                "illuminate/contracts": "^9.52.16|^10.0|^11.0|^12.0",
-                "illuminate/support": "^9.52.16|^10.0|^11.0|^12.0",
-                "php": "^8.0",
-                "symfony/console": "^6.0|^7.0",
-                "symfony/yaml": "^6.0|^7.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
-                "phpstan/phpstan": "^1.10"
-            },
-            "bin": [
-                "bin/sail"
-            ],
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Laravel\\Sail\\SailServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laravel\\Sail\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "Docker files for running a basic Laravel application.",
-            "keywords": [
-                "docker",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/laravel/sail/issues",
-                "source": "https://github.com/laravel/sail"
-            },
-            "time": "2025-07-04T16:17:06+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -8730,72 +7999,6 @@
                 "source": "https://github.com/php-debugbar/php-debugbar/tree/v2.2.4"
             },
             "time": "2025-07-22T14:01:30+00:00"
-        },
-        {
-            "name": "php-webdriver/webdriver",
-            "version": "1.15.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-webdriver/php-webdriver.git",
-                "reference": "998e499b786805568deaf8cbf06f4044f05d91bf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-webdriver/php-webdriver/zipball/998e499b786805568deaf8cbf06f4044f05d91bf",
-                "reference": "998e499b786805568deaf8cbf06f4044f05d91bf",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "ext-zip": "*",
-                "php": "^7.3 || ^8.0",
-                "symfony/polyfill-mbstring": "^1.12",
-                "symfony/process": "^5.0 || ^6.0 || ^7.0"
-            },
-            "replace": {
-                "facebook/webdriver": "*"
-            },
-            "require-dev": {
-                "ergebnis/composer-normalize": "^2.20.0",
-                "ondram/ci-detector": "^4.0",
-                "php-coveralls/php-coveralls": "^2.4",
-                "php-mock/php-mock-phpunit": "^2.0",
-                "php-parallel-lint/php-parallel-lint": "^1.2",
-                "phpunit/phpunit": "^9.3",
-                "squizlabs/php_codesniffer": "^3.5",
-                "symfony/var-dumper": "^5.0 || ^6.0 || ^7.0"
-            },
-            "suggest": {
-                "ext-SimpleXML": "For Firefox profile creation"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "lib/Exception/TimeoutException.php"
-                ],
-                "psr-4": {
-                    "Facebook\\WebDriver\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A PHP client for Selenium WebDriver. Previously facebook/webdriver.",
-            "homepage": "https://github.com/php-webdriver/php-webdriver",
-            "keywords": [
-                "Chromedriver",
-                "geckodriver",
-                "php",
-                "selenium",
-                "webdriver"
-            ],
-            "support": {
-                "issues": "https://github.com/php-webdriver/php-webdriver/issues",
-                "source": "https://github.com/php-webdriver/php-webdriver/tree/1.15.2"
-            },
-            "time": "2024-11-21T15:12:59+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -10496,78 +9699,6 @@
             "time": "2024-06-13T07:21:06+00:00"
         },
         {
-            "name": "symfony/yaml",
-            "version": "v7.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "0c3555045a46ab3cd4cc5a69d161225195230edb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/0c3555045a46ab3cd4cc5a69d161225195230edb",
-                "reference": "0c3555045a46ab3cd4cc5a69d161225195230edb",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2",
-                "symfony/deprecation-contracts": "^2.5|^3.0",
-                "symfony/polyfill-ctype": "^1.8"
-            },
-            "conflict": {
-                "symfony/console": "<6.4"
-            },
-            "require-dev": {
-                "symfony/console": "^6.4|^7.0"
-            },
-            "bin": [
-                "Resources/bin/yaml-lint"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Loads and dumps YAML files",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/yaml/tree/v7.3.1"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2025-06-03T06:57:57+00:00"
-        },
-        {
             "name": "theseer/tokenizer",
             "version": "1.2.3",
             "source": {
@@ -10628,5 +9759,5 @@
         "ext-dom": "*"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
