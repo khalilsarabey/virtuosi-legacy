@@ -70,7 +70,7 @@
                                         <label><i class="la la-female"></i> Child</label>
                                         <div class="children roundtrip-button-inc qtyBtn d-flex align-items-center">
                                             <div  wire:click="dec('children')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                            <input type="text" name="children" wire:model.live="children" readonly>
+                                            <input type="text" data-form-name="children" wire:model.live="children" readonly>
                                             <div wire:click="inc('children')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                         </div>
                                     </div>

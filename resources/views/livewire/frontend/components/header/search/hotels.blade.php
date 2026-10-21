@@ -11,8 +11,8 @@
                         <div class="input-items pl-5 pl-md-0">
                             <select name="from" wire:model.live="destination" class="form-control" required>
                                 <option value selected>Select</option>
-                                @foreach($destinations as $destination)
-                                    <option value="{{ $destination->location }}">{{ $destination->city?->city }}</option>
+                                @foreach($destinations as $location => $city)
+                                    <option value="{{ $location }}">{{ $city }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -103,7 +103,7 @@
             <div class="col-12 col-lg-1">
                 <input type="hidden" name="adults" value="{{ $adults }}" />
                 <input type="hidden" name="infants" value="{{ $infants }}" />
-                <input type="hidden" name="children" value="{{ $children }}" />
+                <input type="hidden" data-form-name="children" value="{{ $children }}" />
                 <input type="hidden" name="tab" value="tab-hotels" />
                 <div class="btn-search text-center">
                     <button style="color:#fff" type="submit" id="submit" class="effect btn btn-primary btn-block btn-lg disable-styles" data-style="zoom-in">

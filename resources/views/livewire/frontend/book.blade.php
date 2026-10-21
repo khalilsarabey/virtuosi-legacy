@@ -260,7 +260,7 @@
                 @isset($query['adults'])
                 <input type="hidden" name="adults" value="{{ $query['adults'] }}">
                 <input type="hidden" name="infants" value="{{ $query['infants'] }}">
-                <input type="hidden" name="children" value="{{ $query['children'] }}">
+                <input type="hidden" data-form-name="children" value="{{ $query['children'] }}">
                 @endisset
 
                 @isset($query['departure'])

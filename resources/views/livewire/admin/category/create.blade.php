@@ -22,7 +22,7 @@
                         <div>
                             <div class="form-group {{ $errors->has('category.section_id') ? 'invalid' : '' }}">
                                 <label class="form-label" for="section">Section</label>
-                                <x-select-list required class="form-control w-100" :options="$sections"
+                                <x-select-list required id="section_id" class="form-control w-100" :options="$sections"
                                                wire:model.live="category.section_id"/>
                                 <div class="validation-message">
                                     {{ $errors->first('category.section_id') }}

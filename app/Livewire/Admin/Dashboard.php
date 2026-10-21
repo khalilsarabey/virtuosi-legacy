@@ -20,7 +20,9 @@ class Dashboard extends Component
     public $year;
     public $filter = [];
     public $topAgencies = [];
-    public $bookingsToday = [];
+    public $filtered = false;
+    // Rebuilt on every render: the computed ticket/room counts don't survive Livewire's model rehydration.
+    protected $bookingsToday = [];
     public $topWhiteLabels = [];
     public $airlines = [];
     public $locations = [];
@@ -50,7 +52,6 @@ class Dashboard extends Component
     {
         $this->year = date('Y');
         $this->bookings_date = 'today';
-        $this->bookingsToday();
         $this->airlines = Airline::orderBy('name')->pluck('name', 'id')->toArray();
         $this->locations = Location::where('active', 1)->pluck('airport_code', 'airport_code')->toArray();
         $this->labels = Agency::pluck('name', 'id')->toArray();
@@ -59,7 +60,9 @@ class Dashboard extends Component
 
     public function render()
     {
-        return view('livewire.admin.dashboard')->layout('layouts.admin');
+        $this->filtered ? $this->loadFilteredBookings() : $this->bookingsToday();
+
+        return view('livewire.admin.dashboard', ['bookingsToday' => $this->bookingsToday])->layout('layouts.admin');
     }
 
     public function getRemainingSeats()
@@ -183,6 +186,11 @@ class Dashboard extends Component
     }
 
     public function search()
+    {
+        $this->filtered = true;
+    }
+
+    protected function loadFilteredBookings()
     {
         if (isset($this->filter['label'])) {
             $bookings = Booking::where('agency_id', $this->filter['label']);

@@ -1649,6 +1649,16 @@
 </footer>
 
 @livewireScripts
+<script>
+    // A form control named "children" shadows form.children, which breaks Livewire's DOM
+    // morphing, so those inputs carry data-form-name and get their name back on submit.
+    document.addEventListener('formdata', function (e) {
+        e.target.querySelectorAll('[data-form-name]').forEach(function (input) {
+            if (!input.disabled) e.formData.set(input.dataset.formName, input.value);
+        });
+    }, true);
+</script>
+
 <script src="/js/jquery-ui.js"></script>
 <script src="/js/bootstrap.bundle.min.js"></script>
 <script src="/js/moment.min.js"></script>

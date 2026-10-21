@@ -845,7 +845,7 @@
                                         @endif
                                         <input type="hidden" name="adults" value="{{ $adults }}" />
                                         <input type="hidden" name="infants" value="{{ $infants }}" />
-                                        <input type="hidden" name="children" value="{{ $children }}" />
+                                        <input type="hidden" data-form-name="children" value="{{ $children }}" />
                                         @if(($selectedDeparture && $query['type'] != 'roundtrip' && $query['type'] != 'multi') || (($query['type'] == 'roundtrip' || $query['type'] == 'multi') && $selectedDeparture && $selectedReturn))
                                             <button
                                                 id="confirm-and-proceed-button"
@@ -929,7 +929,7 @@
                                             <input type="hidden" name="type" value="{{ $query['type'] }}" />
                                             <input type="hidden" name="adults" value="{{ $adults }}" />
                                             <input type="hidden" name="infants" value="{{ $infants }}" />
-                                            <input type="hidden" name="children" value="{{ $children }}" />
+                                            <input type="hidden" data-form-name="children" value="{{ $children }}" />
                                             @if(($selectedDeparture && $query['type'] != 'roundtrip' && $query['type'] != 'multi') || (($query['type'] == 'roundtrip' || $query['type'] == 'multi') && $selectedDeparture && $selectedReturn))
                                                 <button
                                                     class="mt-4 text-uppercase w-100 border-0 h6 btn-primary p-3"

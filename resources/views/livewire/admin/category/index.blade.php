@@ -117,7 +117,6 @@
 </div>
 
 @push('scripts')
-    <script src="https://unpkg.com/@nextapps-be/livewire-sortablejs@0.2.0/dist/livewire-sortable.js"></script>
     <script>
         Livewire.on('confirm', e => {
     if (!confirm("{{ trans('global.areYouSure') }}")) {

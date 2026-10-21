@@ -165,7 +165,7 @@
                                                         <label><i class="la la-female"></i> Child</label>
                                                         <div class="children roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                             <div wire:click="decrement('children', '{{$flight->type}}', '{{$flight->id}}')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                            <input disabled type="text" name="children" wire:model.live="children.{{$flight->id}}">
+                                                            <input disabled type="text" wire:model.live="children.{{$flight->id}}">
                                                             <div wire:ignore.self wire:click="increment('children', '{{$flight->type}}', '{{$flight->id}}', {{ ($flight->seats - $flight->tickets_count) }})" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                         </div>
                                                     </div>
@@ -191,7 +191,7 @@
                                             <input type="hidden" name="total" value="{{ $price }}" />
                                             <input type="hidden" name="adults" value="{{ $adults[$flight->id] }}" />
                                             <input type="hidden" name="infants" value="{{ $infants[$flight->id] }}" />
-                                            <input type="hidden" name="children" value="{{ $children[$flight->id] }}" />
+                                            <input type="hidden" data-form-name="children" value="{{ $children[$flight->id] }}" />
                                             <button type="submit" class="btn btn-outline-primary w-100 text-uppercase disable-styles" style="font-weight: bold; text-transform: uppercase; font-size: 13px; padding: 10px 13px; border-radius: 3px;">Book Now</button>
                                         </div>
                                     </div>

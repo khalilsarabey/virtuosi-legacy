@@ -448,7 +448,7 @@
                         </tbody>
                     </table>
                 </div>
-                @if(config('app.saad_id') == 'samadonline')
+                @if(config('app.saas_id') == 'samadonline')
                 <table id="sabre" style="display:none">
                     <thead>
                     <tr>

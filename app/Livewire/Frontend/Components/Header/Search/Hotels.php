@@ -68,7 +68,8 @@ class Hotels extends Component
         $this->destinations = Hotel::whereHas('rooms', function ($query) use ($currentDate) {
             $query->whereDate('start_date', '<=', $currentDate)
                 ->orWhereDate('end_date', '>=', $currentDate);
-        })->with('city')->select('location')->groupBy('location')->get();
+        })->with('city')->select('location')->groupBy('location')->get()
+            ->mapWithKeys(fn ($hotel) => [$hotel->location => $hotel->city?->city ?? $hotel->location])->all();
         $this->populate();
     }
 

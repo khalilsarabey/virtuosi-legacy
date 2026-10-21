@@ -22,7 +22,7 @@ window.openSubNav = function (el) {
 }
 
 window.initialSubNavLoad = function () {
-  document.getElementsByClassName('has-sub sidebar-nav-active').forEach(function(el) {
+  Array.from(document.getElementsByClassName('has-sub sidebar-nav-active')).forEach(function(el) {
     window.openSubNav(el)
   })
 }

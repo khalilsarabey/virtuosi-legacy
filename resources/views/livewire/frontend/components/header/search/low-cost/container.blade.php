@@ -113,7 +113,7 @@
                                                                             <label><i class="la la-female"></i> Child</label>
                                                                             <div class="children roundtrip-button-inc qtyBtn d-flex align-items-center">
                                                                                 <div  wire:click="dec('oneway','children')" class="qty qtyDec"><i class="la la-minus"></i></div>
-                                                                                <input type="text" name="children" wire:model.live="oneway.children">
+                                                                                <input type="text" data-form-name="children" wire:model.live="oneway.children">
                                                                                 <div wire:click="inc('oneway','children')" class="qty qtyInc"><i class="la la-plus"></i></div>
                                                                             </div>
                                                                         </div>

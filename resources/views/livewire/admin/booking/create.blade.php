@@ -92,7 +92,7 @@
     </div>
     <div class="form-group {{ $errors->has('booking.children') ? 'invalid' : '' }}">
         <label class="form-label" for="children">{{ trans('cruds.booking.fields.children') }}</label>
-        <input class="form-control" type="number" name="children" id="children" wire:model="booking.children" step="1">
+        <input class="form-control" type="number" id="children" wire:model="booking.children" step="1">
         <div class="validation-message">
             {{ $errors->first('booking.children') }}
         </div>
