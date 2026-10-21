@@ -44,8 +44,8 @@
 
         initSelect()
 
-    Livewire.hook('commit', ({ succeed }) => {
-        succeed(() => queueMicrotask(() => initSelect()))
+    Livewire.interceptMessage(({ onSuccess }) => {
+        onSuccess(({ onRender }) => onRender(() => queueMicrotask(() => initSelect())))
     });
 
     el.on('change', function (e) {
