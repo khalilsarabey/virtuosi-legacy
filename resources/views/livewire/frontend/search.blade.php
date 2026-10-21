@@ -2,7 +2,7 @@
     <livewire:frontend.components.header.search.container/>
     <div id="search-results" class="container mt-5">
         @if($hasCheaper && auth()->user()->agency_id == 1)
-            <livewire:components.round-trip-grid :query="$query" :needed_seats="$needed_seats" :foundDepartures="$departures" :foundReturns="$returns" />
+            <livewire:components.round-trip-grid wire:key="round-trip-grid" :query="$query" :needed_seats="$needed_seats" :foundDepartures="$departures" :foundReturns="$returns" />
         @endif
         <style>
             .promo-badge {

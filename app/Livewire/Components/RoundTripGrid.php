@@ -23,7 +23,9 @@ class RoundTripGrid extends Component
 
     public function mount(): void
     {
-        $this->query = request()->query();
+        // Livewire can mount this child during a parent update, where request()->query() is empty,
+        // so prefer the query passed in by the search page.
+        $this->query = $this->query ?: request()->query();
         $this->foundResultsLowestPrices = $this->getLowestPriceFromResults();
     }
 
@@ -255,7 +257,7 @@ class RoundTripGrid extends Component
             'total' => 0,
         ];
 
-        $query = request()->query();
+        $query = $this->query;
         $adults = $this->query['adults'] ?? 1;
         $children = $this->query['children'] ?? 0;
 
