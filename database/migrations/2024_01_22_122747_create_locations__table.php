@@ -1,0 +1,43 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('locations_', function (Blueprint $table) {
+            $table->bigInteger('id', true);
+            $table->string('code', 4)->nullable();
+            $table->string('airport', 50)->nullable();
+            $table->string('city_code', 8)->nullable()->index('city_code');
+            $table->string('city_name', 50)->nullable();
+            $table->string('country_iso_2', 2)->nullable()->index('country_code');
+            $table->string('country_name', 50)->nullable();
+            $table->string('timezone', 8)->nullable();
+            $table->string('lat', 9)->nullable();
+            $table->string('lon', 10)->nullable();
+            $table->boolean('active')->nullable()->default(false);
+            $table->timestamp('created_at')->nullable()->useCurrent();
+            $table->timestamp('updated_at')->nullable()->useCurrent();
+            $table->softDeletes();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('locations_');
+    }
+};

@@ -1,0 +1,56 @@
+{
+    "CheckPNRStatus": false,
+    "ApplyDiscounts": true,
+    "TransactionInfo": {
+        "SecurityGUID": "",
+        "CarrierCodes": [
+            {
+                "AccessibleCarrierCode": "FZ"
+            }
+        ],
+        "ClientIPAddress": "127.0.0.1",
+        "HistoricUserName": "FILL_HERE"
+    },
+    "ReservationInfo": {
+        "SeriesNumber": "299",
+        "ConfirmationNumber": "FILL_HERE"
+    },
+    "PNRPayments": [
+        {
+            "AccountNumber": "",
+            "AccountPin": "",
+            "CardHolder": "",
+            "CurrencyPaid": "FILL_HERE",
+            "CVCode": "",
+            "DatePaid": "FILL_HERE",
+            "ExpirationDate": "FILL_HERE",
+            "ExchangeRate": 1,
+            "ExchangeRateDate": "0001-01-01T00:00:00",
+            "OriginalAmount": "FILL_HERE",
+            "PaymentAmount": "FILL_HERE",
+            "BalanceAmount": 0,
+            "PaymentMethod": "INVC",
+            "UserID": "FILL_HERE",
+            "IataNumber": "FILL_HERE",
+            "ReservationCurrency": "FILL_HERE",
+            "ReservationAmount": "FILL_HERE",
+            "TransactionStatus": "NOTYETPROCESSED",
+            "BaseAmount": "FILL_HERE",
+            "PaymentComment": "",
+            "AuthorizationCode": "",
+            "PaymentReference": "",
+            "CardCurrency": "",
+            "MerchantID": "",
+            "ProcessorID": "",
+            "ProcessorName": "",
+            "FingerPrintingSessionID": "",
+            "GcxID": "1",
+            "GcxOptOption": "1",
+            "TerminalID": 0,
+            "ResponseMessage": "",
+            "Payor": {
+                "FirstName": ""
+            }
+        }
+    ]
+}

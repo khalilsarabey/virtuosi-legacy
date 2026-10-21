@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soap:Header>
+        <wsse:Security soap:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken wsu:Id="UsernameToken-17855236" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                <wsse:Username>FILL_HERE</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">FILL_HERE</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soap:Header>
+    <soap:Body xmlns:ns1="http://www.isaaviation.com/thinair/webservices/OTA/Extensions/2003/05" xmlns:ns2="http://www.opentravel.org/OTA/2003/05">
+        <ns2:OTA_AirBookRQ EchoToken="1" PrimaryLangID="en-us" SequenceNmbr="1" TimeStamp="2022-10-21T07:44:34.455Z" TransactionIdentifier="FILL_HERE" Version="20061">
+            <ns2:POS>
+                <ns2:Source TerminalID="FILL_HERE">
+                    <ns2:RequestorID ID="FILL_HERE" Type="4" />
+                    <ns2:BookingChannel Type="12" />
+                </ns2:Source>
+            </ns2:POS>
+            <ns2:AirItinerary>
+                <ns2:OriginDestinationOptions>
+                    <ns2:OriginDestinationOption>
+                        <ns2:FlightSegment ArrivalDateTime="FILL_HERE" DepartureDateTime="FILL_HERE" FlightNumber="FILL_HERE" RPH="FILL_HERE" returnFlag="false">
+                            <ns2:DepartureAirport LocationCode="FILL_HERE" Terminal="TerminalX" />
+                            <ns2:ArrivalAirport LocationCode="FILL_HERE" Terminal="TerminalX" />
+                            <ns2:OperatingAirline Code="FILL_HERE"/>
+                        </ns2:FlightSegment>
+                    </ns2:OriginDestinationOption>
+                </ns2:OriginDestinationOptions>
+            </ns2:AirItinerary>
+            <ns2:TravelerInfo>
+                <ns2:AirTraveler BirthDate="FILL_HERE" PassengerTypeCode="FILL_HERE_ADT_CHD_INF">
+                    <ns2:PersonName>
+                        <ns2:GivenName>FILL_HERE</ns2:GivenName>
+                        <ns2:Surname>FILL_HERE</ns2:Surname>
+                        <ns2:NameTitle>FILL_HERE</ns2:NameTitle>
+                    </ns2:PersonName>
+                    <ns2:Telephone AreaCityCode="" CountryAccessCode="FILL_HERE" PhoneNumber="FILL_HERE" />
+                    <ns2:Address>
+                        <ns2:CountryName Code="FILL_HERE" />
+                    </ns2:Address>
+                    <ns2:Document DocID="FILL_HERE" DocType="FILL_HERE_PSPT" DocHolderNationality="FILL_HERE"  ExpireDate="FILL_HERE" DocIssueCountry="FILL_HERE"/>
+                    <ns2:TravelerRefNumber RPH="FILL_HERE" />
+                </ns2:AirTraveler>
+            </ns2:TravelerInfo>
+            <ns2:Fulfillment>
+                <ns2:PaymentDetails>
+                    <ns2:PaymentDetail>
+                        <ns2:DirectBill>
+                            <ns2:CompanyName Code="FILL_HERE" />
+                        </ns2:DirectBill>
+                        <ns2:PaymentAmount Amount="FILL_HERE" CurrencyCode="FILL_HERE" DecimalPlaces="2"/>
+                    </ns2:PaymentDetail>
+                </ns2:PaymentDetails>
+            </ns2:Fulfillment>
+            <ns1:SpecialReqDetails>
+                <ns1:SSRRequests></ns1:SSRRequests>
+            </ns1:SpecialReqDetails>
+        </ns2:OTA_AirBookRQ>
+        <ns1:AAAirBookRQExt>
+            <ns1:ContactInfo>
+                <ns1:PersonName>
+                    <ns1:Title>FILL_HERE</ns1:Title>
+                    <ns1:FirstName>FILL_HERE</ns1:FirstName>
+                    <ns1:LastName>FILL_HERE</ns1:LastName>
+                </ns1:PersonName>
+                <ns1:Telephone>
+                    <ns1:PhoneNumber>FILL_HERE</ns1:PhoneNumber>
+                    <ns1:CountryCode>FILL_HERE</ns1:CountryCode>
+                    <ns1:AreaCode></ns1:AreaCode>
+                </ns1:Telephone>
+                <ns1:Email>FILL_HERE</ns1:Email>
+                <ns1:Address>
+                    <ns1:AddressLine1>FILL_HERE</ns1:AddressLine1>
+                    <ns1:CityName>FILL_HERE</ns1:CityName>
+                    <ns1:CountryName>
+                        <ns1:CountryName>FILL_HERE</ns1:CountryName>
+                        <ns1:CountryCode>FILL_HERE</ns1:CountryCode>
+                    </ns1:CountryName>
+                    <ns1:taxRegNo></ns1:taxRegNo>
+                </ns1:Address>
+            </ns1:ContactInfo>
+        </ns1:AAAirBookRQExt>
+    </soap:Body>
+</soap:Envelope>

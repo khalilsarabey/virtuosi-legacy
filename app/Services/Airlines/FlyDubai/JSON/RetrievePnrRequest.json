@@ -1,0 +1,15 @@
+{
+    "ActionType": 2,
+    "ReservationInfo": {
+        "SeriesNumber": "299",
+        "ConfirmationNumber": "FILL_HERE"
+    },
+    "SecurityGUID": "",
+    "CarrierCodes": [
+        {
+            "AccessibleCarrierCode": "FZ"
+        }
+    ],
+    "ClientIPAddress": "127.0.0.1",
+    "HistoricUserName": "api"
+}

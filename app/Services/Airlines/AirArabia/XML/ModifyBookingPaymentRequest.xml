@@ -1,0 +1,41 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/03/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soap:Header>
+      <wsse:Security soap:mustUnderstand="1">
+         <wsse:UsernameToken wsu:Id="SecurityToken-83e43a07-13d8-4763-b4c0-b2d8e98a8c78">
+            <wsse:Username>FILL_HERE</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">FILL_HERE</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soap:Header>
+   <soap:Body>
+      <OTA_AirBookModifyRQ EchoToken="EchoToken-StaffTravel" SequenceNmbr="101" Target="Test" TransactionIdentifier="FILL_HERE" Version="0.1" xmlns="http://www.opentravel.org/OTA/2003/05">
+         <POS>
+            <Source TerminalID="FILL_HERE">
+                <RequestorID ID="FILL_HERE" Type="4" />
+                <BookingChannel Type="12" />
+            </Source>
+         </POS>
+         <AirBookModifyRQ ModificationType="9">
+            <Fulfillment>
+               <PaymentDetails>
+                  <PaymentDetail>
+                     <DirectBill>
+                        <CompanyName Code="FILL_HERE"/>
+                     </DirectBill>
+                     <PaymentAmount Amount="FILL_HERE" CurrencyCode="FILL_HERE" DecimalPlaces="2"/>
+                  </PaymentDetail>
+               </PaymentDetails>
+            </Fulfillment>
+            <BookingReferenceID ID="FILL_HERE" Type="14"/>
+         </AirBookModifyRQ>
+      </OTA_AirBookModifyRQ>
+      <AAAirBookModifyRQExt xmlns="http://www.isaaviation.com/thinair/webservices/OTA/Extensions/2003/05">
+         <AALoadDataOptions>
+            <LoadTravelerInfo>true</LoadTravelerInfo>
+            <LoadAirItinery>true</LoadAirItinery>
+            <LoadPriceInfoTotals>true</LoadPriceInfoTotals>
+            <LoadFullFilment>true</LoadFullFilment>
+         </AALoadDataOptions>
+      </AAAirBookModifyRQExt>
+   </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,2366 @@
+{
+    "RetrieveFareQuoteDateRangeResponse": {
+        "RetrieveFareQuoteDateRangeResult": {
+            "Exceptions": {
+                "ExceptionInformation.Exception": [
+                    {
+                        "ExceptionCode": 1,
+                        "ExceptionDescription": "Successful Transaction",
+                        "ExceptionSource": "RetrieveFareQuoteDateRange",
+                        "ExceptionLevel": "SUCCESS"
+                    }
+                ]
+            },
+            "FlightSegments": {
+                "FlightSegment": [
+                    {
+                        "LFID": 14455604,
+                        "DepartureDate": "2024-01-20T17:10:00",
+                        "ArrivalDate": "2024-01-20T21:10:00",
+                        "LegCount": 1,
+                        "International": true,
+                        "FareTypes": {
+                            "FareType": [
+                                {
+                                    "FareTypeID": 11,
+                                    "SolnId": 1,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "LITE",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": { "ServiceIDs": [] },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 1,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "I",
+                                                        "FBCode": "IR6AE2",
+                                                        "BaseFareAmtNoTaxes": 294.0,
+                                                        "BaseFareAmt": 294.0,
+                                                        "FareAmtNoTaxes": 294.0,
+                                                        "BaseFareAmtInclTax": 401.7,
+                                                        "FareAmtInclTax": 401.7,
+                                                        "PTCID": 1,
+                                                        "Cabin": "ECONOMY",
+                                                        "SeatsAvailable": 9,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 294.0,
+                                                        "DisplayTaxSum": 107.7,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 1624,
+                                                                    "Amt": 20.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 75.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4844,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 11947,
+                                                                    "Amt": 9.5,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "450",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "450",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "xxzdud9sRLVqbSGn62z/xFd1seULJqBK+3lX41TTPDo=",
+                                                        "OriginalFare": 294.0,
+                                                        "hashcode": "4c26cbc741e70256ffcfccab67448245a7593151138b01290cebfdc719ecfa96",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "I",
+                                                                    "Cabin": "Economy",
+                                                                    "PFID": 167771,
+                                                                    "DepartureDate": "2024-01-20T17:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "ToTime": "0",
+                                                                        "Type": "BEFOREDEPARTURE"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "ToTime": "0",
+                                                                        "Type": "BEFOREDEPARTURE"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "FareTypeID": 11,
+                                    "SolnId": 5,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "LITE",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": { "ServiceIDs": [] },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 5,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "I",
+                                                        "FBCode": "IR6AE2",
+                                                        "BaseFareAmtNoTaxes": 295.0,
+                                                        "BaseFareAmt": 295.0,
+                                                        "FareAmtNoTaxes": 295.0,
+                                                        "BaseFareAmtInclTax": 402.7,
+                                                        "FareAmtInclTax": 402.7,
+                                                        "PTCID": 1,
+                                                        "Cabin": "ECONOMY",
+                                                        "SeatsAvailable": 9,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 295.0,
+                                                        "DisplayTaxSum": 107.7,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 1624,
+                                                                    "Amt": 20.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 75.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4844,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 11947,
+                                                                    "Amt": 9.5,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "450",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "450",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "7AVROQBPrrb6v4sbM5Rof1d1seULJqBK+3lX41TTPDo=",
+                                                        "OriginalFare": 294.5,
+                                                        "hashcode": "b51feb97ef9e02572358050b41aa8e88871c157f23adfa8afbb25f8946cd34dd",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "I",
+                                                                    "Cabin": "Economy",
+                                                                    "PFID": 167771,
+                                                                    "DepartureDate": "2024-01-20T17:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "ToTime": "0",
+                                                                        "Type": "BEFOREDEPARTURE"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "ToTime": "0",
+                                                                        "Type": "BEFOREDEPARTURE"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "FareTypeID": 12,
+                                    "SolnId": 23,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "VALUE",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": {
+                                        "ServiceIDs": [
+                                            {
+                                                "ID": 11186,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            }
+                                        ]
+                                    },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 23,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "I",
+                                                        "FBCode": "IRB7AE2",
+                                                        "BaseFareAmtNoTaxes": 299.0,
+                                                        "BaseFareAmt": 299.0,
+                                                        "FareAmtNoTaxes": 299.0,
+                                                        "BaseFareAmtInclTax": 406.7,
+                                                        "FareAmtInclTax": 406.7,
+                                                        "PTCID": 1,
+                                                        "Cabin": "ECONOMY",
+                                                        "SeatsAvailable": 9,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 299.0,
+                                                        "DisplayTaxSum": 107.7,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 1624,
+                                                                    "Amt": 20.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 75.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4844,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 8946,
+                                                                    "Amt": 0.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 11947,
+                                                                    "Amt": 9.5,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "900",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "900",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "7sbz0XsZFGXvwxs+jPuw4Hlx9YQ7sA0PjJR5nudxRxA=",
+                                                        "OriginalFare": 299.0,
+                                                        "hashcode": "2e68d72b9f03ea67dadcb3a7a29a654274c5749bd76caaf5f9302bb5dfa3c425",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "I",
+                                                                    "Cabin": "Economy",
+                                                                    "PFID": 167771,
+                                                                    "DepartureDate": "2024-01-20T17:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO",
+                                                                        "Amount": "200.0"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "FareTypeID": 12,
+                                    "SolnId": 7,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "VALUE",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": {
+                                        "ServiceIDs": [
+                                            {
+                                                "ID": 11186,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            }
+                                        ]
+                                    },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 7,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "I",
+                                                        "FBCode": "IRB7AE2",
+                                                        "BaseFareAmtNoTaxes": 300.0,
+                                                        "BaseFareAmt": 300.0,
+                                                        "FareAmtNoTaxes": 300.0,
+                                                        "BaseFareAmtInclTax": 407.7,
+                                                        "FareAmtInclTax": 407.7,
+                                                        "PTCID": 1,
+                                                        "Cabin": "ECONOMY",
+                                                        "SeatsAvailable": 9,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 300.0,
+                                                        "DisplayTaxSum": 107.7,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 1624,
+                                                                    "Amt": 20.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 75.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4844,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 8946,
+                                                                    "Amt": 0.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 11947,
+                                                                    "Amt": 9.5,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "900",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "900",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "bvxsV2v9URRkv9BFWwAmCld1seULJqBK+3lX41TTPDo=",
+                                                        "OriginalFare": 299.5,
+                                                        "hashcode": "74ce3d50cbc28c201df7d561988483f32e894fc6a3937eb3e09a7cfd6940ec6d",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "I",
+                                                                    "Cabin": "Economy",
+                                                                    "PFID": 167771,
+                                                                    "DepartureDate": "2024-01-20T17:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO",
+                                                                        "Amount": "200.0"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "FareTypeID": 12,
+                                    "SolnId": 3,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "VALUE",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": {
+                                        "ServiceIDs": [
+                                            {
+                                                "ID": 11186,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            }
+                                        ]
+                                    },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 3,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "I",
+                                                        "FBCode": "IRB7AE2",
+                                                        "BaseFareAmtNoTaxes": 300.0,
+                                                        "BaseFareAmt": 300.0,
+                                                        "FareAmtNoTaxes": 300.0,
+                                                        "BaseFareAmtInclTax": 407.7,
+                                                        "FareAmtInclTax": 407.7,
+                                                        "PTCID": 1,
+                                                        "Cabin": "ECONOMY",
+                                                        "SeatsAvailable": 9,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 300.0,
+                                                        "DisplayTaxSum": 107.7,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 1624,
+                                                                    "Amt": 20.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 75.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4844,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 8946,
+                                                                    "Amt": 0.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 11947,
+                                                                    "Amt": 9.5,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "900",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "900",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "fT+rxa2HgqPakSJ9ufq3lQ==",
+                                                        "OriginalFare": 300.0,
+                                                        "hashcode": "bcf256541e2536008adab32ab3c0aca4cd280603d5cdce13fa5bd831bfdade54",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "I",
+                                                                    "Cabin": "Economy",
+                                                                    "PFID": 167771,
+                                                                    "DepartureDate": "2024-01-20T17:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO",
+                                                                        "Amount": "200.0"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "FareTypeID": 13,
+                                    "SolnId": 27,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "FLEX",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": {
+                                        "ServiceIDs": [
+                                            {
+                                                "ID": 11186,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            },
+                                            {
+                                                "ID": 11187,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            }
+                                        ]
+                                    },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 27,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "I",
+                                                        "FBCode": "IRL8AE2",
+                                                        "BaseFareAmtNoTaxes": 400.0,
+                                                        "BaseFareAmt": 400.0,
+                                                        "FareAmtNoTaxes": 400.0,
+                                                        "BaseFareAmtInclTax": 507.7,
+                                                        "FareAmtInclTax": 507.7,
+                                                        "PTCID": 1,
+                                                        "Cabin": "ECONOMY",
+                                                        "SeatsAvailable": 9,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 400.0,
+                                                        "DisplayTaxSum": 107.7,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 1624,
+                                                                    "Amt": 20.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 75.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4844,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 8947,
+                                                                    "Amt": 0.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 11947,
+                                                                    "Amt": 9.5,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "2250",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "2250",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "8JArWbSQe7hGn5XEmVKkInlx9YQ7sA0PjJR5nudxRxA=",
+                                                        "OriginalFare": 400.0,
+                                                        "hashcode": "c3e4f44b95a66a17712b12d89db4ff57b7412af634667537217fb8f54c87a85c",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "I",
+                                                                    "Cabin": "Economy",
+                                                                    "PFID": 167771,
+                                                                    "DepartureDate": "2024-01-20T17:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "0",
+                                                                        "Type": "BEFOREDEPARTURE"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO",
+                                                                        "Amount": "0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "FareTypeID": 13,
+                                    "SolnId": 15,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "FLEX",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": {
+                                        "ServiceIDs": [
+                                            {
+                                                "ID": 11186,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            },
+                                            {
+                                                "ID": 11187,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            }
+                                        ]
+                                    },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 15,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "I",
+                                                        "FBCode": "IRL8AE2",
+                                                        "BaseFareAmtNoTaxes": 401.0,
+                                                        "BaseFareAmt": 401.0,
+                                                        "FareAmtNoTaxes": 401.0,
+                                                        "BaseFareAmtInclTax": 508.7,
+                                                        "FareAmtInclTax": 508.7,
+                                                        "PTCID": 1,
+                                                        "Cabin": "ECONOMY",
+                                                        "SeatsAvailable": 9,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 401.0,
+                                                        "DisplayTaxSum": 107.7,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 1624,
+                                                                    "Amt": 20.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 75.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4844,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 8947,
+                                                                    "Amt": 0.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 11947,
+                                                                    "Amt": 9.5,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "2250",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "2250",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "1M9/XhgMas75x94OCEcEO6Po9zvT1v9vU2ilKVsTNlg=",
+                                                        "OriginalFare": 400.5,
+                                                        "hashcode": "3232194140df2dd79ee5f8ce540430db1dfabd8eec5749195ce1f8b48b39b9af",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "I",
+                                                                    "Cabin": "Economy",
+                                                                    "PFID": 167771,
+                                                                    "DepartureDate": "2024-01-20T17:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "0",
+                                                                        "Type": "BEFOREDEPARTURE"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO",
+                                                                        "Amount": "0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "FareTypeID": 13,
+                                    "SolnId": 11,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "FLEX",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": {
+                                        "ServiceIDs": [
+                                            {
+                                                "ID": 11186,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            },
+                                            {
+                                                "ID": 11187,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            }
+                                        ]
+                                    },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 11,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "I",
+                                                        "FBCode": "IRL8AE2",
+                                                        "BaseFareAmtNoTaxes": 401.0,
+                                                        "BaseFareAmt": 401.0,
+                                                        "FareAmtNoTaxes": 401.0,
+                                                        "BaseFareAmtInclTax": 508.7,
+                                                        "FareAmtInclTax": 508.7,
+                                                        "PTCID": 1,
+                                                        "Cabin": "ECONOMY",
+                                                        "SeatsAvailable": 9,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 401.0,
+                                                        "DisplayTaxSum": 107.7,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 1624,
+                                                                    "Amt": 20.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 75.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4844,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 8947,
+                                                                    "Amt": 0.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 11947,
+                                                                    "Amt": 9.5,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "2250",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "2250",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "d6/ynwxTt++8zkmqydoZ5gUBh6DN5amHLLqwkatz5VM=",
+                                                        "OriginalFare": 401.0,
+                                                        "hashcode": "06032f69e42b8c549bb9caec6f8143b095ba6d05d40df03be962a6f30fa7dcad",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "I",
+                                                                    "Cabin": "Economy",
+                                                                    "PFID": 167771,
+                                                                    "DepartureDate": "2024-01-20T17:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "0",
+                                                                        "Type": "BEFOREDEPARTURE"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO",
+                                                                        "Amount": "0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "FareTypeID": 15,
+                                    "SolnId": 25,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "Business",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": {
+                                        "ServiceIDs": [
+                                            {
+                                                "ID": 6545,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            }
+                                        ]
+                                    },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 25,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "Z",
+                                                        "FBCode": "ZR9AE2",
+                                                        "BaseFareAmtNoTaxes": 1366.0,
+                                                        "BaseFareAmt": 1366.0,
+                                                        "FareAmtNoTaxes": 1366.0,
+                                                        "BaseFareAmtInclTax": 1638.7,
+                                                        "FareAmtInclTax": 1638.7,
+                                                        "PTCID": 1,
+                                                        "Cabin": "BUSINESS",
+                                                        "SeatsAvailable": 8,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 1366.0,
+                                                        "DisplayTaxSum": 272.7,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 1624,
+                                                                    "Amt": 20.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 240.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4844,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 6544,
+                                                                    "Amt": 0.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 11947,
+                                                                    "Amt": 9.5,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "3750",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "3750",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "5OAHMg3LgX8jgZXYYLhPnITOxgn3eW/DRJvd7dlhlyb401KJDPmcLabFC62TaSb5kObuPQ1tsQbSWwtaN8ndGA==",
+                                                        "OriginalFare": 1233.5,
+                                                        "hashcode": "82389c87ec981cc36e3fc12dc4b8c82b7d4c25d95f96c3640fdee06774fe6ea5",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "Z",
+                                                                    "Cabin": "Business",
+                                                                    "PFID": 167771,
+                                                                    "DepartureDate": "2024-01-20T17:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "0",
+                                                                        "Type": "BEFOREDEPARTURE"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO",
+                                                                        "Amount": "0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "FareTypeID": 15,
+                                    "SolnId": 19,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "Business",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": {
+                                        "ServiceIDs": [
+                                            {
+                                                "ID": 6545,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            }
+                                        ]
+                                    },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 19,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "Z",
+                                                        "FBCode": "ZR9AE2",
+                                                        "BaseFareAmtNoTaxes": 1367.0,
+                                                        "BaseFareAmt": 1367.0,
+                                                        "FareAmtNoTaxes": 1367.0,
+                                                        "BaseFareAmtInclTax": 1639.7,
+                                                        "FareAmtInclTax": 1639.7,
+                                                        "PTCID": 1,
+                                                        "Cabin": "BUSINESS",
+                                                        "SeatsAvailable": 8,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 1367.0,
+                                                        "DisplayTaxSum": 272.7,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 1624,
+                                                                    "Amt": 20.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 240.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 4844,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 6544,
+                                                                    "Amt": 0.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 11947,
+                                                                    "Amt": 9.5,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "3750",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "3750",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "o1pJ15TKgwWxtfQdZjBkh4TOxgn3eW/DRJvd7dlhlyb401KJDPmcLabFC62TaSb5usL3YTO9OLLlcw1uvN2zrg==",
+                                                        "OriginalFare": 1234.0,
+                                                        "hashcode": "c68c0f4ef342579d572c703069aab7502eb531239f4326e0d1dc2e9d92ba6e15",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "Z",
+                                                                    "Cabin": "Business",
+                                                                    "PFID": 167771,
+                                                                    "DepartureDate": "2024-01-20T17:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "0",
+                                                                        "Type": "BEFOREDEPARTURE"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO",
+                                                                        "Amount": "0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "FlightLegDetails": {
+                            "FlightLegDetail": [
+                                {
+                                    "PFID": 167771,
+                                    "DepartureDate": "2024-01-20T17:10:00"
+                                }
+                            ]
+                        },
+                        "value": "true"
+                    },
+                    {
+                        "LFID": 14455564,
+                        "DepartureDate": "2024-01-26T22:10:00",
+                        "ArrivalDate": "2024-01-27T07:30:00",
+                        "LegCount": 2,
+                        "International": true,
+                        "FareTypes": {
+                            "FareType": [
+                                {
+                                    "FareTypeID": 11,
+                                    "SolnId": 2,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "LITE",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": { "ServiceIDs": [] },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 2,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "I",
+                                                        "FBCode": "IR6AE2",
+                                                        "BaseFareAmtNoTaxes": 294.0,
+                                                        "BaseFareAmt": 294.0,
+                                                        "FareAmtNoTaxes": 294.0,
+                                                        "BaseFareAmtInclTax": 400.0,
+                                                        "FareAmtInclTax": 400.0,
+                                                        "PTCID": 1,
+                                                        "Cabin": "ECONOMY",
+                                                        "SeatsAvailable": 9,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 294.0,
+                                                        "DisplayTaxSum": 106.0,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 75.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 12610,
+                                                                    "Amt": 29.6,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "450",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "450",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "hQRpa9v3BIRGBZOQY6VL3+LOmUxEx9dXgL5VBlJ9cjc=",
+                                                        "OriginalFare": 294.0,
+                                                        "hashcode": "9034fd86b937f98fddbd8fbd4477ae38b26b49d812581f8e494c35da597f8e35",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "I",
+                                                                    "Cabin": "Economy",
+                                                                    "PFID": 167751,
+                                                                    "DepartureDate": "2024-01-26T22:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "ToTime": "0",
+                                                                        "Type": "BEFOREDEPARTURE"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "ToTime": "0",
+                                                                        "Type": "BEFOREDEPARTURE"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "FareTypeID": 12,
+                                    "SolnId": 6,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "VALUE",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": {
+                                        "ServiceIDs": [
+                                            {
+                                                "ID": 11186,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            }
+                                        ]
+                                    },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 6,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "I",
+                                                        "FBCode": "IRB7AE2",
+                                                        "BaseFareAmtNoTaxes": 300.0,
+                                                        "BaseFareAmt": 300.0,
+                                                        "FareAmtNoTaxes": 300.0,
+                                                        "BaseFareAmtInclTax": 406.0,
+                                                        "FareAmtInclTax": 406.0,
+                                                        "PTCID": 1,
+                                                        "Cabin": "ECONOMY",
+                                                        "SeatsAvailable": 9,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 300.0,
+                                                        "DisplayTaxSum": 106.0,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 75.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 8946,
+                                                                    "Amt": 0.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 12610,
+                                                                    "Amt": 29.6,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "900",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "900",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "E/dIKnV2ZO20RuL4ydftdCq3Oj96bJ9tpsTKoDaRsac=",
+                                                        "OriginalFare": 299.5,
+                                                        "hashcode": "c5b8a825548cf6a80efa34c305bef73241f1e5af866a9fa47645dd5a583dd66b",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "I",
+                                                                    "Cabin": "Economy",
+                                                                    "PFID": 167751,
+                                                                    "DepartureDate": "2024-01-26T22:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO",
+                                                                        "Amount": "200.0"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "0",
+                                                                        "Type": "NOSHOW"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "FareTypeID": 13,
+                                    "SolnId": 10,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "FLEX",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": {
+                                        "ServiceIDs": [
+                                            {
+                                                "ID": 11186,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            },
+                                            {
+                                                "ID": 11187,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            }
+                                        ]
+                                    },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 10,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "I",
+                                                        "FBCode": "IRL8AE2",
+                                                        "BaseFareAmtNoTaxes": 401.0,
+                                                        "BaseFareAmt": 401.0,
+                                                        "FareAmtNoTaxes": 401.0,
+                                                        "BaseFareAmtInclTax": 507.0,
+                                                        "FareAmtInclTax": 507.0,
+                                                        "PTCID": 1,
+                                                        "Cabin": "ECONOMY",
+                                                        "SeatsAvailable": 9,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 401.0,
+                                                        "DisplayTaxSum": 106.0,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 75.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 8947,
+                                                                    "Amt": 0.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 12610,
+                                                                    "Amt": 29.6,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "2250",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "2250",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "C+BxVuM9y+2eOLpr7uMYCgch/O01c2/dcDtIHZ68HUc=",
+                                                        "OriginalFare": 400.5,
+                                                        "hashcode": "35987031c98a4be61d2d4d92cd150e081f66ecd646c0e35ff015d050c4796496",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "I",
+                                                                    "Cabin": "Economy",
+                                                                    "PFID": 167751,
+                                                                    "DepartureDate": "2024-01-26T22:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "0",
+                                                                        "Type": "BEFOREDEPARTURE"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO",
+                                                                        "Amount": "0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "FareTypeID": 15,
+                                    "SolnId": 22,
+                                    "CMPFare": "false",
+                                    "FareTypeName": "Business",
+                                    "FilterRemove": false,
+                                    "Changeable": 0,
+                                    "Refundable": 0,
+                                    "ApplicableServices": {
+                                        "ServiceIDs": [
+                                            {
+                                                "ID": 6545,
+                                                "Amount": 0.0,
+                                                "PaxIDs": { "ID": "1" }
+                                            }
+                                        ]
+                                    },
+                                    "FareInfos": {
+                                        "FareInfo": [
+                                            {
+                                                "Pax": [
+                                                    {
+                                                        "ID": 1,
+                                                        "FareID": 22,
+                                                        "PaxCount": 1,
+                                                        "FCCode": "Z",
+                                                        "FBCode": "ZR9AE2",
+                                                        "BaseFareAmtNoTaxes": 1367.0,
+                                                        "BaseFareAmt": 1367.0,
+                                                        "FareAmtNoTaxes": 1367.0,
+                                                        "BaseFareAmtInclTax": 1638.0,
+                                                        "FareAmtInclTax": 1638.0,
+                                                        "PTCID": 1,
+                                                        "Cabin": "BUSINESS",
+                                                        "SeatsAvailable": 9,
+                                                        "InfantSeatsAvailable": 15,
+                                                        "DisplayFareAmt": 1367.0,
+                                                        "DisplayTaxSum": 271.0,
+                                                        "SpecialMarketed": false,
+                                                        "PromotionCatID": 0,
+                                                        "ApplicableTaxDetails": {
+                                                            "ApplicableTaxDetail": [
+                                                                {
+                                                                    "TaxID": 4246,
+                                                                    "Amt": 240.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 6544,
+                                                                    "Amt": 0.0,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 10386,
+                                                                    "Amt": 1.4,
+                                                                    "InitiatingTaxID": 0
+                                                                },
+                                                                {
+                                                                    "TaxID": 12610,
+                                                                    "Amt": 29.6,
+                                                                    "InitiatingTaxID": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        "CMPFare": "false",
+                                                        "AccruedPoints": {
+                                                            "BaseRewardPoints": "3750",
+                                                            "BonusRewardPoints": "0",
+                                                            "BaseTierPoints": "3750",
+                                                            "BonusTierPoints": "0",
+                                                            "TierBonusMiles": "0",
+                                                            "TierBonusTierMiles": "0"
+                                                        },
+                                                        "RuleId": "t+pe1e3l2i3+5dFVo7S77wDvxLkakCYTTxM7AMQ6iAJc4QnZ7t+VNkTg2Ff6Vkl3OxZ0c59uFgyTZQmIEn8fp6yUDlWpPEDiwnaqatGn/iU=",
+                                                        "OriginalFare": 1234.0,
+                                                        "hashcode": "5882bd18e83ff3a7c79b3a463c1aacd5d3a9adf9a9ba64501001ff80bd5d38f0",
+                                                        "BookingCodes": {
+                                                            "Bookingcode": [
+                                                                {
+                                                                    "RBD": "Z",
+                                                                    "Cabin": "Business",
+                                                                    "PFID": 167751,
+                                                                    "DepartureDate": "2024-01-26T22:10:00"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "FareCarrier": "FZ",
+                                                        "Penalties": {
+                                                            "ChangeFees": {
+                                                                "ChangeFee": [
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "0",
+                                                                        "Type": "BEFOREDEPARTURE"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO"
+                                                                    },
+                                                                    {
+                                                                        "DateChangeInd": true,
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "CancellationFees": {
+                                                                "RefundPenalty": [
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "ToTime": "24",
+                                                                        "Type": "UPTO",
+                                                                        "Amount": "0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "24",
+                                                                        "ToTime": "0",
+                                                                        "Type": "WITHIN",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "Currency": "AED",
+                                                                        "PenaltyType": "A",
+                                                                        "FromTime": "0",
+                                                                        "ToTime": "720",
+                                                                        "Type": "NOSHOWUPTO",
+                                                                        "Amount": "400.0"
+                                                                    },
+                                                                    {
+                                                                        "PenaltyType": "P",
+                                                                        "Percentage": "100",
+                                                                        "FromTime": "720",
+                                                                        "Type": "NOSHOWAFTER"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "FlightLegDetails": {
+                            "FlightLegDetail": [
+                                {
+                                    "PFID": 167751,
+                                    "DepartureDate": "2024-01-26T22:10:00"
+                                }
+                            ]
+                        },
+                        "value": "true"
+                    }
+                ]
+            },
+            "LegDetails": {
+                "LegDetail": [
+                    {
+                        "PFID": 167751,
+                        "DepartureDate": "2024-01-26T22:10:00",
+                        "Origin": "PRG",
+                        "Destination": "DXB",
+                        "FlightNum": "1782",
+                        "International": true,
+                        "ArrivalDate": "2024-01-27T07:30:00",
+                        "FlightTime": 380.0,
+                        "OperatingCarrier": "FZ",
+                        "MarketingCarrier": "FZ",
+                        "MarketingFlightNum": "1782",
+                        "FromTerminal": "",
+                        "ToTerminal": "3",
+                        "EQP": "73X",
+                        "GeneralEQP": "7M8"
+                    },
+                    {
+                        "PFID": 167771,
+                        "DepartureDate": "2024-01-20T17:10:00",
+                        "Origin": "DXB",
+                        "Destination": "PRG",
+                        "FlightNum": "1781",
+                        "International": true,
+                        "ArrivalDate": "2024-01-20T21:10:00",
+                        "FlightTime": 420.0,
+                        "OperatingCarrier": "FZ",
+                        "MarketingCarrier": "FZ",
+                        "MarketingFlightNum": "1781",
+                        "FromTerminal": "3",
+                        "ToTerminal": "",
+                        "EQP": "73X",
+                        "GeneralEQP": "7M8"
+                    }
+                ]
+            },
+            "SegmentDetails": {
+                "SegmentDetail": [
+                    {
+                        "LFID": 14455604,
+                        "Origin": "DXB",
+                        "Destination": "PRG",
+                        "DepartureDate": "2024-01-20T17:10:00",
+                        "CarrierCode": "FZ",
+                        "ArrivalDate": "2024-01-20T21:10:00",
+                        "Stops": 0,
+                        "FlightTime": 420.0,
+                        "AircraftType": "73X",
+                        "SellingCarrier": "FZ",
+                        "FlightNum": "1781",
+                        "OperatingCarrier": "FZ",
+                        "OperatingFlightNum": "1781",
+                        "FlyMonday": false,
+                        "FlyTuesday": false,
+                        "FlyWednesday": false,
+                        "FlyThursday": false,
+                        "FlyFriday": false,
+                        "FlySaturday": false,
+                        "FlySunday": false,
+                        "flightCorrelationID": "GgCPCrJpxaiLb7yF1vJFKw=="
+                    },
+                    {
+                        "LFID": 14455564,
+                        "Origin": "PRG",
+                        "Destination": "DXB",
+                        "DepartureDate": "2024-01-26T22:10:00",
+                        "CarrierCode": "FZ",
+                        "ArrivalDate": "2024-01-27T07:30:00",
+                        "Stops": 0,
+                        "FlightTime": 380.0,
+                        "AircraftType": "73X",
+                        "SellingCarrier": "FZ",
+                        "FlightNum": "1782",
+                        "OperatingCarrier": "FZ",
+                        "OperatingFlightNum": "1782",
+                        "FlyMonday": false,
+                        "FlyTuesday": false,
+                        "FlyWednesday": false,
+                        "FlyThursday": false,
+                        "FlyFriday": false,
+                        "FlySaturday": false,
+                        "FlySunday": false,
+                        "flightCorrelationID": "7YMGycDkMGEbaAShLkF3Ig=="
+                    }
+                ]
+            },
+            "TaxDetails": {
+                "TaxDetail": [
+                    {
+                        "TaxID": 4844,
+                        "TaxCode": "TP",
+                        "CodeType": "TAX",
+                        "TaxDesc": "Passengers Security & Safety Service Fees"
+                    },
+                    {
+                        "TaxID": 10386,
+                        "TaxCode": "ZR",
+                        "CodeType": "TAX",
+                        "TaxDesc": "Advanced passenger information fee"
+                    },
+                    {
+                        "TaxID": 11947,
+                        "TaxCode": "F6",
+                        "CodeType": "TAX",
+                        "TaxDesc": "Passenger Facilities Charge."
+                    },
+                    {
+                        "TaxID": 1624,
+                        "TaxCode": "AE",
+                        "CodeType": "TAX",
+                        "TaxDesc": "Passenger Service Charge (Intl)"
+                    },
+                    {
+                        "TaxID": 4246,
+                        "TaxCode": "YQ",
+                        "CodeType": "TAX",
+                        "TaxDesc": "YQ - DUMMY"
+                    },
+                    {
+                        "TaxID": 12610,
+                        "TaxCode": "CZ",
+                        "CodeType": "TAX",
+                        "TaxDesc": "Embarkation Tax(International)"
+                    },
+                    {
+                        "TaxID": 8946,
+                        "TaxCode": "BAGB",
+                        "CodeType": "BAGB",
+                        "TaxDesc": "20kg BAG INCLUDED IN FARE"
+                    },
+                    {
+                        "TaxID": 8947,
+                        "TaxCode": "BAGL",
+                        "CodeType": "BAGL",
+                        "TaxDesc": "30kg BAG INCLUDED IN FARE"
+                    },
+                    {
+                        "TaxID": 6544,
+                        "TaxCode": "JBAG",
+                        "CodeType": "JBAG",
+                        "TaxDesc": "40kg Baggage allowance Business"
+                    }
+                ]
+            },
+            "ServiceDetails": {
+                "ServiceDetail": [
+                    {
+                        "ID": 11186,
+                        "Code": "MLIN",
+                        "Description": "Standard meal"
+                    },
+                    {
+                        "ID": 11187,
+                        "Code": "INST",
+                        "Description": "Included seat"
+                    },
+                    {
+                        "ID": 6545,
+                        "Code": "IFPJ",
+                        "Description": "In flight entertainment Business"
+                    }
+                ]
+            },
+            "Combinability": {
+                "BS": [
+                    { "ID": 1, "SolnRef": [1, 2] },
+                    { "ID": 2, "SolnRef": [3, 2] },
+                    { "ID": 3, "SolnRef": [5, 6] },
+                    { "ID": 4, "SolnRef": [7, 6] },
+                    { "ID": 5, "SolnRef": [5, 10] },
+                    { "ID": 6, "SolnRef": [11, 2] },
+                    { "ID": 7, "SolnRef": [7, 10] },
+                    { "ID": 8, "SolnRef": [15, 6] },
+                    { "ID": 9, "SolnRef": [15, 10] },
+                    { "ID": 10, "SolnRef": [19, 2] },
+                    { "ID": 11, "SolnRef": [1, 22] },
+                    { "ID": 12, "SolnRef": [23, 22] },
+                    { "ID": 13, "SolnRef": [25, 6] },
+                    { "ID": 14, "SolnRef": [27, 22] },
+                    { "ID": 15, "SolnRef": [25, 10] },
+                    { "ID": 16, "SolnRef": [19, 22] }
+                ]
+            },
+            "FullInBoundDate": "26/01/2024",
+            "FullOutBoundDate": "20/01/2024"
+        }
+    }
+}

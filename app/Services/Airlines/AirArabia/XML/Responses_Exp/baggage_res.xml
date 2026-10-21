@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soap:Body xmlns:ns1="http://www.opentravel.org/OTA/2003/05">
+      <ns1:AA_OTA_AirBaggageDetailsRS EchoToken="11835513529845-916011621" PrimaryLangID="en-us" RetransmissionIndicator="false" SequenceNmbr="1" TransactionIdentifier="TID$1666871217033528441.demo2144" Version="2006.01">
+         <ns1:Success/>
+         <ns1:Warnings/>
+         <ns1:OnDBaggagesEnabled>true</ns1:OnDBaggagesEnabled>
+         <ns1:BaggageDetailsResponses>
+            <ns1:OnDBaggageDetailsResponse>
+               <ns1:OnDFlightSegmentInfo ArrivalDateTime="2022-11-30T07:00:00" DepartureDateTime="2022-11-30T05:05:00" FlightNumber="G9436" RPH="G9$JAI/SHJ$2797345$20221130050500$20221130070000" SegmentCode="JAI/SHJ" returnFlag="false">
+                  <ns1:DepartureAirport LocationCode="JAI"/>
+                  <ns1:ArrivalAirport LocationCode="SHJ" Terminal="TerminalX"/>
+               </ns1:OnDFlightSegmentInfo>
+               <ns1:Baggage>
+                  <ns1:baggageCode>40 Kg Free Piece</ns1:baggageCode>
+                  <ns1:baggageDescription>40 Kg Piece Free</ns1:baggageDescription>
+                  <ns1:baggageCharge>0</ns1:baggageCharge>
+                  <ns1:currencyCode>AED</ns1:currencyCode>
+               </ns1:Baggage>
+            </ns1:OnDBaggageDetailsResponse>
+            <ns1:OnDBaggageDetailsResponse>
+               <ns1:OnDFlightSegmentInfo ArrivalDateTime="2022-11-27T04:25:00" DepartureDateTime="2022-11-26T23:45:00" FlightNumber="G9435" RPH="G9$SHJ/JAI$2797159$20221126234500$20221127042500" SegmentCode="SHJ/JAI" returnFlag="false">
+                  <ns1:DepartureAirport LocationCode="SHJ"/>
+                  <ns1:ArrivalAirport LocationCode="JAI" Terminal="TerminalX"/>
+               </ns1:OnDFlightSegmentInfo>
+               <ns1:Baggage>
+                  <ns1:baggageCode>40 Kg Free Piece</ns1:baggageCode>
+                  <ns1:baggageDescription>40 Kg Piece Free</ns1:baggageDescription>
+                  <ns1:baggageCharge>0</ns1:baggageCharge>
+                  <ns1:currencyCode>AED</ns1:currencyCode>
+               </ns1:Baggage>
+            </ns1:OnDBaggageDetailsResponse>
+         </ns1:BaggageDetailsResponses>
+         <ns1:Errors/>
+      </ns1:AA_OTA_AirBaggageDetailsRS>
+   </soap:Body>
+</soap:Envelope>

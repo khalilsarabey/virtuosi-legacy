@@ -1,0 +1,34 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soap:Header>
+      <wsse:Security soap:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken Id="UsernameToken-17099451">
+            <wsse:Username>FILL_HERE</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">FILL_HERE</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soap:Header>
+   <soap:Body xmlns:ns1="http://www.isaaviation.com/thinair/webservices/OTA/Extensions/2003/05" xmlns:ns2="http://www.opentravel.org/OTA/2003/05">
+      <ns2:OTA_ReadRQ EchoToken="11839640750780-171674061" PrimaryLangID="en-us" SequenceNmbr="1" TimeStamp="2011-12-14T09:47:48" Version="20061.00">
+         <ns2:POS>
+            <ns2:Source TerminalID="FILL_HERE">
+                <ns2:RequestorID ID="FILL_HERE" Type="4" />
+                <ns2:BookingChannel Type="12" />
+            </ns2:Source>
+         </ns2:POS>
+         <ns2:ReadRequests>
+            <ns2:ReadRequest>
+               <ns2:UniqueID ID="FILL_HERE" Type="14"/>
+            </ns2:ReadRequest>
+         </ns2:ReadRequests>
+      </ns2:OTA_ReadRQ>
+      <ns1:AAReadRQExt>
+         <ns1:AALoadDataOptions>
+            <ns1:LoadTravelerInfo>true</ns1:LoadTravelerInfo>
+            <ns1:LoadAirItinery>true</ns1:LoadAirItinery>
+            <ns1:LoadPriceInfoTotals>true</ns1:LoadPriceInfoTotals>
+            <ns1:LoadPTCPriceInfo>true</ns1:LoadPTCPriceInfo>
+            <ns1:LoadFullFilment>true</ns1:LoadFullFilment>
+         </ns1:AALoadDataOptions>
+      </ns1:AAReadRQExt>
+   </soap:Body>
+</soap:Envelope>

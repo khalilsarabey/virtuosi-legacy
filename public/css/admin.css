@@ -1,0 +1,178 @@
+.admin-header {
+    padding-top:8rem;
+    padding-bottom:8rem;
+    background: rgba(18, 138, 162, 1);
+    color: white;
+}
+.text-blueGray-400 {
+    color: rgba(148, 163, 184, 1);
+}
+.text-blueGray-600 {
+     color: rgba(71, 85, 105, 1);
+ }
+.tracking-wide {
+    letter-spacing: 0.025rem;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.font-bold {
+    font-weight: 700;
+}
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.block {
+    display: block;
+}
+.table.table-index {
+    padding: 0.5rem 1rem;
+}
+.table td, .table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+.table {
+    table-layout: auto !important;
+}
+
+.table th, .table td, .table thead th, .table tbody td, .table tfoot td, .table tfoot th {
+    width: 1% !important;
+    white-space: nowrap;
+}
+.btn-xs {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-right: 0.25rem;
+    display: inline-block;
+    cursor: pointer;
+    justify-content: center;
+    border-color: transparent;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 150ms;
+    transition-timing-function: linear;
+}
+input:focus, select:focus {
+    box-shadow: none !important;
+    border: 1px solid var(--theme) !important;
+}
+label {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(71, 85, 105, 1);
+}
+.border-blueGray-200 {
+
+}
+.border-bottom-blueGray-200 {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1rem;
+    padding-top: 0;
+    border-bottom: 1px solid rgba(226, 232, 240, 1);
+}
+.header-card-title {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    color: rgb(51, 65, 85);
+}
+.admin-container {
+    border-radius:10px;
+    background:white;
+    margin-top:-10rem;
+    position:relative;
+}
+.select2-container--bootstrap-5.select2-container--focus .select2-selection, .select2-container--bootstrap-5.select2-container--open .select2-selection {
+    box-shadow: none;
+    border-color: var(--theme);
+}
+.select2-container--bootstrap-5 .select2-dropdown {
+    border-color: var(--theme);
+    box-shadow: none;
+}
+.clickable-table tr {
+    cursor: pointer;
+}
+.clickable-table tr {
+    transition: all 0.3s;
+}
+.clickable-table tr:hover {
+    background: rgba(134, 158, 62, .05);
+}
+.clickable-table tr.active {
+    /*background: rgba(134, 158, 62, .1);*/
+    border-left: 3px solid #869e3e;
+}
+td.vertical-center {
+    vertical-align: middle;
+}
+tr.toggle-details {
+    display: none;
+}
+tr.toggle-details.active {
+    display: table-row;
+}
+select+.select2-container--bootstrap-5 {
+    z-index: 0;
+}
+.table.table-index th {
+    border-left-width: 0px;
+    border-right-width: 0px;
+    --tw-border-opacity: 1;
+    border-color: rgba(241, 245, 249, var(--tw-border-opacity));
+    padding: 0.75rem 1.5rem;
+}
+.table.table-index td {
+    padding: 0.5rem 1rem;
+}
+.table {
+    table-layout: auto;
+    border-collapse: collapse;
+    align-items: center;
+    background-color: transparent;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgba(71, 85, 105, var(--tw-text-opacity));
+}
+table th {
+    white-space: nowrap;
+    border-width: 1px;
+    border-style: solid;
+    --tw-bg-opacity: 1;
+    background-color: rgba(248, 250, 252, var(--tw-bg-opacity));
+    text-align: left;
+    vertical-align: middle;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    --tw-text-opacity: 1;
+    color: rgba(100, 116, 139, var(--tw-text-opacity));
+}
+.table td {
+    --tw-border-opacity: 1;
+    border-color: rgba(226, 232, 240, var(--tw-border-opacity));
+}

@@ -1,0 +1,252 @@
+<div class="main_search contact-form-action">
+    <form action="{{ route('frontend.search') }}#search-results">
+        <input type="hidden" name="type" value="multi"/>
+        <input type="hidden" name="tab" value="tab-charter" />
+        <input type="hidden" name="subtab" value="multiple" />
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-3">
+                <div class="input-wrapper" wire:ignore>
+                    <span class="label-text">From</span>
+                    <div class="form-group">
+                        <span class="la la-map-marker form-icon"></span>
+                        <div class="input-items pl-5 pl-md-0">
+                            <select name="dep_from_code" wire:model="dep_from_code" class="form-control" required>
+                                <option value disabled selected>Select</option>
+                                @foreach($fromList as $value => $key)
+                                    <option value="{{ $key }}">{{ $value }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="input-wrapper">
+                    <span class="label-text">To</span>
+                    <div class="form-group">
+                        <span class="la la-map-marker form-icon"></span>
+                        <div class="input-items pl-5 pl-md-0">
+                            <select name="dep_to_code" wire:model="dep_to_code" class="form-control" {{ count($toList) ? '' : 'disabled' }} required>
+                                <option value disabled selected>Select</option>
+                                @foreach($toList as $value => $key)
+                                    <option value="{{ $key }}">{{ $value }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="input-box" wire:ignore>
+                    <div class="label-text">Departure</div>
+                    <div class="form-group">
+                        <span class="la la-calendar form-icon"></span>
+                        <x-flatpickr id="charter-multi-date-pick-departure" value="{{ $dep_date }}" name="dep_date" disabled mode="single" min="today" required picker="date" wire:model="dep_date" wire:loading.attr="disabled" required />
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2">
+                <div class="input-box" wire:ignore>
+                    <div class="label-text">Passengers</div>
+                    <div class="form-group">
+                        <span class="la la-male form-icon"></span>
+                        <div x-data class="dropdown dropdown-contain">
+                            <a class="dropdown-toggle dropdown-btn d-flex align-items-center" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                <p> <span class="roundTripNumberOfPassengers pl-4" x-text="parseInt($wire.infants)+parseInt($wire.adults)+parseInt($wire.children)">{{ $infants + $children + $adults }}</span></p>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-wrap" style="border: 1px solid var(--theme)">
+                                <div class="dropdown-item mb-3 mt-3">
+                                    <div class="qty-box d-flex align-items-center justify-content-between">
+                                        <label><i class="la la-user"></i> Adult</label>
+                                        <div class="roundtrip-button-inc qtyBtn d-flex align-items-center">
+                                            <div wire:click="dec('adults')" class="qty qtyDec"><i class="la la-minus"></i></div>
+                                            <input type="text" name="adults" wire:model="adults" readonly>
+                                            <div wire:click="inc('adults')" class="qty qtyInc"><i class="la la-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item mb-3">
+                                    <div class="qty-box d-flex align-items-center justify-content-between">
+                                        <label><i class="la la-female"></i> Child</label>
+                                        <div class="children roundtrip-button-inc qtyBtn d-flex align-items-center">
+                                            <div  wire:click="dec('children')" class="qty qtyDec"><i class="la la-minus"></i></div>
+                                            <input type="text" name="children" wire:model="children" readonly>
+                                            <div wire:click="inc('children')" class="qty qtyInc"><i class="la la-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item mb-3">
+                                    <div class="qty-box d-flex align-items-center justify-content-between">
+                                        <label><i class="la la-female"></i> Infant</label>
+                                        <div class="infants roundtrip-button-inc qtyBtn d-flex align-items-center">
+                                            <div wire:click="dec('infants')" class="qty qtyDec"><i class="la la-minus"></i></div>
+                                            <input type="text" name="infants" wire:model="infants" readonly>
+                                            <div wire:click="inc('infants')" class="qty qtyInc"><i class="la la-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end dropdown -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 d-sm-none d-lg-flex">
+                <div class="btn-search text-center">
+                    <button style="color:#fff" type="submit" id="submit" class="effect btn btn-primary btn-block btn-lg disable-styles" data-style="zoom-in">
+                        <svg style="fill:currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="c8LPF-icon" role="img" height="24" cleanup=""><path d="M174.973 150.594l-29.406-29.406c5.794-9.945 9.171-21.482 9.171-33.819C154.737 50.164 124.573 20 87.368 20S20 50.164 20 87.368s30.164 67.368 67.368 67.368c12.345 0 23.874-3.377 33.827-9.171l29.406 29.406c6.703 6.703 17.667 6.703 24.371 0c6.704-6.702 6.704-17.674.001-24.377zM36.842 87.36c0-27.857 22.669-50.526 50.526-50.526s50.526 22.669 50.526 50.526s-22.669 50.526-50.526 50.526s-50.526-22.669-50.526-50.526z"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-3">
+                <div class="input-wrapper">
+                    <span class="label-text">From</span>
+                    <div class="form-group">
+                        <span class="la la-map-marker form-icon"></span>
+                        <div class="input-items pl-5 pl-md-0">
+                            <select name="ret_from_code" wire:model="ret_from_code" class="form-control" required>
+                                <option value disabled selected>Select</option>
+                                @foreach($returnFromList as $value => $key)
+                                    <option value="{{ $key }}">{{ $value }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="input-wrapper">
+                    <span class="label-text">To</span>
+                    <div class="form-group">
+                        <span class="la la-map-marker form-icon"></span>
+                        <div class="input-items pl-5 pl-md-0">
+                            <select name="ret_to_code" wire:model="ret_to_code" class="form-control" {{ count($returnToList) ? '' : 'disabled' }} required>
+                                <option value disabled selected>Select</option>
+                                @foreach($returnToList as $value => $key)
+                                    <option value="{{ $key }}">{{ $value }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="input-box" wire:ignore>
+                    <label class="label-text">Departure</label>
+                    <div class="form-group">
+                        <span class="la la-calendar form-icon"></span>
+                        <x-flatpickr id="charter-multi-date-pick-return" value="{{ $ret_date }}" name="ret_date" disabled mode="single" min="today" required picker="date" wire:model="ret_date" wire:loading.attr="disabled" required />
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3"></div>
+            <div class="col-12 d-lg-none">
+                <div class="btn-search text-center">
+                    <button style="color:#fff" type="submit" id="submit" class="effect btn btn-primary btn-block btn-lg disable-styles" data-style="zoom-in">
+                        <svg style="fill:currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="c8LPF-icon" role="img" height="24" cleanup=""><path d="M174.973 150.594l-29.406-29.406c5.794-9.945 9.171-21.482 9.171-33.819C154.737 50.164 124.573 20 87.368 20S20 50.164 20 87.368s30.164 67.368 67.368 67.368c12.345 0 23.874-3.377 33.827-9.171l29.406 29.406c6.703 6.703 17.667 6.703 24.371 0c6.704-6.702 6.704-17.674.001-24.377zM36.842 87.36c0-27.857 22.669-50.526 50.526-50.526s50.526 22.669 50.526 50.526s-22.669 50.526-50.526 50.526s-50.526-22.669-50.526-50.526z"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+@pushOnce('scripts')
+    <script>
+        $(document).ready(function() {
+
+            @if(count($query))
+                document.querySelector('#charter-multi-date-pick-departure').removeAttribute('disabled');
+                document.querySelector('#charter-multi-date-pick-return').removeAttribute('disabled');
+                @if($query['type'] == 'multi')
+                    if (window.flatpickrInstances && window.flatpickrInstances['charter-multi-date-pick-departure']) {
+                        let enabledDays = @js($departureList);
+                        window.flatpickrInstances['charter-multi-date-pick-departure'].set('enable', enabledDays);
+                        window.flatpickrInstances['charter-multi-date-pick-departure'].set('minDate', enabledDays[0]);
+                        window.flatpickrInstances['charter-multi-date-pick-departure'].setDate(@js($dep_date));
+                    }
+                    if (window.flatpickrInstances && window.flatpickrInstances['charter-multi-date-pick-return']) {
+                        let enabledDays = @js($returnDepartureList);
+                        window.flatpickrInstances['charter-multi-date-pick-return'].set('enable', enabledDays);
+                        window.flatpickrInstances['charter-multi-date-pick-return'].set('minDate', enabledDays[0]);
+                        window.flatpickrInstances['charter-multi-date-pick-return'].setDate(@js($ret_date));
+                    }
+                @endif
+            @endif
+
+            window.addEventListener('set-multi-passengers-number', event => {
+                let passengers = event.detail.passengers;
+                $('.multiNumberOfPassengers').text(passengers);
+            });
+
+            window.addEventListener('set-multi-departure-date', event => {
+                document.querySelector('#charter-multi-date-pick-departure').removeAttribute('disabled');
+                if (window.flatpickrInstances && window.flatpickrInstances['charter-multi-date-pick-departure']) {
+                    let enabledDays = event.detail.dates;
+                    window.flatpickrInstances['charter-multi-date-pick-departure'].set('enable', enabledDays);
+                    window.flatpickrInstances['charter-multi-date-pick-departure'].set('minDate', enabledDays[0]);
+                    @if(!count($query))
+                        window.flatpickrInstances['charter-multi-date-pick-departure'].open();
+                    @endif
+                }
+            })
+
+            window.addEventListener('set-multi-return-departure-date', event => {
+                document.querySelector('#charter-multi-date-pick-return').removeAttribute('disabled');
+                if (window.flatpickrInstances && window.flatpickrInstances['charter-multi-date-pick-return']) {
+                    let enabledDays = event.detail.dates;
+                    window.flatpickrInstances['charter-multi-date-pick-return'].set('enable', enabledDays);
+                    window.flatpickrInstances['charter-multi-date-pick-return'].set('minDate', enabledDays[0]);
+                    @if(!count($query))
+                        window.flatpickrInstances['charter-multi-date-pick-return'].open();
+                    @endif
+                }
+            })
+
+            window.addEventListener('set-multi-passengers', event => {
+                $('.listOfMultiPassengers').removeClass('d-none');
+            });
+
+            $(document).on('click', '.showMultiPassengers', function(e) {
+                $('.listOfMultiPassengers').removeClass('d-none');
+            })
+
+            $(document).mouseup(function (e)
+            {
+                var container = $('.listOfMultiPassengers');
+
+                $.each(container, function(key, value) {
+                    if (!$(value).is(e.target) && $(value).has(e.target).length === 0) {
+                        $(value).addClass('d-none');
+                    }
+                });
+            });
+
+            $(".multi-button-inc").on('click', function () {
+                var $button = $(this);
+                var oldValue = $button.parent().find("input").val();
+                if ($button.text() === "+") {
+                    var newVal = parseFloat(oldValue) + 1;
+                } else {
+                    // Don't allow decrementing below zero
+                    if (oldValue > 1) {
+                        var newVal = parseFloat(oldValue) - 1;
+                    } else {
+                        newVal = 0;
+                    }
+                }
+                $button.parent().find("input").val(newVal);
+                var field = $button.parent().find("input").attr('name');
+                if(field === 'adults') {
+                @this.set('adults', newVal)
+                } else if (field === 'infants') {
+                @this.set('infants', newVal)
+                } else if (field === 'children') {
+                @this.set('children', newVal)
+                }
+            });
+        });
+    </script>
+@endPushOnce

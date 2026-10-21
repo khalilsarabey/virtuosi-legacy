@@ -1,0 +1,206 @@
+{
+    "action": null,
+    "loadTax": false,
+    "SecurityGUID": "e2942f0r6e614439c93el82fw2946bl6y96eb3496b34",
+    "currency": "USD",
+    "CurrencyOfFareQuote": "USD",
+    "IATA": "95151225",
+    "CorporationId": 0,
+    "inventoryFilterMethod": null,
+    "promoCode": null,
+    "flightGroups": [
+        {
+            "ID": "14455604",
+            "fareGroupID": "o9B0MqxfTl82vCRSGrjPkg==",
+            "origin": "DXB",
+            "destination": "PRG",
+            "flightNum": "1781",
+            "depDate": "2024-01-20T17:10:00",
+            "flightGroup": ["1"],
+            "fareBrands": [
+                {
+                    "fareBrandID": 11,
+                    "fareBrand": null,
+                    "fareInfos": [
+                        {
+                            "paxFareInfos": [
+                                {
+                                    "FBC": "IO6AE2",
+                                    "HeldId": 0,
+                                    "ID": 1,
+                                    "PTC": 1,
+                                    "PaxID": null,
+                                    "applicableTaxDetails": [
+                                        {
+                                            "amt": 20.4,
+                                            "taxCode": null,
+                                            "taxID": 1624,
+                                            "codeType": null,
+                                            "taxDesc": null
+                                        },
+                                        {
+                                            "amt": 75.0,
+                                            "taxCode": null,
+                                            "taxID": 4246,
+                                            "codeType": null,
+                                            "taxDesc": null
+                                        },
+                                        {
+                                            "amt": 1.4,
+                                            "taxCode": null,
+                                            "taxID": 4844,
+                                            "codeType": null,
+                                            "taxDesc": null
+                                        },
+                                        {
+                                            "amt": 1.4,
+                                            "taxCode": null,
+                                            "taxID": 10386,
+                                            "codeType": null,
+                                            "taxDesc": null
+                                        },
+                                        {
+                                            "amt": 9.5,
+                                            "taxCode": null,
+                                            "taxID": 11947,
+                                            "codeType": null,
+                                            "taxDesc": null
+                                        }
+                                    ],
+                                    "baseFare": 403.0,
+                                    "fareCarrier": "FZ",
+                                    "fareID": 1,
+                                    "originalFare": 0.0,
+                                    "ruleID": null,
+                                    "secureHash": "bcbf29d67a17aaac59f4610ad5e0f6f46e8ab3546a03a0fe9a5242dd82083fbf",
+                                    "tfee": 0.0,
+                                    "ticketDesignator": null,
+                                    "totalFare": 510.7
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "isChargeUpdateRqd": false
+        }
+    ],
+    "originDestinations": [
+        {
+            "ID": "1",
+            "odID": 14455604,
+            "origin": "DXB",
+            "destination": "PRG",
+            "flightNum": "1781",
+            "depDate": "2024-01-20T17:10:00",
+            "isPromoApplied": false,
+            "fareBrands": [
+                {
+                    "fareBrandID": 11,
+                    "fareBrand": null,
+                    "fareInfos": [
+                        {
+                            "paxFareInfos": [
+                                {
+                                    "FBC": "IO6AE2",
+                                    "HeldId": 0,
+                                    "ID": 1,
+                                    "PTC": 1,
+                                    "PaxID": null,
+                                    "applicableTaxDetails": [
+                                        {
+                                            "amt": 20.4,
+                                            "taxCode": null,
+                                            "taxID": 1624,
+                                            "codeType": null,
+                                            "taxDesc": null
+                                        },
+                                        {
+                                            "amt": 75.0,
+                                            "taxCode": null,
+                                            "taxID": 4246,
+                                            "codeType": null,
+                                            "taxDesc": null
+                                        },
+                                        {
+                                            "amt": 1.4,
+                                            "taxCode": null,
+                                            "taxID": 4844,
+                                            "codeType": null,
+                                            "taxDesc": null
+                                        },
+                                        {
+                                            "amt": 1.4,
+                                            "taxCode": null,
+                                            "taxID": 10386,
+                                            "codeType": null,
+                                            "taxDesc": null
+                                        },
+                                        {
+                                            "amt": 9.5,
+                                            "taxCode": null,
+                                            "taxID": 11947,
+                                            "codeType": null,
+                                            "taxDesc": null
+                                        }
+                                    ],
+                                    "baseFare": 403.0,
+                                    "fareCarrier": "FZ",
+                                    "fareID": 1,
+                                    "originalFare": 0.0,
+                                    "pricingKey": "6576c06e003039000000006a#1#1#TPAPI#VAYANT#CREATE",
+                                    "ruleID": null,
+                                    "secureHash": "bcbf29d67a17aaac59f4610ad5e0f6f46e8ab3546a03a0fe9a5242dd82083fbf",
+                                    "tfee": 0.0,
+                                    "ticketDesignator": null,
+                                    "totalFare": 510.7
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "segmentDetails": [
+                {
+                    "segmentID": 14455604,
+                    "origin": "DXB",
+                    "destination": "PRG",
+                    "depDate": "2024-01-20T17:10:00",
+                    "legDetails": [
+                        {
+                            "arrDate": "2024-01-20T21:10:00",
+                            "arrTerminal": "",
+                            "depDate": "2024-01-20T17:10:00",
+                            "depTerminal": "",
+                            "destination": "PRG",
+                            "legID": 167771,
+                            "mrktCarrier": "FZ",
+                            "mrktFlightNum": "1781",
+                            "operCarrier": "FZ",
+                            "operFlightNum": "1781",
+                            "origin": "DXB"
+                        }
+                    ],
+                    "bookingCodes": [
+                        {
+                            "fareClass": "I",
+                            "cabin": "ECONOMY",
+                            "paxID": [1]
+                        }
+                    ]
+                }
+            ],
+            "isChargeUpdateRqd": false
+        }
+    ],
+    "OASegments": [],
+    "ticketingInfo": [],
+    "Exceptions": [
+        {
+            "ExceptionCode": 0,
+            "ExceptionDescription": "Successful Transaction",
+            "ExceptionSource": "SetChargesInSession",
+            "ExceptionLevel": 0
+        }
+    ]
+}

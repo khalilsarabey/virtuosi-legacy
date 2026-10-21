@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soap:Body xmlns:ns1="http://www.opentravel.org/OTA/2003/05">
+      <ns1:OTA_AirSeatMapRS EchoToken="11868765275150-1300257933" PrimaryLangID="en-us" RetransmissionIndicator="false" SequenceNmbr="1" TransactionIdentifier="TID$1666871217033528441.demo2144" Version="2006.01">
+         <ns1:Success/>
+         <ns1:Warnings/>
+         <ns1:SeatMapResponses>
+            <ns1:SeatMapResponse SeatUpgradeApplied="false">
+               <ns1:FlightSegmentInfo ArrivalDateTime="2022-11-30T07:00:00" DepartureDateTime="2022-11-30T05:05:00" FlightNumber="G9436" RPH="2797345" SegmentCode="JAI/SHJ" returnFlag="false">
+                  <ns1:DepartureAirport LocationCode="JAI"/>
+                  <ns1:ArrivalAirport LocationCode="SHJ" Terminal="TerminalX"/>
+               </ns1:FlightSegmentInfo>
+               <ns1:SeatMapDetails>
+                  <ns1:CabinClass CabinType="Y">
+                     <ns1:AirRows>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="1">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="2">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="3">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="4">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="5">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="6">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="7">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="8">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="9">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="10">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="11">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="12">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="13">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="14">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="15">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="16">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="17">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="18">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="19">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="20">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="21">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="22">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="23">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="24">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="25">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="26">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="27">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="28">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                     </ns1:AirRows>
+                  </ns1:CabinClass>
+               </ns1:SeatMapDetails>
+            </ns1:SeatMapResponse>
+            <ns1:SeatMapResponse SeatUpgradeApplied="false">
+               <ns1:FlightSegmentInfo ArrivalDateTime="2022-11-27T04:25:00" DepartureDateTime="2022-11-26T23:45:00" FlightNumber="G9435" RPH="2797159" SegmentCode="SHJ/JAI" returnFlag="false">
+                  <ns1:DepartureAirport LocationCode="SHJ"/>
+                  <ns1:ArrivalAirport LocationCode="JAI" Terminal="TerminalX"/>
+               </ns1:FlightSegmentInfo>
+               <ns1:SeatMapDetails>
+                  <ns1:CabinClass CabinType="Y">
+                     <ns1:AirRows>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="1">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="2">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="3">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="4">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="5">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="6">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="7">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="8">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="9">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="10">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="11">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="12">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="13">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="14">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="15">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="16">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="17">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="18">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="19">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="20">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="21">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="22">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="23">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="24">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="25">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="26">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="27">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                        <ns1:AirRow MaxNumberOfSeats="0" RowNumber="28">
+                           <ns1:AirSeats>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="A"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="B"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="C"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="D"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="E"/>
+                              <ns1:AirSeat SeatAvailability="VAC" SeatCharacteristics="0" SeatNumber="F"/>
+                           </ns1:AirSeats>
+                        </ns1:AirRow>
+                     </ns1:AirRows>
+                  </ns1:CabinClass>
+               </ns1:SeatMapDetails>
+            </ns1:SeatMapResponse>
+         </ns1:SeatMapResponses>
+         <ns1:Errors/>
+      </ns1:OTA_AirSeatMapRS>
+   </soap:Body>
+</soap:Envelope>

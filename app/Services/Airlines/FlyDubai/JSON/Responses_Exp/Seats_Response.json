@@ -1,0 +1,1956 @@
+{
+    "seatQuotes": {
+        "flights": [
+            {
+                "pfID": "167771",
+                "depDate": "2024-01-20T17:10:00",
+                "origin": "DXB",
+                "dest": "PRG",
+                "originName": "Dubai International Airport",
+                "destName": "Prague",
+                "tailNum": "73X       ",
+                "flightNum": "1781",
+                "circular": false,
+                "legOrder": -2147483648,
+                "seatCodes": [
+                    {
+                        "seatCode": "INST",
+                        "desc": "Included seat"
+                    },
+                    {
+                        "seatCode": "NSST",
+                        "desc": "ADVANCED SEAT SELECTION"
+                    },
+                    {
+                        "seatCode": "SEAT",
+                        "desc": "Preserved seat"
+                    },
+                    {
+                        "seatCode": "FRST",
+                        "desc": "FRONT ROW SEAT SELECTION"
+                    },
+                    {
+                        "seatCode": "SPST",
+                        "desc": "SPECIAL SEAT SELECTION"
+                    },
+                    {
+                        "seatCode": "XLGR",
+                        "desc": "EXTRA LEG ROOM SEAT"
+                    }
+                ],
+                "cabins": [
+                {
+                    "cabin": "ECONOMY",
+                    "seatMaps": [
+                        {
+                            "rowNumber": "6",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "7",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "8",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "9",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "10",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "FRST",
+                                    "amount": 15.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "11",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "12",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "14",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "15",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": true,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "16",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": true,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "XLGR",
+                                    "amount": 41.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "17",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "18",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "19",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "20",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "21",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "22",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "SPST",
+                                    "amount": 11.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "23",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "24",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "25",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "26",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "27",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "28",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "29",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "30",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": true,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": true,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": true,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "31",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": true,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": true,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": true,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "32",
+                            "seatMap": "ABC DEF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": true,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": true,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "NSST",
+                                    "amount": 7.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": true,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cabin": "BUSINESS",
+                    "seatMaps": [
+                        {
+                            "rowNumber": "1",
+                            "seatMap": "AC DF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "SEAT",
+                                    "amount": 0.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "SEAT",
+                                    "amount": 0.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "SEAT",
+                                    "amount": 0.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "SEAT",
+                                    "amount": 0.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "2",
+                            "seatMap": " B  E ",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "B",
+                                    "serviceCode": "SEAT",
+                                    "amount": 0.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "E",
+                                    "serviceCode": "SEAT",
+                                    "amount": 0.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        },
+                        {
+                            "rowNumber": "3",
+                            "seatMap": "AC DF",
+                            "isWing": false,
+                            "isExit": false,
+                            "seats": [
+                                {
+                                    "seat": "A",
+                                    "serviceCode": "SEAT",
+                                    "amount": 0.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "C",
+                                    "serviceCode": "SEAT",
+                                    "amount": 0.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "D",
+                                    "serviceCode": "SEAT",
+                                    "amount": 0.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                },
+                                {
+                                    "seat": "F",
+                                    "serviceCode": "SEAT",
+                                    "amount": 0.0,
+                                    "currency": "USD",
+                                    "assigned": false,
+                                    "redeemMiles": 0.0,
+                                    "isBlocked": false,
+                                    "isPreBlocked": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+                ]
+            }
+        ]
+    },
+    "exceptions": [
+        {
+            "code": "0",
+            "desc": "Successful Transaction",
+            "source": "Pricing Seat",
+            "level": "0"
+        }
+    ]
+}

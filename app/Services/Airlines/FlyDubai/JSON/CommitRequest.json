@@ -1,0 +1,15 @@
+{
+    "ActionType": "CommitSummary",
+    "ReservationInfo": {
+        "SeriesNumber": "299",
+        "ConfirmationNumber": ""
+    },
+    "SecurityGUID": "",
+    "CarrierCodes": [
+        {
+            "AccessibleCarrierCode": "FZ"
+        }
+    ],
+    "ClientIPAddress": "",
+    "HistoricUserName": "FILL_HERE"
+}

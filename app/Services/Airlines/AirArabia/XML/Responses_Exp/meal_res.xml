@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soap:Body xmlns:ns1="http://www.opentravel.org/OTA/2003/05">
+      <ns1:AA_OTA_AirMealDetailsRS EchoToken="11868765275150-1300257933" PrimaryLangID="en-us" RetransmissionIndicator="false" SequenceNmbr="1" TransactionIdentifier="TID$1666871217033528441.demo2144" Version="2006.01">
+         <ns1:Success/>
+         <ns1:Warnings/>
+         <ns1:MealDetailsResponses>
+            <ns1:MealDetailsResponse>
+               <ns1:FlightSegmentInfo ArrivalDateTime="2022-11-30T07:00:00" DepartureDateTime="2022-11-30T05:05:00" FlightNumber="G9436" RPH="2797345" SegmentCode="JAI/SHJ" returnFlag="false">
+                  <ns1:DepartureAirport LocationCode="JAI"/>
+                  <ns1:ArrivalAirport LocationCode="SHJ" Terminal="TerminalX"/>
+               </ns1:FlightSegmentInfo>
+               <ns1:Meal>
+                  <ns1:mealCode>OMBB</ns1:mealCode>
+                  <ns1:mealDescription>Mini Sausages, Omelet, Fried Potato, Grilled Tomato, Bread Roll &amp; Butter Portion</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Egg Omelette Breakfast With Bread and Butter</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_281.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Breakfast</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>BFCN</ns1:mealCode>
+                  <ns1:mealDescription>Tender Chicken Breast with vegetables, Cheddar Cheese and Masala Sauce served in tortilla bread</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Chicken Nashif Wrap</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_188.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Sandwiches and Wraps</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>HCSW</ns1:mealCode>
+                  <ns1:mealDescription>Grilled Halloumi cheese served in soft bread with creamy dressing and vegetables</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Halloumi Cheese Sandwich</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_230.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Sandwiches and Wraps</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>STSD</ns1:mealCode>
+                  <ns1:mealDescription>Layered smoked turkey and emmental cheese with lettuce in a home baked croissant</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Smoked Turkey  Cheese</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_132.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Sandwiches and Wraps</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>TRCS</ns1:mealCode>
+                  <ns1:mealDescription>Fresh sliced bread sandwich with three kinds of Swiss cheese</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Three cheese sandwich</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_226.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Sandwiches and Wraps</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>VEFF</ns1:mealCode>
+                  <ns1:mealDescription>Mixed Vegetable Fajita served on a hot made fatayer roll</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Vegetable Fajita Fatayer</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_227.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Sandwiches and Wraps</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>BKVR</ns1:mealCode>
+                  <ns1:mealDescription>Grilled beef Kebab served with vermicelli rice and flavored tomato sauce.</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Beef Kebab with vermicelli Rice</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_234.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>BL</ns1:mealCode>
+                  <ns1:mealDescription>Tender meat beef slowly cooked with herbs tomato sauce served with pasta and topped with creamy white sauce and parmesan chee</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Beef Lasagna</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_235.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>BO</ns1:mealCode>
+                  <ns1:mealDescription>slowly cooked rice with oriental spices served with tender beef stripes and fresh vegetables.</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Beef Ouzi</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_236.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>CBy</ns1:mealCode>
+                  <ns1:mealDescription>A traditional tender chicken biryani served with flavored basmati rice and accompanied with a portion of Raita (yoghurt)</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Chicken Biryani</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_14.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>CM</ns1:mealCode>
+                  <ns1:mealDescription>Soft dough stuffed with chicken meat served sweet chilly sauce.</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Chicken Momo</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_238.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>CCFR</ns1:mealCode>
+                  <ns1:mealDescription>Chinese Chicken Fried Rice</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Chinese Chicken Fried Rice</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_247.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>CHMCH</ns1:mealCode>
+                  <ns1:mealDescription>Tender chicken strips served with noodles and vegetables</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Chow Mien Chicken</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_217.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>CHBWR</ns1:mealCode>
+                  <ns1:mealDescription>Marinated Grilled Chicken breast served with creamy spinach risotto</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Grilled Chicken Breast with Risotto</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_218.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>LG</ns1:mealCode>
+                  <ns1:mealDescription>Fresh vegetables cooked with tender lamb meat served with mashed potato.</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Lamb Goulash</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_240.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>PUMC</ns1:mealCode>
+                  <ns1:mealDescription>Tender chicken breast slowly cooked with creamy pumpkin with south Indian spices.</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Pumpkin Curry</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_243.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>PUCH</ns1:mealCode>
+                  <ns1:mealDescription>Tender chicken breast served with panjabi sauce and fresh Amari rice</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Punjabi Chicken Curry with Amari Rice</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_219.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>SC</ns1:mealCode>
+                  <ns1:mealDescription>Slow cooked spinach leaves with creamy sauce served with pasta, tomato sauce and shaved parmesan cheese</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Spinach Cannelloni</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_244.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>SKWY</ns1:mealCode>
+                  <ns1:mealDescription>Stuffed meat ball served with flavored mint yoghurt sauce</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Stuffed Kibbeh with Yoghurt Mint Sauce</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_221.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>SSC</ns1:mealCode>
+                  <ns1:mealDescription>Tender chicken breast cooked in oriental sauce served with Chinese fried rice.</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Sweet and sour chicken</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_246.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>VBy</ns1:mealCode>
+                  <ns1:mealDescription>A traditional fresh vegetable biryani in light masala sauce served with basmati rice and accompanied with a portion of Raita</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Vegetable Biryani</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_13.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+            </ns1:MealDetailsResponse>
+            <ns1:MealDetailsResponse>
+               <ns1:FlightSegmentInfo ArrivalDateTime="2022-11-27T04:25:00" DepartureDateTime="2022-11-26T23:45:00" FlightNumber="G9435" RPH="2797159" SegmentCode="SHJ/JAI" returnFlag="false">
+                  <ns1:DepartureAirport LocationCode="SHJ"/>
+                  <ns1:ArrivalAirport LocationCode="JAI" Terminal="TerminalX"/>
+               </ns1:FlightSegmentInfo>
+               <ns1:Meal>
+                  <ns1:mealCode>OMBB</ns1:mealCode>
+                  <ns1:mealDescription>Mini Sausages, Omelet, Fried Potato, Grilled Tomato, Bread Roll &amp; Butter Portion</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Egg Omelette Breakfast With Bread and Butter</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_281.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Breakfast</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>BFCN</ns1:mealCode>
+                  <ns1:mealDescription>Tender Chicken Breast with vegetables, Cheddar Cheese and Masala Sauce served in tortilla bread</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Chicken Nashif Wrap</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_188.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Sandwiches and Wraps</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>HCSW</ns1:mealCode>
+                  <ns1:mealDescription>Grilled Halloumi cheese served in soft bread with creamy dressing and vegetables</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Halloumi Cheese Sandwich</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_230.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Sandwiches and Wraps</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>STSD</ns1:mealCode>
+                  <ns1:mealDescription>Layered smoked turkey and emmental cheese with lettuce in a home baked croissant</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Smoked Turkey  Cheese</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_132.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Sandwiches and Wraps</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>TRCS</ns1:mealCode>
+                  <ns1:mealDescription>Fresh sliced bread sandwich with three kinds of Swiss cheese</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Three cheese sandwich</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_226.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Sandwiches and Wraps</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>VEFF</ns1:mealCode>
+                  <ns1:mealDescription>Mixed Vegetable Fajita served on a hot made fatayer roll</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Vegetable Fajita Fatayer</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_227.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Sandwiches and Wraps</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>BKVR</ns1:mealCode>
+                  <ns1:mealDescription>Grilled beef Kebab served with vermicelli rice and flavored tomato sauce.</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Beef Kebab with vermicelli Rice</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_234.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>BL</ns1:mealCode>
+                  <ns1:mealDescription>Tender meat beef slowly cooked with herbs tomato sauce served with pasta and topped with creamy white sauce and parmesan chee</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Beef Lasagna</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_235.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>BO</ns1:mealCode>
+                  <ns1:mealDescription>slowly cooked rice with oriental spices served with tender beef stripes and fresh vegetables.</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Beef Ouzi</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_236.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>CBy</ns1:mealCode>
+                  <ns1:mealDescription>A traditional tender chicken biryani served with flavored basmati rice and accompanied with a portion of Raita (yoghurt)</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Chicken Biryani</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_14.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>CM</ns1:mealCode>
+                  <ns1:mealDescription>Soft dough stuffed with chicken meat served sweet chilly sauce.</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Chicken Momo</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_238.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>CCFR</ns1:mealCode>
+                  <ns1:mealDescription>Chinese Chicken Fried Rice</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Chinese Chicken Fried Rice</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_247.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>CHMCH</ns1:mealCode>
+                  <ns1:mealDescription>Tender chicken strips served with noodles and vegetables</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Chow Mien Chicken</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_217.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>CHBWR</ns1:mealCode>
+                  <ns1:mealDescription>Marinated Grilled Chicken breast served with creamy spinach risotto</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Grilled Chicken Breast with Risotto</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_218.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>LG</ns1:mealCode>
+                  <ns1:mealDescription>Fresh vegetables cooked with tender lamb meat served with mashed potato.</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Lamb Goulash</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_240.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>PUMC</ns1:mealCode>
+                  <ns1:mealDescription>Tender chicken breast slowly cooked with creamy pumpkin with south Indian spices.</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Pumpkin Curry</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_243.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>PUCH</ns1:mealCode>
+                  <ns1:mealDescription>Tender chicken breast served with panjabi sauce and fresh Amari rice</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Punjabi Chicken Curry with Amari Rice</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_219.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>SC</ns1:mealCode>
+                  <ns1:mealDescription>Slow cooked spinach leaves with creamy sauce served with pasta, tomato sauce and shaved parmesan cheese</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Spinach Cannelloni</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_244.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>SKWY</ns1:mealCode>
+                  <ns1:mealDescription>Stuffed meat ball served with flavored mint yoghurt sauce</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Stuffed Kibbeh with Yoghurt Mint Sauce</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_221.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>SSC</ns1:mealCode>
+                  <ns1:mealDescription>Tender chicken breast cooked in oriental sauce served with Chinese fried rice.</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Sweet and sour chicken</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_246.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+               <ns1:Meal>
+                  <ns1:mealCode>VBy</ns1:mealCode>
+                  <ns1:mealDescription>A traditional fresh vegetable biryani in light masala sauce served with basmati rice and accompanied with a portion of Raita</ns1:mealDescription>
+                  <ns1:mealCharge>0</ns1:mealCharge>
+                  <ns1:mealName>Vegetable Biryani</ns1:mealName>
+                  <ns1:availableMeals>100</ns1:availableMeals>
+                  <ns1:soldMeals>0</ns1:soldMeals>
+                  <ns1:allocatedMeals>100</ns1:allocatedMeals>
+                  <ns1:mealImageLink>https://reservations.airarabia.com/images/meal_13.jpg</ns1:mealImageLink>
+                  <ns1:mealCategoryCode>Hot meals</ns1:mealCategoryCode>
+               </ns1:Meal>
+            </ns1:MealDetailsResponse>
+            <ns1:multipleMealSelectionEnabled>true</ns1:multipleMealSelectionEnabled>
+         </ns1:MealDetailsResponses>
+         <ns1:Errors/>
+      </ns1:AA_OTA_AirMealDetailsRS>
+   </soap:Body>
+</soap:Envelope>

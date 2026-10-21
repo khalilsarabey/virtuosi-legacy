@@ -1,0 +1,66 @@
+{
+    "currency": "FILL_HERE",
+    "IATA": "FILL_HERE",
+    "inventoryFilterMethod": 0,
+    "securityGUID": "",
+    "originDestinations": [
+        {
+            "odID": "FILL_HERE",
+            "origin": "FILL_HERE",
+            "destination": "FILL_HERE",
+            "flightNum": "FILL_HERE",
+            "depDate": "FILL_HERE",
+            "isPromoApplied": false,
+            "fareBrand": [
+                {
+                    "fareBrandID": "FILL_HERE",
+                    "fareBrandName": "FILL_HERE",
+                    "fareInfos": [
+                        {
+                            "paxFareInfos": [
+                                {
+                                    "fareID": "FILL_HERE",
+                                    "ID": "FILL_HERE",
+                                    "FBC": "FILL_HERE",
+                                    "fareClass": "FILL_HERE",
+                                    "cabin": "FILL_HERE",
+                                    "baseFare": "FILL_HERE",
+                                    "ruleID": "FILL_HERE",
+                                    "originalFare": "FILL_HERE",
+                                    "totalFare": "FILL_HERE",
+                                    "PTC": "FILL_HERE",
+                                    "seatAvailability": "FILL_HERE",
+                                    "infantAvailability": "FILL_HERE",
+                                    "secureHash": "FILL_HERE",
+                                    "fareCarrier": "FILL_HERE",
+                                    "applicableTaxDetails": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "segmentDetails": [
+                {
+                    "segmentID": "FILL_HERE",
+                    "origin": "FILL_HERE",
+                    "destination": "FILL_HERE",
+                    "depDate": "FILL_HERE",
+                    "arrDate": "FILL_HERE",
+                    "bookingCodes": [
+                        {
+                            "fareClass": "FILL_HERE",
+                            "cabin": "FILL_HERE",
+                            "paxID": ["FILL_HERE"]
+                        }
+                    ],
+                    "OAFlight": false,
+                    "operCarrier": "FILL_HERE",
+                    "operFlightNum": "FILL_HERE",
+                    "mrktCarrier": "FILL_HERE",
+                    "mrktFlightNum": "FILL_HERE"
+                }
+            ]
+        }
+    ]
+}

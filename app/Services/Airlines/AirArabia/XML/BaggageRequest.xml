@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17855236" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>FILL_HERE</wsse:Username>
+				<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">FILL_HERE</wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+	</soapenv:Header>
+	<soapenv:Body>
+		<AA_OTA_AirBaggageDetailsRQ EchoToken="1" PrimaryLangID="en-us" SequenceNmbr="1" TransactionIdentifier="FILL_HERE" Version="20061" xmlns="http://www.opentravel.org/OTA/2003/05">
+			<POS>
+				<Source TerminalID="FILL_HERE">
+					<RequestorID ID="FILL_HERE" Type="4"/>
+					<BookingChannel Type="12"/>
+				</Source>
+			</POS>
+			<BaggageDetailsRequests>
+				<BaggageDetailsRequest>
+					<FlightSegmentInfo ArrivalDateTime="FILL_HERE" DepartureDateTime="FILL_HERE" FlightNumber="FILL_HERE" RPH="FILL_HERE" returnFlag="false">
+						<DepartureAirport LocationCode="FILL_HERE"/>
+						<ArrivalAirport LocationCode="FILL_HERE"/>
+						<OperatingAirline Code="FILL_HERE"/>
+					</FlightSegmentInfo>
+				</BaggageDetailsRequest>
+			</BaggageDetailsRequests>
+		</AA_OTA_AirBaggageDetailsRQ>
+	</soapenv:Body>
+</soapenv:Envelope>

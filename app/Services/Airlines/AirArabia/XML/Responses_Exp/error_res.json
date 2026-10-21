@@ -1,0 +1,8 @@
+{
+    "Errors": [
+        {
+            "code": "40",
+            "text": "Transaction invalid or expired [Transaction specified in request is invalid or already expired [requestedTnxIdTID$1701672329780143-.demo2155, SessionId=9A1D679C9B477A83991EB5160AB0B276.demo2155, UserId=ABYSAMADTOURSONEAPI]]"
+        }
+    ]
+}

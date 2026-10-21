@@ -1,0 +1,339 @@
+{
+    "transaction_identifier": "TID$1701672329780143-.demo2155",
+    "departure_departure_date": "2023-12-15T09:00:00",
+    "departure_arrival_date": "2023-12-15T08:55:00",
+    "departure_flight_number": "G9135",
+    "departure_rph": "G9$SHJ/DOH$109179480$20231215090000$20231215085500",
+    "departure_from": "SHJ",
+    "departure_from_terminal": "Terminal1",
+    "departure_to": "DOH",
+    "departure_to_terminal": "TerminalX",
+    "departure_comment": "airport_short_names:SHJ=Sharja,DOH=Doha",
+    "return_departure_date": "2024-02-26T09:55:00",
+    "return_arrival_date": "2024-02-26T11:55:00",
+    "return_flight_number": "G9136",
+    "return_rph": "G9$DOH/SHJ$109179481$20240226095500$20240226115500",
+    "return_from": "DOH",
+    "return_from_termianl": "TerminalX",
+    "return_to": "SHJ",
+    "return_to_terminal": "Terminal1",
+    "return_comment": "airport_short_names:DOH=Doha,SHJ=Sharja",
+    "fare_info": [
+        {
+            "pax_code": "CHD",
+            "pax_quantity": "1",
+            "base_fare": 755,
+            "currency": "AED",
+            "total_taxes": 324.55,
+            "total_fees": 565.5,
+            "taxes": [
+                {
+                    "amount": "35.00",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-Pax Facility Fee P2P F6"
+                },
+                {
+                    "amount": "75.00",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-Dept Tax ST"
+                },
+                {
+                    "amount": "10.00",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-API Charge Dept API1"
+                },
+                {
+                    "amount": "10.00",
+                    "tax_code": "TAX",
+                    "tax_name": "QATAR-Pax Service Charge PZ1"
+                },
+                {
+                    "amount": "15.55",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-Dept PSS Fee TP"
+                },
+                {
+                    "amount": "8.00",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-API Charge Arr API1"
+                },
+                {
+                    "amount": "60.00",
+                    "tax_code": "TAX",
+                    "tax_name": "DOH Airport Development Fees"
+                },
+                {
+                    "amount": "41.00",
+                    "tax_code": "TAX",
+                    "tax_name": "QATAR-Dept Tax QA"
+                },
+                {
+                    "amount": "10.00",
+                    "tax_code": "TAX",
+                    "tax_name": "QATAR-Pax Service Charge PZ"
+                },
+                {
+                    "amount": "60.00",
+                    "tax_code": "TAX",
+                    "tax_name": "QATAR-Pax Facility PFCDOH"
+                }
+            ],
+            "fees": [
+                { "amount": "70.00", "fee_code": "SUR" },
+                { "amount": "90.00", "fee_code": "SUR" },
+                { "amount": "15.00", "fee_code": "SUR" },
+                { "amount": "75.00", "fee_code": "SUR" },
+                { "amount": "25.25", "fee_code": "SUR" },
+                { "amount": "30.00", "fee_code": "SUR" },
+                { "amount": "90.00", "fee_code": "SUR" },
+                { "amount": "15.00", "fee_code": "SUR" },
+                { "amount": "30.00", "fee_code": "SUR" },
+                { "amount": "25.00", "fee_code": "SUR" },
+                { "amount": "75.00", "fee_code": "SUR" },
+                { "amount": "25.25", "fee_code": "SUR" }
+            ],
+            "total_fare": 1645.05,
+            "pax_ref": ["G9|C3$108267935"]
+        },
+        {
+            "pax_code": "ADT",
+            "pax_quantity": "1",
+            "base_fare": 755,
+            "currency": "AED",
+            "total_taxes": 324.55,
+            "total_fees": 565.5,
+            "taxes": [
+                {
+                    "amount": "41.00",
+                    "tax_code": "TAX",
+                    "tax_name": "QATAR-Dept Tax QA"
+                },
+                {
+                    "amount": "60.00",
+                    "tax_code": "TAX",
+                    "tax_name": "QATAR-Pax Facility PFCDOH"
+                },
+                {
+                    "amount": "10.00",
+                    "tax_code": "TAX",
+                    "tax_name": "QATAR-Pax Service Charge PZ"
+                },
+                {
+                    "amount": "8.00",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-API Charge Arr API1"
+                },
+                {
+                    "amount": "60.00",
+                    "tax_code": "TAX",
+                    "tax_name": "DOH Airport Development Fees"
+                },
+                {
+                    "amount": "15.55",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-Dept PSS Fee TP"
+                },
+                {
+                    "amount": "35.00",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-Pax Facility Fee P2P F6"
+                },
+                {
+                    "amount": "75.00",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-Dept Tax ST"
+                },
+                {
+                    "amount": "10.00",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-API Charge Dept API1"
+                },
+                {
+                    "amount": "10.00",
+                    "tax_code": "TAX",
+                    "tax_name": "QATAR-Pax Service Charge PZ1"
+                }
+            ],
+            "fees": [
+                { "amount": "75.00", "fee_code": "SUR" },
+                { "amount": "25.25", "fee_code": "SUR" },
+                { "amount": "25.00", "fee_code": "SUR" },
+                { "amount": "90.00", "fee_code": "SUR" },
+                { "amount": "15.00", "fee_code": "SUR" },
+                { "amount": "30.00", "fee_code": "SUR" },
+                { "amount": "90.00", "fee_code": "SUR" },
+                { "amount": "15.00", "fee_code": "SUR" },
+                { "amount": "30.00", "fee_code": "SUR" },
+                { "amount": "75.00", "fee_code": "SUR" },
+                { "amount": "25.25", "fee_code": "SUR" },
+                { "amount": "70.00", "fee_code": "SUR" }
+            ],
+            "total_fare": 1645.05,
+            "pax_ref": ["G9|A1$108267933"]
+        },
+        {
+            "pax_code": "ADT",
+            "pax_quantity": "1",
+            "base_fare": 755,
+            "currency": "AED",
+            "total_taxes": 324.55,
+            "total_fees": 565.5,
+            "taxes": [
+                {
+                    "amount": "10.00",
+                    "tax_code": "TAX",
+                    "tax_name": "QATAR-Pax Service Charge PZ1"
+                },
+                {
+                    "amount": "15.55",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-Dept PSS Fee TP"
+                },
+                {
+                    "amount": "35.00",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-Pax Facility Fee P2P F6"
+                },
+                {
+                    "amount": "75.00",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-Dept Tax ST"
+                },
+                {
+                    "amount": "10.00",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-API Charge Dept API1"
+                },
+                {
+                    "amount": "60.00",
+                    "tax_code": "TAX",
+                    "tax_name": "DOH Airport Development Fees"
+                },
+                {
+                    "amount": "41.00",
+                    "tax_code": "TAX",
+                    "tax_name": "QATAR-Dept Tax QA"
+                },
+                {
+                    "amount": "60.00",
+                    "tax_code": "TAX",
+                    "tax_name": "QATAR-Pax Facility PFCDOH"
+                },
+                {
+                    "amount": "10.00",
+                    "tax_code": "TAX",
+                    "tax_name": "QATAR-Pax Service Charge PZ"
+                },
+                {
+                    "amount": "8.00",
+                    "tax_code": "TAX",
+                    "tax_name": "UAE-API Charge Arr API1"
+                }
+            ],
+            "fees": [
+                { "amount": "30.00", "fee_code": "SUR" },
+                { "amount": "90.00", "fee_code": "SUR" },
+                { "amount": "70.00", "fee_code": "SUR" },
+                { "amount": "15.00", "fee_code": "SUR" },
+                { "amount": "75.00", "fee_code": "SUR" },
+                { "amount": "25.25", "fee_code": "SUR" },
+                { "amount": "30.00", "fee_code": "SUR" },
+                { "amount": "75.00", "fee_code": "SUR" },
+                { "amount": "25.25", "fee_code": "SUR" },
+                { "amount": "25.00", "fee_code": "SUR" },
+                { "amount": "90.00", "fee_code": "SUR" },
+                { "amount": "15.00", "fee_code": "SUR" }
+            ],
+            "total_fare": 1645.05,
+            "pax_ref": ["G9|A2$108267936"]
+        },
+        {
+            "pax_code": "INF",
+            "pax_quantity": "1",
+            "base_fare": 300,
+            "currency": "AED",
+            "total_taxes": 0,
+            "total_fees": 140.5,
+            "taxes": [
+                {
+                    "amount": "0.00",
+                    "tax_code": "TAX",
+                    "tax_name": "QATAR-Pax Service Charge PZ1"
+                },
+                {
+                    "amount": "0.00",
+                    "tax_code": "TAX",
+                    "tax_name": "DOH Airport Development Fees"
+                }
+            ],
+            "fees": [
+                { "amount": "0.00", "fee_code": "SUR" },
+                { "amount": "15.00", "fee_code": "SUR" },
+                { "amount": "30.00", "fee_code": "SUR" },
+                { "amount": "0.00", "fee_code": "SUR" },
+                { "amount": "25.25", "fee_code": "SUR" },
+                { "amount": "0.00", "fee_code": "SUR" },
+                { "amount": "25.25", "fee_code": "SUR" },
+                { "amount": "0.00", "fee_code": "SUR" },
+                { "amount": "15.00", "fee_code": "SUR" },
+                { "amount": "30.00", "fee_code": "SUR" }
+            ],
+            "total_fare": 440.5,
+            "pax_ref": ["G9|I4/A1$108267934"]
+        }
+    ],
+    "travellers": [
+        {
+            "pax_code": "CHD",
+            "with_infant": "false",
+            "first_name": "Walad",
+            "last_name": "Tayyar",
+            "phone_number": "96-13-4442255",
+            "pax_ref": "G9|C3$108267935"
+        },
+        {
+            "pax_code": "ADT",
+            "with_infant": "false",
+            "first_name": "Waleed",
+            "last_name": "Tayyar",
+            "phone_number": "96-13-4442255",
+            "pax_ref": "G9|A1$108267933"
+        },
+        {
+            "pax_code": "ADT",
+            "with_infant": "false",
+            "first_name": "Lara",
+            "last_name": "Singer",
+            "phone_number": "96-13-4442255",
+            "pax_ref": "G9|A2$108267936"
+        },
+        {
+            "pax_code": "INF",
+            "with_infant": "false",
+            "first_name": "Bent",
+            "last_name": "Tayyar",
+            "phone_number": "96-13-4442255",
+            "pax_ref": "G9|I4/A1$108267934"
+        }
+    ],
+    "services": {
+        "G9136": {
+            "seats": {
+                "G9|C3$108267935": "8C",
+                "G9|A1$108267933": "8A",
+                "G9|A2$108267936": "8B"
+            }
+        },
+        "G9135": {
+            "seats": {
+                "G9|C3$108267935": "5C",
+                "G9|A1$108267933": "5A",
+                "G9|A2$108267936": "5B"
+            }
+        }
+    },
+    "ticket_advisory": [
+        "Reservation is onhold. To avoid cancellation, pay before 2023-12-05T06:47:29 GMT"
+    ],
+    "booking_reference": "603824177"
+}

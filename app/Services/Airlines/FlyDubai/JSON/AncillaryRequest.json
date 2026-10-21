@@ -1,0 +1,18 @@
+{
+    "flights": [
+        {
+            "lfID": "FILL_HERE",
+            "flightNum": "FILL_HERE",
+            "depDate": "FILL_HERE",
+            "origin": "FILL_HERE",
+            "dest": "FILL_HERE",
+            "category": null,
+            "services": null,
+            "currency": "FILL_HERE",
+            "UTCOffset": 0,
+            "operatingCarrierCode": "FILL_HERE",
+            "marketingCarrierCode": "FILL_HERE",
+            "channel": "TPAPI"
+        }
+    ]
+}

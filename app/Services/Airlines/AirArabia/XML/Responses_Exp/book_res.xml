@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soap:Body xmlns:ns1="http://www.opentravel.org/OTA/2003/05">
+      <ns1:OTA_AirBookRS Cancel="false" EchoToken="11810120749379731256589" PrimaryLangID="en-us" RetransmissionIndicator="false" SequenceNmbr="1" TransactionIdentifier="TID$1666871217033528441.demo2144" Version="2006.01">
+         <ns1:AirReservation>
+            <ns1:AirItinerary>
+               <ns1:OriginDestinationOptions>
+                  <ns1:OriginDestinationOption>
+                     <ns1:FlightSegment ArrivalDateTime="2022-11-27T04:25:00" DepartureDateTime="2022-11-26T23:45:00" FlightNumber="G9435" RPH="G9$SHJ/JAI$95448428$20221126234500$20221127042500" ResCabinClass="Y" Status="35" returnFlag="false">
+                        <ns1:DepartureAirport LocationCode="SHJ" Terminal="TerminalX"/>
+                        <ns1:ArrivalAirport LocationCode="JAI" Terminal="TerminalX"/>
+                        <ns1:Comment>airport_short_names:SHJ=Sharja,JAI=Jaipur</ns1:Comment>
+                     </ns1:FlightSegment>
+                  </ns1:OriginDestinationOption>
+                  <ns1:OriginDestinationOption>
+                     <ns1:FlightSegment ArrivalDateTime="2022-11-30T07:00:00" DepartureDateTime="2022-11-30T05:05:00" FlightNumber="G9436" RPH="G9$JAI/SHJ$95448429$20221130050500$20221130070000" ResCabinClass="Y" Status="35" returnFlag="false">
+                        <ns1:DepartureAirport LocationCode="JAI" Terminal="TerminalX"/>
+                        <ns1:ArrivalAirport LocationCode="SHJ" Terminal="TerminalX"/>
+                        <ns1:Comment>airport_short_names:JAI=Jaipur,SHJ=Sharja</ns1:Comment>
+                     </ns1:FlightSegment>
+                  </ns1:OriginDestinationOption>
+               </ns1:OriginDestinationOptions>
+            </ns1:AirItinerary>
+            <ns1:PriceInfo RepriceRequired="false">
+               <ns1:ItinTotalFare NegotiatedFare="false">
+                  <ns1:BaseFare Amount="2700.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                  <ns1:Taxes>
+                     <ns1:Tax Amount="666.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TOTALTAX"/>
+                  </ns1:Taxes>
+                  <ns1:Fees>
+                     <ns1:Fee Amount="1800.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="TOTALFEE"/>
+                  </ns1:Fees>
+                  <ns1:TotalFare Amount="5166.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                  <ns1:TotalEquivFare Amount="5166.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                  <ns1:TotalFareWithCCFee Amount="5166.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                  <ns1:TotalEquivFareWithCCFee Amount="5166.00" CurrencyCode="AED" DecimalPlaces="2"/>
+               </ns1:ItinTotalFare>
+               <ns1:PTC_FareBreakdowns>
+                  <ns1:PTC_FareBreakdown>
+                     <ns1:PassengerTypeQuantity Age="0" Code="ADT" Quantity="1"/>
+                     <ns1:FareBasisCodes>
+                        <ns1:FareBasisCode>P</ns1:FareBasisCode>
+                     </ns1:FareBasisCodes>
+                     <ns1:PassengerFare NegotiatedFare="false">
+                        <ns1:BaseFare Amount="900.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                        <ns1:Taxes>
+                           <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="India-Pax Service Fees"/>
+                           <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE -  Arrival API"/>
+                           <ns1:Tax Amount="22.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="INDIA-Aviation Security Fees"/>
+                           <ns1:Tax Amount="70.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="INDIA - (JAI) JAIUDF"/>
+                           <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE - PSS Fee TP"/>
+                           <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE - Dep API"/>
+                           <ns1:Tax Amount="75.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE - Departure Tax ST"/>
+                           <ns1:Tax Amount="35.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE - (SHJ) Pax Facilty Chg F6"/>
+                        </ns1:Taxes>
+                        <ns1:Fees>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Basic Bundle India</ns1:Fee>
+                           <ns1:Fee Amount="160.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Surcharge - 280</ns1:Fee>
+                           <ns1:Fee Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Departure Control Surcharge</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Baggage Selection</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">AeroAnci Bundle Charge</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Seat Selection</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">DAY PEAK SURCHARGE</ns1:Fee>
+                           <ns1:Fee Amount="60.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Global Surch - 60</ns1:Fee>
+                           <ns1:Fee Amount="45.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Global Insurance Surch - 45</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Admin Fee Refundable</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Meal Selection</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Baggage Selection</ns1:Fee>
+                           <ns1:Fee Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Departure Control Surcharge</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Seat Selection</ns1:Fee>
+                           <ns1:Fee Amount="160.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Surcharge - 280</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">AeroAnci Bundle Charge</ns1:Fee>
+                           <ns1:Fee Amount="60.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Global Surch - 60</ns1:Fee>
+                           <ns1:Fee Amount="45.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Global Insurance Surch - 45</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Admin Fee Refundable</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Meal Selection</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Basic Bundle India</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">DAY PEAK SURCHARGE</ns1:Fee>
+                        </ns1:Fees>
+                        <ns1:TotalFare Amount="1722.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                     </ns1:PassengerFare>
+                     <ns1:TravelerRefNumber RPH="G9|A1$94475579"/>
+                  </ns1:PTC_FareBreakdown>
+                  <ns1:PTC_FareBreakdown>
+                     <ns1:PassengerTypeQuantity Age="0" Code="ADT" Quantity="1"/>
+                     <ns1:FareBasisCodes>
+                        <ns1:FareBasisCode>P</ns1:FareBasisCode>
+                     </ns1:FareBasisCodes>
+                     <ns1:PassengerFare NegotiatedFare="false">
+                        <ns1:BaseFare Amount="900.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                        <ns1:Taxes>
+                           <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="India-Pax Service Fees"/>
+                           <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE -  Arrival API"/>
+                           <ns1:Tax Amount="70.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="INDIA - (JAI) JAIUDF"/>
+                           <ns1:Tax Amount="22.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="INDIA-Aviation Security Fees"/>
+                           <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE - PSS Fee TP"/>
+                           <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE - Dep API"/>
+                           <ns1:Tax Amount="75.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE - Departure Tax ST"/>
+                           <ns1:Tax Amount="35.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE - (SHJ) Pax Facilty Chg F6"/>
+                        </ns1:Taxes>
+                        <ns1:Fees>
+                           <ns1:Fee Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Departure Control Surcharge</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Basic Bundle India</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Baggage Selection</ns1:Fee>
+                           <ns1:Fee Amount="160.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Surcharge - 280</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">AeroAnci Bundle Charge</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">DAY PEAK SURCHARGE</ns1:Fee>
+                           <ns1:Fee Amount="60.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Global Surch - 60</ns1:Fee>
+                           <ns1:Fee Amount="45.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Global Insurance Surch - 45</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Admin Fee Refundable</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Baggage Selection</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Meal Selection</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Basic Bundle India</ns1:Fee>
+                           <ns1:Fee Amount="160.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Surcharge - 280</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">AeroAnci Bundle Charge</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">DAY PEAK SURCHARGE</ns1:Fee>
+                           <ns1:Fee Amount="60.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Global Surch - 60</ns1:Fee>
+                           <ns1:Fee Amount="45.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Global Insurance Surch - 45</ns1:Fee>
+                           <ns1:Fee Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Departure Control Surcharge</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Seat Selection</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Admin Fee Refundable</ns1:Fee>
+                        </ns1:Fees>
+                        <ns1:TotalFare Amount="1722.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                     </ns1:PassengerFare>
+                     <ns1:TravelerRefNumber RPH="G9|A2$94475581"/>
+                  </ns1:PTC_FareBreakdown>
+                  <ns1:PTC_FareBreakdown>
+                     <ns1:PassengerTypeQuantity Age="0" Code="ADT" Quantity="1"/>
+                     <ns1:FareBasisCodes>
+                        <ns1:FareBasisCode>P</ns1:FareBasisCode>
+                     </ns1:FareBasisCodes>
+                     <ns1:PassengerFare NegotiatedFare="false">
+                        <ns1:BaseFare Amount="900.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                        <ns1:Taxes>
+                           <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="India-Pax Service Fees"/>
+                           <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE -  Arrival API"/>
+                           <ns1:Tax Amount="70.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="INDIA - (JAI) JAIUDF"/>
+                           <ns1:Tax Amount="22.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="INDIA-Aviation Security Fees"/>
+                           <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE - PSS Fee TP"/>
+                           <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE - Dep API"/>
+                           <ns1:Tax Amount="75.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE - Departure Tax ST"/>
+                           <ns1:Tax Amount="35.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TAX" TaxName="UAE - (SHJ) Pax Facilty Chg F6"/>
+                        </ns1:Taxes>
+                        <ns1:Fees>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Basic Bundle India</ns1:Fee>
+                           <ns1:Fee Amount="160.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Surcharge - 280</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Seat Selection</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">AeroAnci Bundle Charge</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">DAY PEAK SURCHARGE</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Meal Selection</ns1:Fee>
+                           <ns1:Fee Amount="60.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Global Surch - 60</ns1:Fee>
+                           <ns1:Fee Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Departure Control Surcharge</ns1:Fee>
+                           <ns1:Fee Amount="45.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Global Insurance Surch - 45</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Admin Fee Refundable</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Baggage Selection</ns1:Fee>
+                           <ns1:Fee Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Departure Control Surcharge</ns1:Fee>
+                           <ns1:Fee Amount="160.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Surcharge - 280</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">AeroAnci Bundle Charge</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Baggage Selection</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">DAY PEAK SURCHARGE</ns1:Fee>
+                           <ns1:Fee Amount="60.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Global Surch - 60</ns1:Fee>
+                           <ns1:Fee Amount="45.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Global Insurance Surch - 45</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Meal Selection</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Admin Fee Refundable</ns1:Fee>
+                           <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Basic Bundle India</ns1:Fee>
+                           <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="SUR">Seat Selection</ns1:Fee>
+                        </ns1:Fees>
+                        <ns1:TotalFare Amount="1722.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                     </ns1:PassengerFare>
+                     <ns1:TravelerRefNumber RPH="G9|A3$94475580"/>
+                  </ns1:PTC_FareBreakdown>
+               </ns1:PTC_FareBreakdowns>
+            </ns1:PriceInfo>
+            <ns1:TravelerInfo>
+               <ns1:AirTraveler AccompaniedByInfant="false" PassengerTypeCode="ADT">
+                  <ns1:PersonName>
+                     <ns1:GivenName>shiva</ns1:GivenName>
+                     <ns1:Surname>reddy</ns1:Surname>
+                     <ns1:NameTitle>MR</ns1:NameTitle>
+                  </ns1:PersonName>
+                  <ns1:Telephone DefaultInd="false" FormattedInd="false" PhoneNumber="91-98-49674003"/>
+                  <ns1:Document DocHolderNationality="AE"/>
+                  <ns1:TravelerRefNumber RPH="G9|A1$94475579"/>
+                  <ns1:ETicketInfo/>
+               </ns1:AirTraveler>
+               <ns1:AirTraveler AccompaniedByInfant="false" PassengerTypeCode="ADT">
+                  <ns1:PersonName>
+                     <ns1:GivenName>shiva</ns1:GivenName>
+                     <ns1:Surname>reddy</ns1:Surname>
+                     <ns1:NameTitle>MR</ns1:NameTitle>
+                  </ns1:PersonName>
+                  <ns1:Telephone DefaultInd="false" FormattedInd="false" PhoneNumber="91-98-49674003"/>
+                  <ns1:Document DocHolderNationality="AE"/>
+                  <ns1:TravelerRefNumber RPH="G9|A2$94475581"/>
+                  <ns1:ETicketInfo/>
+               </ns1:AirTraveler>
+               <ns1:AirTraveler AccompaniedByInfant="false" PassengerTypeCode="ADT">
+                  <ns1:PersonName>
+                     <ns1:GivenName>shiva</ns1:GivenName>
+                     <ns1:Surname>reddy</ns1:Surname>
+                     <ns1:NameTitle>MR</ns1:NameTitle>
+                  </ns1:PersonName>
+                  <ns1:Telephone DefaultInd="false" FormattedInd="false" PhoneNumber="91-98-49674003"/>
+                  <ns1:Document DocHolderNationality="AE"/>
+                  <ns1:TravelerRefNumber RPH="G9|A3$94475580"/>
+                  <ns1:ETicketInfo/>
+               </ns1:AirTraveler>
+               <ns1:SpecialReqDetails>
+                  <ns1:SeatRequests>
+                     <ns1:SeatRequest DepartureDate="2022-11-26T23:45:00" FlightNumber="G9435" FlightRefNumberRPHList="G9$SHJ/JAI$2797159$20221126234500$20221127042500" SeatNumber="2A" SmokingAllowed="false" TravelerRefNumberRPHList="G9|A1$94475579"/>
+                     <ns1:SeatRequest DepartureDate="2022-11-30T05:05:00" FlightNumber="G9436" FlightRefNumberRPHList="G9$JAI/SHJ$2797345$20221130050500$20221130070000" SeatNumber="2A" SmokingAllowed="false" TravelerRefNumberRPHList="G9|A1$94475579"/>
+                     <ns1:SeatRequest DepartureDate="2022-11-26T23:45:00" FlightNumber="G9435" FlightRefNumberRPHList="G9$SHJ/JAI$2797159$20221126234500$20221127042500" SeatNumber="2B" SmokingAllowed="false" TravelerRefNumberRPHList="G9|A2$94475581"/>
+                     <ns1:SeatRequest DepartureDate="2022-11-30T05:05:00" FlightNumber="G9436" FlightRefNumberRPHList="G9$JAI/SHJ$2797345$20221130050500$20221130070000" SmokingAllowed="false" TravelerRefNumberRPHList="G9|A2$94475581"/>
+                     <ns1:SeatRequest DepartureDate="2022-11-26T23:45:00" FlightNumber="G9435" FlightRefNumberRPHList="G9$SHJ/JAI$2797159$20221126234500$20221127042500" SeatNumber="2C" SmokingAllowed="false" TravelerRefNumberRPHList="G9|A3$94475580"/>
+                     <ns1:SeatRequest DepartureDate="2022-11-30T05:05:00" FlightNumber="G9436" FlightRefNumberRPHList="G9$JAI/SHJ$2797345$20221130050500$20221130070000" SeatNumber="2C" SmokingAllowed="false" TravelerRefNumberRPHList="G9|A3$94475580"/>
+                  </ns1:SeatRequests>
+                  <ns1:MealRequests>
+                     <ns1:MealRequest DepartureDate="2022-11-26T23:45:00" FlightNumber="G9435" FlightRefNumberRPHList="G9$SHJ/JAI$2797159$20221126234500$20221127042500" TravelerRefNumberRPHList="G9|A1$94475579" mealCode="SKWY" mealQuantity="0"/>
+                     <ns1:MealRequest DepartureDate="2022-11-30T05:05:00" FlightNumber="G9436" FlightRefNumberRPHList="G9$JAI/SHJ$2797345$20221130050500$20221130070000" TravelerRefNumberRPHList="G9|A1$94475579" mealCode="SKWY" mealQuantity="0"/>
+                     <ns1:MealRequest DepartureDate="2022-11-26T23:45:00" FlightNumber="G9435" FlightRefNumberRPHList="G9$SHJ/JAI$2797159$20221126234500$20221127042500" TravelerRefNumberRPHList="G9|A2$94475581" mealCode="SKWY" mealQuantity="0"/>
+                     <ns1:MealRequest DepartureDate="2022-11-26T23:45:00" FlightNumber="G9435" FlightRefNumberRPHList="G9$SHJ/JAI$2797159$20221126234500$20221127042500" TravelerRefNumberRPHList="G9|A3$94475580" mealCode="SKWY" mealQuantity="0"/>
+                     <ns1:MealRequest DepartureDate="2022-11-30T05:05:00" FlightNumber="G9436" FlightRefNumberRPHList="G9$JAI/SHJ$2797345$20221130050500$20221130070000" TravelerRefNumberRPHList="G9|A3$94475580" mealCode="SKWY" mealQuantity="0"/>
+                  </ns1:MealRequests>
+                  <ns1:BaggageRequests>
+                     <ns1:BaggageRequest DepartureDate="2022-11-26T23:45:00" FlightNumber="G9435" FlightRefNumberRPHList="G9$SHJ/JAI$2797159$20221126234500$20221127042500" TravelerRefNumberRPHList="G9|A1$94475579" baggageCode="40 Kg Free Piece" baggageOndGroupId=""/>
+                     <ns1:BaggageRequest DepartureDate="2022-11-30T05:05:00" FlightNumber="G9436" FlightRefNumberRPHList="G9$JAI/SHJ$2797345$20221130050500$20221130070000" TravelerRefNumberRPHList="G9|A1$94475579" baggageCode="40 Kg Free Piece" baggageOndGroupId=""/>
+                     <ns1:BaggageRequest DepartureDate="2022-11-26T23:45:00" FlightNumber="G9435" FlightRefNumberRPHList="G9$SHJ/JAI$2797159$20221126234500$20221127042500" TravelerRefNumberRPHList="G9|A2$94475581" baggageCode="40 Kg Free Piece" baggageOndGroupId=""/>
+                     <ns1:BaggageRequest DepartureDate="2022-11-30T05:05:00" FlightNumber="G9436" FlightRefNumberRPHList="G9$JAI/SHJ$2797345$20221130050500$20221130070000" TravelerRefNumberRPHList="G9|A2$94475581" baggageCode="40 Kg Free Piece" baggageOndGroupId=""/>
+                     <ns1:BaggageRequest DepartureDate="2022-11-26T23:45:00" FlightNumber="G9435" FlightRefNumberRPHList="G9$SHJ/JAI$2797159$20221126234500$20221127042500" TravelerRefNumberRPHList="G9|A3$94475580" baggageCode="40 Kg Free Piece" baggageOndGroupId=""/>
+                     <ns1:BaggageRequest DepartureDate="2022-11-30T05:05:00" FlightNumber="G9436" FlightRefNumberRPHList="G9$JAI/SHJ$2797345$20221130050500$20221130070000" TravelerRefNumberRPHList="G9|A3$94475580" baggageCode="40 Kg Free Piece" baggageOndGroupId=""/>
+                  </ns1:BaggageRequests>
+               </ns1:SpecialReqDetails>
+            </ns1:TravelerInfo>
+            <ns1:Ticketing ReverseTktgSegmentsInd="false" TicketTimeLimit="2022-10-28T11:56:31" TicketType="eTicket" TicketingStatus="1">
+               <ns1:TicketAdvisory>Reservation is onhold. To avoid cancellation, pay before 2022-10-28T11:56:31 GMT</ns1:TicketAdvisory>
+            </ns1:Ticketing>
+            <ns1:BookingReferenceID ID="600011120" Type="14"/>
+            <ns1:TPA_Extensions>
+               <ns2:AAAirReservationExt xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:ns2="http://www.isaaviation.com/thinair/webservices/OTA/Extensions/2003/05">
+                  <ns2:ContactInfo>
+                     <ns2:PersonName>
+                        <ns2:Title>MR</ns2:Title>
+                        <ns2:FirstName>shiva</ns2:FirstName>
+                        <ns2:LastName>reddy</ns2:LastName>
+                     </ns2:PersonName>
+                     <ns2:Telephone>
+                        <ns2:PhoneNumber>49674003</ns2:PhoneNumber>
+                        <ns2:CountryCode>91</ns2:CountryCode>
+                        <ns2:AreaCode>98</ns2:AreaCode>
+                     </ns2:Telephone>
+                     <ns2:Email>test@gmail.com</ns2:Email>
+                     <ns2:Address>
+                        <ns2:CityName>RAK</ns2:CityName>
+                        <ns2:CountryName>
+                           <ns2:CountryName>AE</ns2:CountryName>
+                           <ns2:CountryCode>AE</ns2:CountryCode>
+                        </ns2:CountryName>
+                     </ns2:Address>
+                     <ns2:PreferredLanguage>en</ns2:PreferredLanguage>
+                  </ns2:ContactInfo>
+                  <ns2:AdminInfo>
+                     <ns2:OriginAgentCode>ABYSHJ001</ns2:OriginAgentCode>
+                  </ns2:AdminInfo>
+                  <ns2:ResSummary>
+                     <ns2:PTCCounts>
+                        <ns2:PTCCount>
+                           <ns2:PassengerTypeCode>ADT</ns2:PassengerTypeCode>
+                           <ns2:PassengerTypeQuantity>3</ns2:PassengerTypeQuantity>
+                        </ns2:PTCCount>
+                        <ns2:PTCCount>
+                           <ns2:PassengerTypeCode>CHD</ns2:PassengerTypeCode>
+                           <ns2:PassengerTypeQuantity>0</ns2:PassengerTypeQuantity>
+                        </ns2:PTCCount>
+                        <ns2:PTCCount>
+                           <ns2:PassengerTypeCode>INF</ns2:PassengerTypeCode>
+                           <ns2:PassengerTypeQuantity>0</ns2:PassengerTypeQuantity>
+                        </ns2:PTCCount>
+                     </ns2:PTCCounts>
+                  </ns2:ResSummary>
+               </ns2:AAAirReservationExt>
+            </ns1:TPA_Extensions>
+         </ns1:AirReservation>
+         <ns1:Success/>
+         <ns1:Errors/>
+      </ns1:OTA_AirBookRS>
+   </soap:Body>
+</soap:Envelope>

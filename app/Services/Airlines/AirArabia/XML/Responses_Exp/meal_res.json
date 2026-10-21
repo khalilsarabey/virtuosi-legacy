@@ -1,0 +1,472 @@
+{
+    "G9436": {
+        "meals": [
+            {
+                "code": "OMBB",
+                "description": "Mini Sausages, Omelet, Fried Potato, Grilled Tomato, Bread Roll & Butter Portion",
+                "charge": "0",
+                "name": "Egg Omelette Breakfast With Bread and Butter",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_281.jpg",
+                "category": "Breakfast"
+            },
+            {
+                "code": "BFCN",
+                "description": "Tender Chicken Breast with vegetables, Cheddar Cheese and Masala Sauce served in tortilla bread",
+                "charge": "0",
+                "name": "Chicken Nashif Wrap",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_188.jpg",
+                "category": "Sandwiches and Wraps"
+            },
+            {
+                "code": "HCSW",
+                "description": "Grilled Halloumi cheese served in soft bread with creamy dressing and vegetables",
+                "charge": "0",
+                "name": "Halloumi Cheese Sandwich",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_230.jpg",
+                "category": "Sandwiches and Wraps"
+            },
+            {
+                "code": "STSD",
+                "description": "Layered smoked turkey and emmental cheese with lettuce in a home baked croissant",
+                "charge": "0",
+                "name": "Smoked Turkey Cheese",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_132.jpg",
+                "category": "Sandwiches and Wraps"
+            },
+            {
+                "code": "TRCS",
+                "description": "Fresh sliced bread sandwich with three kinds of Swiss cheese",
+                "charge": "0",
+                "name": "Three cheese sandwich",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_226.jpg",
+                "category": "Sandwiches and Wraps"
+            },
+            {
+                "code": "VEFF",
+                "description": "Mixed Vegetable Fajita served on a hot made fatayer roll",
+                "charge": "0",
+                "name": "Vegetable Fajita Fatayer",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_227.jpg",
+                "category": "Sandwiches and Wraps"
+            },
+            {
+                "code": "BKVR",
+                "description": "Grilled beef Kebab served with vermicelli rice and flavored tomato sauce.",
+                "charge": "0",
+                "name": "Beef Kebab with vermicelli Rice",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_234.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "BL",
+                "description": "Tender meat beef slowly cooked with herbs tomato sauce served with pasta and topped with creamy white sauce and parmesan chee",
+                "charge": "0",
+                "name": "Beef Lasagna",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_235.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "BO",
+                "description": "slowly cooked rice with oriental spices served with tender beef stripes and fresh vegetables.",
+                "charge": "0",
+                "name": "Beef Ouzi",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_236.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "CBy",
+                "description": "A traditional tender chicken biryani served with flavored basmati rice and accompanied with a portion of Raita (yoghurt)",
+                "charge": "0",
+                "name": "Chicken Biryani",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_14.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "CM",
+                "description": "Soft dough stuffed with chicken meat served sweet chilly sauce.",
+                "charge": "0",
+                "name": "Chicken Momo",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_238.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "CCFR",
+                "description": "Chinese Chicken Fried Rice",
+                "charge": "0",
+                "name": "Chinese Chicken Fried Rice",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_247.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "CHMCH",
+                "description": "Tender chicken strips served with noodles and vegetables",
+                "charge": "0",
+                "name": "Chow Mien Chicken",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_217.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "CHBWR",
+                "description": "Marinated Grilled Chicken breast served with creamy spinach risotto",
+                "charge": "0",
+                "name": "Grilled Chicken Breast with Risotto",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_218.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "LG",
+                "description": "Fresh vegetables cooked with tender lamb meat served with mashed potato.",
+                "charge": "0",
+                "name": "Lamb Goulash",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_240.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "PUMC",
+                "description": "Tender chicken breast slowly cooked with creamy pumpkin with south Indian spices.",
+                "charge": "0",
+                "name": "Pumpkin Curry",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_243.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "PUCH",
+                "description": "Tender chicken breast served with panjabi sauce and fresh Amari rice",
+                "charge": "0",
+                "name": "Punjabi Chicken Curry with Amari Rice",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_219.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "SC",
+                "description": "Slow cooked spinach leaves with creamy sauce served with pasta, tomato sauce and shaved parmesan cheese",
+                "charge": "0",
+                "name": "Spinach Cannelloni",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_244.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "SKWY",
+                "description": "Stuffed meat ball served with flavored mint yoghurt sauce",
+                "charge": "0",
+                "name": "Stuffed Kibbeh with Yoghurt Mint Sauce",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_221.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "SSC",
+                "description": "Tender chicken breast cooked in oriental sauce served with Chinese fried rice.",
+                "charge": "0",
+                "name": "Sweet and sour chicken",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_246.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "VBy",
+                "description": "A traditional fresh vegetable biryani in light masala sauce served with basmati rice and accompanied with a portion of Raita",
+                "charge": "0",
+                "name": "Vegetable Biryani",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_13.jpg",
+                "category": "Hot meals"
+            }
+        ]
+    },
+    "G9435": {
+        "meals": [
+            {
+                "code": "OMBB",
+                "description": "Mini Sausages, Omelet, Fried Potato, Grilled Tomato, Bread Roll & Butter Portion",
+                "charge": "0",
+                "name": "Egg Omelette Breakfast With Bread and Butter",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_281.jpg",
+                "category": "Breakfast"
+            },
+            {
+                "code": "BFCN",
+                "description": "Tender Chicken Breast with vegetables, Cheddar Cheese and Masala Sauce served in tortilla bread",
+                "charge": "0",
+                "name": "Chicken Nashif Wrap",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_188.jpg",
+                "category": "Sandwiches and Wraps"
+            },
+            {
+                "code": "HCSW",
+                "description": "Grilled Halloumi cheese served in soft bread with creamy dressing and vegetables",
+                "charge": "0",
+                "name": "Halloumi Cheese Sandwich",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_230.jpg",
+                "category": "Sandwiches and Wraps"
+            },
+            {
+                "code": "STSD",
+                "description": "Layered smoked turkey and emmental cheese with lettuce in a home baked croissant",
+                "charge": "0",
+                "name": "Smoked Turkey Cheese",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_132.jpg",
+                "category": "Sandwiches and Wraps"
+            },
+            {
+                "code": "TRCS",
+                "description": "Fresh sliced bread sandwich with three kinds of Swiss cheese",
+                "charge": "0",
+                "name": "Three cheese sandwich",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_226.jpg",
+                "category": "Sandwiches and Wraps"
+            },
+            {
+                "code": "VEFF",
+                "description": "Mixed Vegetable Fajita served on a hot made fatayer roll",
+                "charge": "0",
+                "name": "Vegetable Fajita Fatayer",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_227.jpg",
+                "category": "Sandwiches and Wraps"
+            },
+            {
+                "code": "BKVR",
+                "description": "Grilled beef Kebab served with vermicelli rice and flavored tomato sauce.",
+                "charge": "0",
+                "name": "Beef Kebab with vermicelli Rice",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_234.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "BL",
+                "description": "Tender meat beef slowly cooked with herbs tomato sauce served with pasta and topped with creamy white sauce and parmesan chee",
+                "charge": "0",
+                "name": "Beef Lasagna",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_235.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "BO",
+                "description": "slowly cooked rice with oriental spices served with tender beef stripes and fresh vegetables.",
+                "charge": "0",
+                "name": "Beef Ouzi",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_236.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "CBy",
+                "description": "A traditional tender chicken biryani served with flavored basmati rice and accompanied with a portion of Raita (yoghurt)",
+                "charge": "0",
+                "name": "Chicken Biryani",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_14.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "CM",
+                "description": "Soft dough stuffed with chicken meat served sweet chilly sauce.",
+                "charge": "0",
+                "name": "Chicken Momo",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_238.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "CCFR",
+                "description": "Chinese Chicken Fried Rice",
+                "charge": "0",
+                "name": "Chinese Chicken Fried Rice",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_247.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "CHMCH",
+                "description": "Tender chicken strips served with noodles and vegetables",
+                "charge": "0",
+                "name": "Chow Mien Chicken",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_217.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "CHBWR",
+                "description": "Marinated Grilled Chicken breast served with creamy spinach risotto",
+                "charge": "0",
+                "name": "Grilled Chicken Breast with Risotto",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_218.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "LG",
+                "description": "Fresh vegetables cooked with tender lamb meat served with mashed potato.",
+                "charge": "0",
+                "name": "Lamb Goulash",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_240.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "PUMC",
+                "description": "Tender chicken breast slowly cooked with creamy pumpkin with south Indian spices.",
+                "charge": "0",
+                "name": "Pumpkin Curry",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_243.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "PUCH",
+                "description": "Tender chicken breast served with panjabi sauce and fresh Amari rice",
+                "charge": "0",
+                "name": "Punjabi Chicken Curry with Amari Rice",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_219.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "SC",
+                "description": "Slow cooked spinach leaves with creamy sauce served with pasta, tomato sauce and shaved parmesan cheese",
+                "charge": "0",
+                "name": "Spinach Cannelloni",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_244.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "SKWY",
+                "description": "Stuffed meat ball served with flavored mint yoghurt sauce",
+                "charge": "0",
+                "name": "Stuffed Kibbeh with Yoghurt Mint Sauce",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_221.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "SSC",
+                "description": "Tender chicken breast cooked in oriental sauce served with Chinese fried rice.",
+                "charge": "0",
+                "name": "Sweet and sour chicken",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_246.jpg",
+                "category": "Hot meals"
+            },
+            {
+                "code": "VBy",
+                "description": "A traditional fresh vegetable biryani in light masala sauce served with basmati rice and accompanied with a portion of Raita",
+                "charge": "0",
+                "name": "Vegetable Biryani",
+                "available_meals": "100",
+                "sold_meals": "0",
+                "allocated_meals": "100",
+                "image_url": "https://reservations.airarabia.com/images/meal_13.jpg",
+                "category": "Hot meals"
+            }
+        ]
+    }
+}

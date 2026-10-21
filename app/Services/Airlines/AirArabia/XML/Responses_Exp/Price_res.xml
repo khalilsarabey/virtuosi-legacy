@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soap:Body xmlns:ns1="http://www.opentravel.org/OTA/2003/05">
+      <ns1:OTA_AirPriceRS EchoToken="82194110027161-4745231814" PrimaryLangID="en-us" RetransmissionIndicator="false" SequenceNmbr="1" TransactionIdentifier="TID$1666871217033528441.demo2144" Version="2006.01">
+         <ns1:PricedItineraries>
+            <ns1:PricedItinerary SequenceNumber="1">
+               <ns1:AirItinerary>
+                  <ns1:OriginDestinationOptions>
+                     <ns1:OriginDestinationOption>
+                        <ns1:FlightSegment ArrivalDateTime="2022-11-27T04:25:00" DepartureDateTime="2022-11-26T23:45:00" FlightNumber="G9435" RPH="G9$SHJ/JAI$2797159$20221126234500$20221127042500" returnFlag="false">
+                           <ns1:DepartureAirport LocationCode="SHJ" Terminal="TerminalX"/>
+                           <ns1:ArrivalAirport LocationCode="JAI" Terminal="TerminalX"/>
+                        </ns1:FlightSegment>
+                     </ns1:OriginDestinationOption>
+                     <ns1:OriginDestinationOption>
+                        <ns1:FlightSegment ArrivalDateTime="2022-11-30T07:00:00" DepartureDateTime="2022-11-30T05:05:00" FlightNumber="G9436" RPH="G9$JAI/SHJ$2797345$20221130050500$20221130070000" returnFlag="false">
+                           <ns1:DepartureAirport LocationCode="JAI" Terminal="TerminalX"/>
+                           <ns1:ArrivalAirport LocationCode="SHJ" Terminal="TerminalX"/>
+                        </ns1:FlightSegment>
+                     </ns1:OriginDestinationOption>
+                     <ns1:AABundledServiceExt applicableOnd="SHJ/JAI" applicableOndSequence="0">
+                        <ns1:bundledService>
+                           <ns1:bunldedServiceId>13015</ns1:bunldedServiceId>
+                           <ns1:bundledServiceName>Extra</ns1:bundledServiceName>
+                           <ns1:perPaxBundledFee>10</ns1:perPaxBundledFee>
+                           <ns1:bookingClasses>Y15</ns1:bookingClasses>
+                           <ns1:description>Includes 40 Kg checked baggage, any hot meal, any seat, one modification up to 4h, cancellation Up to 4h</ns1:description>
+                           <ns1:includedServies>BAGGAGE</ns1:includedServies>
+                           <ns1:includedServies>SEAT_MAP</ns1:includedServies>
+                           <ns1:includedServies>MEAL</ns1:includedServies>
+                        </ns1:bundledService>
+                        <ns1:bundledService>
+                           <ns1:bunldedServiceId>11456</ns1:bunldedServiceId>
+                           <ns1:bundledServiceName>Value</ns1:bundledServiceName>
+                           <ns1:perPaxBundledFee>27</ns1:perPaxBundledFee>
+                           <ns1:bookingClasses>Y15</ns1:bookingClasses>
+                           <ns1:description>Includes 30 Kg checked baggage, sandwich and water, seat from 5th row onwards</ns1:description>
+                           <ns1:includedServies>BAGGAGE</ns1:includedServies>
+                           <ns1:includedServies>SEAT_MAP</ns1:includedServies>
+                           <ns1:includedServies>MEAL</ns1:includedServies>
+                        </ns1:bundledService>
+                     </ns1:AABundledServiceExt>
+                     <ns1:AABundledServiceExt applicableOnd="JAI/SHJ" applicableOndSequence="1">
+                        <ns1:bundledService>
+                           <ns1:bunldedServiceId>13015</ns1:bunldedServiceId>
+                           <ns1:bundledServiceName>Extra</ns1:bundledServiceName>
+                           <ns1:perPaxBundledFee>10</ns1:perPaxBundledFee>
+                           <ns1:bookingClasses>Y15</ns1:bookingClasses>
+                           <ns1:description>Includes 40 Kg checked baggage, any hot meal, any seat, one modification up to 4h, cancellation Up to 4h</ns1:description>
+                           <ns1:includedServies>BAGGAGE</ns1:includedServies>
+                           <ns1:includedServies>SEAT_MAP</ns1:includedServies>
+                           <ns1:includedServies>MEAL</ns1:includedServies>
+                        </ns1:bundledService>
+                        <ns1:bundledService>
+                           <ns1:bunldedServiceId>11456</ns1:bunldedServiceId>
+                           <ns1:bundledServiceName>Value</ns1:bundledServiceName>
+                           <ns1:perPaxBundledFee>27</ns1:perPaxBundledFee>
+                           <ns1:bookingClasses>Y15</ns1:bookingClasses>
+                           <ns1:description>Includes 30 Kg checked baggage, sandwich and water, seat from 5th row onwards</ns1:description>
+                           <ns1:includedServies>BAGGAGE</ns1:includedServies>
+                           <ns1:includedServies>SEAT_MAP</ns1:includedServies>
+                           <ns1:includedServies>MEAL</ns1:includedServies>
+                        </ns1:bundledService>
+                     </ns1:AABundledServiceExt>
+                  </ns1:OriginDestinationOptions>
+               </ns1:AirItinerary>
+               <ns1:AirItineraryPricingInfo PricingSource="Published">
+                  <ns1:ItinTotalFare NegotiatedFare="false">
+                     <ns1:BaseFare Amount="2700.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                     <ns1:TotalFare Amount="5106.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                     <ns1:TotalEquivFare Amount="5106.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                     <ns1:TotalFareWithCCFee Amount="5106.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                     <ns1:TotalEquivFareWithCCFee Amount="5106.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                  </ns1:ItinTotalFare>
+                  <ns1:PTC_FareBreakdowns>
+                     <ns1:PTC_FareBreakdown PricingSource="Published">
+                        <ns1:PassengerTypeQuantity Age="0" Code="ADT" Quantity="2"/>
+                        <ns1:FareBasisCodes>
+                           <ns1:FareBasisCode>P</ns1:FareBasisCode>
+                        </ns1:FareBasisCodes>
+                        <ns1:PassengerFare NegotiatedFare="false">
+                           <ns1:BaseFare Amount="900.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                           <ns1:Taxes>
+                              <ns1:Tax Amount="35.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="F6" TaxName="UAE - (SHJ) Pax Facilty Chg F6"/>
+                              <ns1:Tax Amount="75.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="ST" TaxName="UAE - Departure Tax ST"/>
+                              <ns1:Tax Amount="22.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="ASFIN" TaxName="INDIA-Aviation Security Fees"/>
+                              <ns1:Tax Amount="70.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="JAIUDF" TaxName="INDIA - (JAI) JAIUDF"/>
+                              <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="API1" TaxName="UAE -  Arrival API"/>
+                              <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="API" TaxName="UAE - Dep API"/>
+                              <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TP" TaxName="UAE - PSS Fee TP"/>
+                              <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="PSIN" TaxName="India-Pax Service Fees"/>
+                           </ns1:Taxes>
+                           <ns1:Fees>
+                              <ns1:Fee Amount="20.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="TF/Admin Fee Refundable"/>
+                              <ns1:Fee Amount="90.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="YO/Global Insurance Surch - 45"/>
+                              <ns1:Fee Amount="20.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="PH/DAY PEAK SURCHARGE"/>
+                              <ns1:Fee Amount="120.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="YQ/Global Surch - 60"/>
+                              <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="ANCI_BNDL/AeroAnci Bundle Charge"/>
+                              <ns1:Fee Amount="320.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="YQ3/Surcharge - 280"/>
+                              <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="DC/Departure Control Surcharge"/>
+                           </ns1:Fees>
+                           <ns1:TotalFare Amount="1702.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                        </ns1:PassengerFare>
+                        <ns1:TravelerRefNumber RPH="A1"/>
+                        <ns1:TravelerRefNumber RPH="A2"/>
+                     </ns1:PTC_FareBreakdown>
+                     <ns1:PTC_FareBreakdown PricingSource="Published">
+                        <ns1:PassengerTypeQuantity Age="0" Code="CHD" Quantity="1"/>
+                        <ns1:FareBasisCodes>
+                           <ns1:FareBasisCode>P</ns1:FareBasisCode>
+                        </ns1:FareBasisCodes>
+                        <ns1:PassengerFare NegotiatedFare="false">
+                           <ns1:BaseFare Amount="900.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                           <ns1:Taxes>
+                              <ns1:Tax Amount="35.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="F6" TaxName="UAE - (SHJ) Pax Facilty Chg F6"/>
+                              <ns1:Tax Amount="75.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="ST" TaxName="UAE - Departure Tax ST"/>
+                              <ns1:Tax Amount="22.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="ASFIN" TaxName="INDIA-Aviation Security Fees"/>
+                              <ns1:Tax Amount="70.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="JAIUDF" TaxName="INDIA - (JAI) JAIUDF"/>
+                              <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="API1" TaxName="UAE -  Arrival API"/>
+                              <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="API" TaxName="UAE - Dep API"/>
+                              <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="TP" TaxName="UAE - PSS Fee TP"/>
+                              <ns1:Tax Amount="5.00" CurrencyCode="AED" DecimalPlaces="2" TaxCode="PSIN" TaxName="India-Pax Service Fees"/>
+                           </ns1:Taxes>
+                           <ns1:Fees>
+                              <ns1:Fee Amount="20.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="TF/Admin Fee Refundable"/>
+                              <ns1:Fee Amount="90.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="YO/Global Insurance Surch - 45"/>
+                              <ns1:Fee Amount="20.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="PH/DAY PEAK SURCHARGE"/>
+                              <ns1:Fee Amount="120.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="YQ/Global Surch - 60"/>
+                              <ns1:Fee Amount="0.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="ANCI_BNDL/AeroAnci Bundle Charge"/>
+                              <ns1:Fee Amount="320.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="YQ3/Surcharge - 280"/>
+                              <ns1:Fee Amount="10.00" CurrencyCode="AED" DecimalPlaces="2" FeeCode="DC/Departure Control Surcharge"/>
+                           </ns1:Fees>
+                           <ns1:TotalFare Amount="1702.00" CurrencyCode="AED" DecimalPlaces="2"/>
+                        </ns1:PassengerFare>
+                        <ns1:TravelerRefNumber RPH="C3"/>
+                     </ns1:PTC_FareBreakdown>
+                  </ns1:PTC_FareBreakdowns>
+               </ns1:AirItineraryPricingInfo>
+            </ns1:PricedItinerary>
+         </ns1:PricedItineraries>
+         <ns1:Success/>
+         <ns1:Errors/>
+      </ns1:OTA_AirPriceRS>
+   </soap:Body>
+</soap:Envelope>

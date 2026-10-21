@@ -1,0 +1,46 @@
+{
+    "G9135": {
+        "baggages": [
+            {
+                "code": "No Bag",
+                "description": "No Bag",
+                "charge": "0",
+                "currency": "AED"
+            },
+            {
+                "code": "20 Kg 1 Piece",
+                "description": "20 Kg 1 Piece",
+                "charge": "20.0",
+                "currency": "AED"
+            },
+            {
+                "code": "30 Kg 1 Piece",
+                "description": "30 Kg 1 Piece",
+                "charge": "30.0",
+                "currency": "AED"
+            }
+        ]
+    },
+    "G9136": {
+        "baggages": [
+            {
+                "code": "No Bag",
+                "description": "No Bag",
+                "charge": "0",
+                "currency": "AED"
+            },
+            {
+                "code": "20 Kg 1 Piece",
+                "description": "20 Kg 1 Piece",
+                "charge": "20.0",
+                "currency": "AED"
+            },
+            {
+                "code": "30 Kg 1 Piece",
+                "description": "30 Kg 1 Piece",
+                "charge": "30.0",
+                "currency": "AED"
+            }
+        ]
+    }
+}

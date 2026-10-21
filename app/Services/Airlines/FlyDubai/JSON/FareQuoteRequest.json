@@ -1,0 +1,51 @@
+{
+    "RetrieveFareQuoteDateRange": {
+        "RetrieveFareQuoteDateRangeRequest": {
+            "SecurityGUID": "",
+            "CarrierCodes": {
+                "CarrierCode": [
+                    {
+                        "AccessibleCarrierCode": "FZ"
+                    }
+                ]
+            },
+            "ChannelID": "OTA",
+            "CountryCode": "LB",
+            "ClientIPAddress": "",
+            "HistoricUserName": "FILL_HERE",
+            "CurrencyOfFareQuote": "FILL_HERE",
+            "PromotionalCode": "FAREBRANDS",
+            "IataNumberOfRequestor": "FILL_HERE",
+            "FullInBoundDate": "FILL_HERE",
+            "FullOutBoundDate": "FILL_HERE",
+            "CorporationID": "-2147483648",
+            "FareFilterMethod": "NoCombinabilityRoundtripLowestFarePerFareType",
+            "FareGroupMethod": "WebFareTypes",
+            "InventoryFilterMethod": "Available",
+            "FareQuoteDetails": {
+                "FareQuoteDetailDateRange": [
+                    {
+                        "Origin": "FILL_HERE",
+                        "Destination": "FILL_HERE",
+                        "PartyConfig": "",
+                        "UseAirportsNotMetroGroups": "True",
+                        "UseAirportsNotMetroGroupsAsRule": "True",
+                        "UseAirportsNotMetroGroupsForFrom": "True",
+                        "UseAirportsNotMetroGroupsForTo": "True",
+                        "DateOfDepartureStart": "FILL_HERE",
+                        "DateOfDepartureEnd": "FILL_HERE",
+                        "FareQuoteRequestInfos": {
+                            "FareQuoteRequestInfo": [
+                                {
+                                    "PassengerTypeID": 1,
+                                    "TotalSeatsRequired": 1
+                                }
+                            ]
+                        },
+                        "FareTypeCategory": "1"
+                    }
+                ]
+            }
+        }
+    }
+}

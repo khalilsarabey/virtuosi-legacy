@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soap:Header>
+      <wsse:Security soap:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-32124385" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>FILL_HERE</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">FILL_HERE</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soap:Header>
+   <soap:Body xmlns:ns1="http://www.opentravel.org/OTA/2003/05">
+      <ns1:OTA_AirPriceRQ EchoToken="1" PrimaryLangID="en-us" SequenceNmbr="1" TimeStamp="2010-02-15T10:20:06" Version="20061.00">
+         <ns1:POS>
+            <ns1:Source TerminalID="FILL_HERE">
+               <ns1:RequestorID ID="FILL_HERE" Type="4"/>
+               <ns1:BookingChannel Type="12"/>
+            </ns1:Source>
+         </ns1:POS>
+         <ns1:AirItinerary DirectionInd="FILL_HERE_OneWay_OR_Return">
+            <ns1:OriginDestinationOptions>
+               <ns1:OriginDestinationOption>
+                  <ns1:FlightSegment ArrivalDateTime="FILL_HERE" DepartureDateTime="FILL_HERE" FlightNumber="FILL_HERE">
+                     <ns1:DepartureAirport LocationCode="FILL_HERE"/>
+                     <ns1:ArrivalAirport LocationCode="FILL_HERE"/>
+                     <ns1:OperatingAirline Code="FILL_HERE"/>
+                  </ns1:FlightSegment>
+               </ns1:OriginDestinationOption>
+            </ns1:OriginDestinationOptions>
+         </ns1:AirItinerary>
+         <ns1:TravelerInfoSummary>
+            <ns1:AirTravelerAvail>
+               <ns1:PassengerTypeQuantity Code="FILL_HERE_ADT_CHD_INF" Quantity="FILL_HERE"/>
+            </ns1:AirTravelerAvail>
+            <ns1:SpecialReqDetails>
+            </ns1:SpecialReqDetails>
+         </ns1:TravelerInfoSummary>
+      </ns1:OTA_AirPriceRQ>
+   </soap:Body>
+</soap:Envelope>

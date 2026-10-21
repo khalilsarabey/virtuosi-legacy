@@ -1,0 +1,119 @@
+{
+    "ActionType": "GetSummary",
+    "ReservationInfo": {
+        "SeriesNumber": "299",
+        "ConfirmationNumber": ""
+    },
+    "CarrierCodes": [
+        {
+            "AccessibleCarrierCode": "FZ"
+        }
+    ],
+    "ClientIPAddress": "",
+    "SecurityGUID": "",
+    "SecurityToken": "",
+    "HistoricUserName": "FILL_HERE",
+    "CarrierCurrency": "FILL_HERE",
+    "DisplayCurrency": "FILL_HERE",
+    "IATANum": "FILL_HERE",
+    "User": "FILL_HERE",
+    "ReceiptLanguageID": "1",
+    "Address": {
+        "CountryCode": "LB"
+    },
+    "ContactInfos": null,
+    "Passengers": [
+        {
+            "PersonOrgID": -1,
+            "FirstName": "FILL_HERE",
+            "LastName": "FILL_HERE",
+            "MiddleName": "",
+            "Age": "FILL_HERE",
+            "DOB": "FILL_HERET00:00:00",
+            "Gender": "FILL_HERE",
+            "Title": "FILL_HERE",
+            "NationalityLaguageID": 1,
+            "RelationType": "Self",
+            "WBCID": "FILL_HERE",
+            "PTCID": "FILL_HERE",
+            "TravelsWithPersonOrgID": -1,
+            "MarketingOptIn": true,
+            "UseInventory": false,
+            "Address": {
+                "Address1": "",
+                "Address2": "",
+                "City": "",
+                "State": "",
+                "Postal": "",
+                "Country": "",
+                "CountryCode": "",
+                "AreaCode": "",
+                "PhoneNumber": "FILL_HERE",
+                "Display": ""
+            },
+            "Nationality": "FILL_HERE",
+            "ProfileId": -2147483648,
+            "IsPrimaryPassenger": true,
+            "ContactInfos": [
+                {
+                    "Key": 0,
+                    "ContactID": 0,
+                    "PersonOrgID": -1,
+                    "ContactField": "FILL_HERE",
+                    "ContactType": 3,
+                    "Extension": "",
+                    "CountryCode": "",
+                    "PhoneNumber": "FILL_HERE",
+                    "Display": "",
+                    "PreferredContactMethod": true,
+                    "ValidatedContact": false
+                }
+            ],
+            "DocumentInfos": [
+                {
+                    "DocType": "1",
+                    "DocNumber": "FILL_HERE",
+                    "IssuingCountry": "FILL_HERE",
+                    "ExpiryDate": "FILL_HERET00:00:00"
+                }
+            ]
+        }
+    ],
+    "Segments": [
+        {
+            "PersonOrgID": -1,
+            "FareInformationID": 1,
+            "SpecialServices": [
+                {
+                    "PersonOrgID": -1,
+                    "ServiceID": 0,
+                    "CodeType": "AVML",
+                    "SSRCategory": 121,
+                    "LogicalFlightID": "14455604",
+                    "DepartureDate": "2024-01-20T00:00:00",
+                    "Amount": 10.0,
+                    "OverrideAmount": false,
+                    "CurrencyCode": "USD",
+                    "Commissionable": false,
+                    "Refundable": false,
+                    "ChargeComment": "FLXID:35 AED-Fare brand rule:",
+                    "AlreadyAdded": false,
+                    "PhysicalFlightID": "167771",
+                    "OverrideAmtReason": null,
+                    "ExtPenaltyRule": null
+                }
+            ],
+            "Seats": [
+                {
+                    "PersonOrgID": 0,
+                    "LogicalFlightID": 0,
+                    "PhysicalFlightID": 0,
+                    "DepartureDate": "FILL_HERE",
+                    "SeatSelected": "FILL_HERE",
+                    "RowNumber": "FILL_HERE"
+                }
+            ]
+        }
+    ],
+    "Payments": null
+}
