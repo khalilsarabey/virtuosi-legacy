@@ -38,8 +38,8 @@ class SabreService
                     'grant_type' => 'client_credentials'
                 ],
                 'auth' => [
-                    env('SABRE_CLIENT_ID'),
-                    env('SABRE_CLIENT_SECRET')
+                    (string) env('SABRE_CLIENT_ID'),
+                    (string) env('SABRE_CLIENT_SECRET')
                 ]
             ]);
 
