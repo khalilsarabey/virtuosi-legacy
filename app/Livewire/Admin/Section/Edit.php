@@ -42,7 +42,7 @@ class Edit extends Component
         $this->section = Section::find($id);
         $this->initListsForFields();
         $this->mediaCollections = [
-            'section_banner' => $this->section->banner,
+            'section_banner' => collect($this->section->banner)->toArray(),
         ];
     }
 

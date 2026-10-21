@@ -260,7 +260,7 @@ class Index extends Component
             });
         }
 
-        $query->orderBy($this->sortBy, $this->sortDirection);
+        $this->applySort($query);
         $tickets = $query->paginate($this->perPage);
 
         return view('livewire.admin.booking.index', compact('query', 'tickets'))->layout('layouts.admin');
@@ -348,6 +348,22 @@ class Index extends Component
             if($available == 0) {
                 Booking::where('id', $booking_id)->delete();
             }
+        }
+    }
+
+    // The list shows tickets but the sortable fields come from Booking, so map them onto
+    // ticket columns or the parent booking instead of ordering by a column tickets lack.
+    protected function applySort($query): void
+    {
+        $direction = strtolower($this->sortDirection) === 'asc' ? 'asc' : 'desc';
+        $field = ['flight.dep_date' => 'dep_date', 'flight.arr_time' => 'dep_arr_time'][$this->sortBy] ?? $this->sortBy;
+
+        if (in_array($field, ['id', 'title', 'first_name', 'last_name', 'date_of_birth', 'dep_date', 'dep_arr_time', 'created_at', 'price'])) {
+            $query->orderBy('tickets.'.$field, $direction);
+        } elseif (in_array($field, ['reference', 'status', 'type', 'adults', 'children', 'infants', 'agency_id'])) {
+            $query->orderBy(Booking::select($field)->whereColumn('bookings.id', 'tickets.booking_id')->limit(1), $direction);
+        } else {
+            $query->orderBy('tickets.id', 'desc');
         }
     }
 }

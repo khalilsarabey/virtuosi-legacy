@@ -32,8 +32,8 @@ class Edit extends Component
         ];
         $this->selectedFeatures = $this->hotel->features()->pluck('feature_id')->toArray();
         $this->mediaCollections = [
-            'hotel_gallery' => $this->hotel->gallery,
-            'hotel_logo' => $this->hotel->logo,
+            'hotel_gallery' => collect($this->hotel->gallery)->toArray(),
+            'hotel_logo' => collect($this->hotel->logo)->toArray(),
         ];
         $this->initListsForFields();
     }

@@ -27,6 +27,7 @@ class Index extends Component
     {
         $this->confirmingPageDeletion = true;
         $this->pageIdBeingDeleted = $pageId;
+        $this->dispatch('confirmingPageDeletion');
     }
 
     public function deletePage()
@@ -34,6 +35,7 @@ class Index extends Component
         Page::find($this->pageIdBeingDeleted)->delete();
         $this->confirmingPageDeletion = false;
         $this->pageIdBeingDeleted = null;
+        $this->dispatch('pageDeleted');
         session()->flash('message', 'Page deleted successfully.');
     }
 

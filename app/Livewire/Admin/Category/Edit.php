@@ -54,8 +54,8 @@ class Edit extends Component
         $this->category = Category::where('slug', $id)->with('section')->firstOrFail();
         $this->type = $this->category->section->type;
         $this->mediaCollections = [
-            'category_image' => $this->category->image,
-            'category_banner' => $this->category->banner,
+            'category_image' => collect($this->category->image)->toArray(),
+            'category_banner' => collect($this->category->banner)->toArray(),
         ];
         $this->sections = Section::pluck('name', 'id')->toArray();
         $this->initListsForFields();

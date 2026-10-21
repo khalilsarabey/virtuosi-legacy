@@ -37,7 +37,7 @@ class Edit extends Component
     {
         $this->airline          = Airline::find($id);
         $this->mediaCollections = [
-            'airline_image' => $this->airline->image,
+            'airline_image' => collect($this->airline->image)->toArray(),
         ];
     }
 

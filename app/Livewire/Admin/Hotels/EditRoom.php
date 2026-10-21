@@ -60,7 +60,7 @@ class EditRoom extends Component
         $this->available = $this->room->start_date . ' to ' .  $this->room->end_date;
         $this->selectedFeatures = $this->room->features()->pluck('feature_id')->toArray();
         $this->mediaCollections = [
-            'room_gallery' => $this->room->gallery,
+            'room_gallery' => collect($this->room->gallery)->toArray(),
         ];
         $this->rule['adult']['pricing']     = $this->room->adult_pricing;
         $this->rule['adult']['capacity']    = $this->room->adult_capacity;

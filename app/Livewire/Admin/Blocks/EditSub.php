@@ -55,7 +55,7 @@ class EditSub extends Component
             'agency_id' => auth()->user()->agency_id
         ])->firstOrFail();
         $this->mediaCollections = [
-            'block_thumbnail' => $this->block->thumbnail
+            'block_thumbnail' => collect($this->block->thumbnail)->toArray()
         ];
     }
 

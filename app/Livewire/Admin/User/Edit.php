@@ -61,7 +61,7 @@ class Edit extends Component
         $this->old_balance = $this->user->balance;
         $this->initListsForFields();
         $this->mediaCollections = [
-            'user_logo' => $this->user->logo,
+            'user_logo' => collect($this->user->logo)->toArray(),
         ];
         // Initialize blocked_connections from user's comma separated string
         $this->blocked_connections = $this->user->blocked_connections

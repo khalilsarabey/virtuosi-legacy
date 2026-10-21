@@ -219,7 +219,8 @@ class Dashboard extends Component
             $bookings->where('dep_to_code', $this->filter['destination']);
         }
         if (isset($this->filter['airline'])) {
-            $bookings->where('airline_id', $this->filter['airline']);
+            // Bookings have no airline_id; match on the airline of the booked departure flight.
+            $bookings->whereIn('dep_flight_id', Flight::where('airline_id', $this->filter['airline'])->select('id'));
         }
         $this->bookingsToday = $bookings->withTrashed(isset($this->filter['status']) && $this->filter['status'] == 'Deleted')
             ->with(['tickets' => function($q) {

@@ -51,10 +51,10 @@ class Branding extends Component
     {
         $this->agency = Agency::where('id', auth()->user()->agency_id)->first();
         $this->mediaCollections = [
-            'agency_logo'      => $this->agency->logo,
-            'agency_login_bg'  => $this->agency->login_bg,
-            'agency_search_bg' => $this->agency->search_bg,
-            'agency_print_logo' => $this->agency->print_logo,
+            'agency_logo'      => collect($this->agency->logo)->toArray(),
+            'agency_login_bg'  => collect($this->agency->login_bg)->toArray(),
+            'agency_search_bg' => collect($this->agency->search_bg)->toArray(),
+            'agency_print_logo' => collect($this->agency->print_logo)->toArray(),
         ];
     }
 
