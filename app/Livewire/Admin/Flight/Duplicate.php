@@ -75,6 +75,7 @@ class Duplicate extends Component
             $flight->ret_from_code = $duplication['ret_from_code'];
             $flight->ret_to_code = $duplication['ret_to_code'];
             $flight->contract_id = $duplication['contract_id'];
+            $flight->promo = $duplication['promo'] ?? 0;
             $flight->seats = $seats;
             $flight->business_seats = $business_seats;
             $flight->save();

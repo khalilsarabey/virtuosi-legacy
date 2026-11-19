@@ -11,7 +11,7 @@
                         </div>
                     </div>
                 </h6>
-                <a href="{{ route('admin.hotels.add-rooms', $hotel->id) }}" class="btn btn-xs px-4 py-2 btn-primary uppercase waves-effect">Add Rooms</a>
+                <a href="{{ route('admin.hotels.rooms.create', $hotel->id) }}" class="btn btn-xs px-4 py-2 btn-primary uppercase waves-effect">Add Rooms</a>
             </div>
         </div>
         <div class="container-fluid mb-4">

@@ -42,6 +42,13 @@ class Rooms extends Component
         return view('livewire.admin.hotels.rooms')->layout('layouts.admin', ['title' => 'Rooms']);
     }
 
+    public function deleteRoom($id)
+    {
+        // Soft delete, so rooms on existing bookings keep their details
+        $this->hotel->rooms()->whereKey($id)->first()?->delete();
+        $this->hotel = Hotel::with('rooms.room_type')->find($this->hotel->id);
+    }
+
     public function showInactive()
     {
         $this->showingInactive = !$this->showingInactive;

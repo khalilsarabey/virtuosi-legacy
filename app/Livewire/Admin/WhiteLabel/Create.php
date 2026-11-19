@@ -12,6 +12,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
 class Create extends Component
 {
     use WithFileUploads;
+    use WithAgencyMedia;
 
     public Agency $agency;
     public User $user;
@@ -59,6 +60,7 @@ class Create extends Component
             $this->agency->user_id = $this->user->id;
             $this->agency->status = 1;
             $this->agency->save();
+            $this->syncMedia($this->agency->id);
             Cache::forget('settings');
             session()->flash('message', 'White Label successfully added.');
         } catch(\Exception $e) {

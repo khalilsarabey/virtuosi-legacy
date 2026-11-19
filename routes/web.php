@@ -141,7 +141,8 @@ Route::group(['prefix' => 'v2/admin', 'as' => 'admin.', 'middleware' => ['web', 
         Route::livewire('/create', \App\Livewire\Admin\Hotels\Create::class)->name('hotels.create');
         Route::livewire('/{hotel}/edit', \App\Livewire\Admin\Hotels\Edit::class)->name('hotels.edit');
         Route::livewire('/{hotel}/show', \App\Livewire\Admin\Hotels\Show::class)->name('hotels.show');
-        Route::livewire('/{hotel}/add-rooms/', \App\Livewire\Admin\Hotels\AddContract::class)->name('hotels.add-rooms');
+        // The old "add contract" screen was never finished; send it to the working room form
+        Route::get('/{hotel}/add-rooms/', fn ($hotel) => redirect()->route('admin.hotels.rooms.create', $hotel))->name('hotels.add-rooms');
         Route::livewire('/{hotel}/rooms', \App\Livewire\Admin\Hotels\Rooms::class)->name('hotels.rooms');
         Route::livewire('/services', \App\Livewire\Admin\Hotels\Services::class)->name('hotels.services');
         Route::livewire('/seasons', \App\Livewire\Admin\Hotels\Seasons\Index::class)->name('hotels.seasons.index');
@@ -194,7 +195,7 @@ Route::group(['prefix' => 'v2/admin', 'as' => 'admin.', 'middleware' => ['web', 
     Route::livewire('/bookings/low-cost', \App\Livewire\Admin\AirlineBooking\Index::class)->name('airline-bookings.index')->middleware('features:lowcost');
     Route::livewire('/bookings/low-cost/{id}/show', \App\Livewire\Admin\AirlineBooking\Index::class)->name('airline-bookings.show')->middleware('features:lowcost');
     Route::livewire('/bookings/edit/{id}', BookingEdit::class)->name('bookings.edit')->middleware('features:charter');
-    Route::livewire('/bookings/{id}/edit-package', \App\Livewire\Admin\Booking\EditPackage::class)->name('bookings.package.edit')->middleware('features:packages');
+    Route::livewire('/bookings/{id}/edit-package', \App\Livewire\Admin\Booking\EditHotel::class)->name('bookings.package.edit')->middleware('features:packages');
     Route::livewire('/bookings/{id}/edit-hotel', \App\Livewire\Admin\Booking\EditHotel::class)->name('bookings.hotel.edit')->middleware('features:hotels');
     Route::livewire('/bookings/change/{id}', BookingChange::class)->name('bookings.change')->middleware('features:charter');
     Route::livewire('/categories', CategoryIndex::class)->name('categories.index');
@@ -246,9 +247,9 @@ Route::group(['prefix' => 'v2/admin', 'as' => 'admin.', 'middleware' => ['web', 
     Route::livewire('settings/auto-pricing/airline/{id}/edit', PricingAirlineEdit::class)->name('settings.auto-pricing.airlines.edit')->middleware(['samad_only', 'features:autopricing']);
 
     Route::livewire('settings/auto-pricing/categories', App\Livewire\Admin\Settings\PricingCategories\Index::class)->name('settings.auto-pricing.categories.index')->middleware(['samad_only', 'features:autopricing']);
-    Route::livewire('settings/auto-pricing/categories/create', App\Livewire\Admin\Settings\PricingCategories\Create::class)->name('settings.auto-pricing.categories.create')->middleware(['samad_only', 'features:autopricing']);
-    Route::livewire('settings/auto-pricing/categories/{id}/edit', App\Livewire\Admin\Settings\PricingCategories\Edit::class)->name('settings.auto-pricing.categories.edit')->middleware(['samad_only', 'features:autopricing']);
-    Route::livewire('settings/auto-pricing/categories/{id}/show', App\Livewire\Admin\Settings\PricingCategories\Show::class)->name('settings.auto-pricing.categories.show')->middleware(['samad_only', 'features:autopricing']);
+    Route::get('settings/auto-pricing/categories/create', fn () => redirect()->route('admin.settings.auto-pricing.categories.index'))->name('settings.auto-pricing.categories.create')->middleware(['samad_only', 'features:autopricing']);
+    Route::get('settings/auto-pricing/categories/{id}/edit', fn () => redirect()->route('admin.settings.auto-pricing.categories.index'))->name('settings.auto-pricing.categories.edit')->middleware(['samad_only', 'features:autopricing']);
+    Route::get('settings/auto-pricing/categories/{id}/show', fn () => redirect()->route('admin.settings.auto-pricing.categories.index'))->name('settings.auto-pricing.categories.show')->middleware(['samad_only', 'features:autopricing']);
 
     Route::livewire('settings/auto-pricing/classes', \App\Livewire\Admin\Settings\PricingClasses\Index::class)->name('settings.auto-pricing.classes.index')->middleware(['samad_only', 'features:autopricing']);
     Route::livewire('settings/auto-pricing/classes/create', \App\Livewire\Admin\Settings\PricingClasses\Create::class)->name('settings.auto-pricing.classes.create')->middleware(['samad_only', 'features:autopricing']);

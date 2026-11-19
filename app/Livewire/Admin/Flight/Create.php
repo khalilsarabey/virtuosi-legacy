@@ -35,6 +35,7 @@ class Create extends Component
         $this->flight->multi_supplements        = '0';
         $this->flight->combinable_supplements   = '0';
         $this->flight->seats                    = '0';
+        $this->flight->promo                    = '0';
         $this->pricing                          = [
             ['class' => 'L', 'adult' => 0, 'child' => 0, 'infant' => 0, 'seats' => 0, 'package_adult' => 0, 'package_child' => 0, 'package_infant' => 0],
             ['class' => 'M', 'adult' => 0, 'child' => 0, 'infant' => 0, 'seats' => 0, 'package_adult' => 0, 'package_child' => 0, 'package_infant' => 0],

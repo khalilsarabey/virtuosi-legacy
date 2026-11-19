@@ -36,6 +36,8 @@ class Edit extends Component
         $this->flight->dep_arr_time = Carbon::parse($this->flight->dep_arr_time)->format('H:i');
         $this->flight->ret_dep_time     = $this->flight->ret_dep_time ?  Carbon::parse($this->flight->ret_dep_time)->format('H:i') : null;
         $this->flight->ret_arr_time = $this->flight->ret_arr_time ? Carbon::parse($this->flight->ret_arr_time)->format('H:i') : null;
+        // Older flights have no promo value; treat it as "No" so the form can be saved
+        $this->flight->promo = $this->flight->promo ?? 0;
         $this->category = $this->flight->category()->pluck('id')->toArray();
         $this->booked_seats = \App\Models\Ticket::query()->where('flight_id', $id)->get();
         $this->initListsForFields();

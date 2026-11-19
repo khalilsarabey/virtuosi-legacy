@@ -64,8 +64,8 @@
                 </div>
                 <div class="col-md-4">
                     <label>Password</label>
-                    <input type="password" name="password" class="form-control" wire:model="user.password" required />
-                    @error('user.password') <div class="text-danger">{{ $message }}</div> @enderror
+                    <input type="password" name="password" class="form-control" wire:model="password" placeholder="Leave blank to keep the current password" autocomplete="new-password" />
+                    @error('password') <div class="text-danger">{{ $message }}</div> @enderror
                 </div>
                 <div class="col-12">
                     <label class="my-5" style="font-size:1rem">BRAND COLORS</label>

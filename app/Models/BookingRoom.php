@@ -22,7 +22,8 @@ class BookingRoom extends Model
 
     public function room(): BelongsTo
     {
-        return $this->belongsTo(Room::class, 'room_id');
+        // Keep deleted rooms visible on existing bookings
+        return $this->belongsTo(Room::class, 'room_id')->withTrashed();
     }
 
     public function booking(): BelongsTo

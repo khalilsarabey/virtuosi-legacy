@@ -8,7 +8,7 @@ use Livewire\Component;
 class RoomTypes extends Component
 {
     public $showForm = false;
-    public $form;
+    public $form = [];
     public $types = [];
 
     public function render()

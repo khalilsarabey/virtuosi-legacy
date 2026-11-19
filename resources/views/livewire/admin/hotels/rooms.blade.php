@@ -63,7 +63,7 @@
                                 <a class="btn btn-xs btn-primary" href="{{ route('admin.hotels.rooms.edit', $room) }}">
                                     Edit
                                 </a>
-                                <a class="btn btn-xs btn-danger" href="{{ route('admin.hotels.rooms', $hotel->id) }}">Delete</a>
+                                <button type="button" class="btn btn-xs btn-danger" wire:click="deleteRoom({{ $room->id }})" wire:confirm="Delete this room? Existing bookings keep their details.">Delete</button>
                             </td>
                         </tr>
                         @endif

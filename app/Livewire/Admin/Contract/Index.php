@@ -5,8 +5,6 @@ namespace App\Livewire\Admin\Contract;
 use App\Livewire\WithConfirmation;
 use App\Livewire\WithSorting;
 use App\Models\Contract;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Gate;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -82,8 +80,6 @@ class Index extends Component
 
     public function deleteSelected()
     {
-        abort_if(Gate::denies('contract_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-
         Contract::whereIn('id', $this->selected)->delete();
 
         $this->resetSelected();
@@ -91,8 +87,6 @@ class Index extends Component
 
     public function delete(Contract $contract)
     {
-        abort_if(Gate::denies('contract_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-
         $contract->delete();
     }
 }

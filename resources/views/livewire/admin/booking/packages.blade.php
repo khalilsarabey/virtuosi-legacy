@@ -111,11 +111,14 @@
                                     <td class="text-center"><strong>{!! $booking->status == 'Confirmed' ? '<span class="text-success">Confirmed</span>' : '<span class="text-danger">On Hold</span>' !!}</strong></td>
                                     <td data-exclude="true">
                                         <div class="d-flex justify-content-end">
-                                            <a class="btn btn-xs btn-info text-center" href="{{ route('frontend.booking.print', $booking->id) }}" target="_blank">
+                                            <a class="btn btn-xs btn-info mr-2 text-center" href="{{ route('frontend.booking.print', $booking->id) }}" target="_blank">
                                                 View
                                             </a>
                                             @if(auth()->user()->type != 'accounting')
-                                                <button type="button" class="btn btn-xs btn-danger text-center" href="#" wire:click="delete({{ $booking->id }})">
+                                                <a class="btn btn-xs btn-success mr-2 text-center" href="{{ route('admin.bookings.package.edit', $booking->id) }}">
+                                                    Edit
+                                                </a>
+                                                <button type="button" class="btn btn-xs btn-danger mr-2 text-center" href="#" wire:click="delete({{ $booking->id }})">
                                                     Delete
                                                 </button>
                                                 @if($booking->status == 'On Hold')
