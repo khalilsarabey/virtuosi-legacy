@@ -85,9 +85,9 @@
                                                 @csrf
                                                 @foreach($this->query as $k => $v)
                                                     @if(is_array($v))
-                                                        <input type="hidden" name="{{ $k }}" value="{{ json_encode($v) }}"/>
+                                                        <input type="hidden" @if($k === 'children') data-form-name="children" @else name="{{ $k }}" @endif value="{{ json_encode($v) }}"/>
                                                     @else
-                                                        <input type="hidden" name="{{ $k }}" value="{{ $v }}"/>
+                                                        <input type="hidden" @if($k === 'children') data-form-name="children" @else name="{{ $k }}" @endif value="{{ $v }}"/>
                                                     @endif
                                                 @endforeach
                                                 <button class="btn btn-outline-primary w-100 text-uppercase disable-styles"  style="font-weight: bold; text-transform: uppercase; font-size: 13px; padding: 10px 13px; border-radius: 3px;" onclick="this.form.submit(); this.disabled=true; this.textContent='Please wait…'; ">

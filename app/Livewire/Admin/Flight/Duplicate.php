@@ -32,7 +32,8 @@ class Duplicate extends Component
     {
         $this->generated = [];
         for ($i = 1; $i <= (int) $v; $i++) {
-            $this->generated[] = $this->flight->replicate();
+            // Store plain arrays: Livewire 3+ cannot round-trip unsaved models nested in arrays.
+            $this->generated[] = $this->flight->replicate()->toArray();
         }
     }
 
@@ -40,9 +41,14 @@ class Duplicate extends Component
     {
         foreach($this->generated as $duplication):
             $seats = 0;
+            $business_seats = 0;
             $prices = [];
             foreach($duplication['prices'] as $i => $price):
-                $seats += $price['adult'] + $price['child'];
+                // Same seat count as Flight Create: sum of seats per price row
+                $seats += (int) ($price['seats'] ?? 0);
+                if (($price['type'] ?? null) === 'business') {
+                    $business_seats += (int) ($price['seats'] ?? 0);
+                }
                 unset($duplication['prices'][$i]['flight_id']);
                 $priceObject = new Price();
                 $priceObject->fill($price);
@@ -70,10 +76,11 @@ class Duplicate extends Component
             $flight->ret_to_code = $duplication['ret_to_code'];
             $flight->contract_id = $duplication['contract_id'];
             $flight->seats = $seats;
+            $flight->business_seats = $business_seats;
             $flight->save();
             $flight->prices()->saveMany($prices);
         endforeach;
-        return redirect()->to('/admin/flights');
+        return redirect()->route('admin.flights.index');
     }
 
     protected function initListsForFields(): void

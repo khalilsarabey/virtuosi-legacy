@@ -17,6 +17,7 @@ class Show extends Component
     public $seasons     = [];
     public $selectedSeason = null;
     public $data = [];
+    public $filter = [];
 
     public function mount($hotel)
     {

@@ -827,9 +827,9 @@
                                         @endif
                                         @foreach($this->query as $k => $v)
                                             @if(is_array($v))
-                                                <input type="hidden" name="{{ $k }}" value="{{ json_encode($v) }}"/>
+                                                <input type="hidden" @if($k === 'children') data-form-name="children" @else name="{{ $k }}" @endif value="{{ json_encode($v) }}"/>
                                             @else
-                                                <input type="hidden" name="{{ $k }}" value="{{ $v }}"/>
+                                                <input type="hidden" @if($k === 'children') data-form-name="children" @else name="{{ $k }}" @endif value="{{ $v }}"/>
                                             @endif
                                         @endforeach
                                         <input type="hidden" name="dep_class" value="{{ $prices['dep_class'] ?? '' }}" />

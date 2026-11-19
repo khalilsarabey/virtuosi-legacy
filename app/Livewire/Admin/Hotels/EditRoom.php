@@ -197,6 +197,16 @@ class EditRoom extends Component
 
     public function updatedPrices($v, $k): void
     {
+        // Livewire sends the whole price row the first time "date" is set,
+        // because that key did not exist on the client yet.
+        if (is_array($v)) {
+            if (! isset($v['date']) || ! is_string($v['date'])) {
+                return;
+            }
+            $k = $k . '.date';
+            $v = $v['date'];
+        }
+
         if(str_contains($k, 'date')) {
             $dates = explode(" to ", $v);
             if(count($dates) == 2) {

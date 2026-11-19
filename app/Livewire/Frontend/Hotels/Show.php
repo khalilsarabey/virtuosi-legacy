@@ -88,11 +88,22 @@ class Show extends Component
         }
     }
 
-    public function updatedRooms($key, $value): void
+    public function updatedRooms($value, $key): void
     {
-        if(array_key_exists($key, $this->mealPlans)) {
-            $array = explode('.', $value);
-            $this->rooms[$array[0]][$array[1]][$array[2]]['meal_price'] = $this->mealPlans[$key];
+        // Livewire sends the whole room result (not just meal_plan) the first time
+        // a meal plan is picked, because the key did not exist on the client yet.
+        if (is_array($value)) {
+            $plan = $value['meal_plan'] ?? null;
+            $path = $key;
+        } elseif (str_ends_with((string) $key, '.meal_plan')) {
+            $plan = $value;
+            $path = substr($key, 0, -strlen('.meal_plan'));
+        } else {
+            return;
+        }
+
+        if (is_string($plan) && array_key_exists($plan, $this->mealPlans)) {
+            data_set($this->rooms, $path . '.meal_price', $this->mealPlans[$plan]);
         }
     }
 

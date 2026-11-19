@@ -382,9 +382,9 @@
                             <input type="hidden" name="endDate" value="{{ $endDate }}" />
                             @foreach($query as $k => $v)
                                 @if(is_string($v))
-                                    <input type="hidden" name="{{ $k }}" value="{{ $v }}" />
+                                    <input type="hidden" @if($k === 'children') data-form-name="children" @else name="{{ $k }}" @endif value="{{ $v }}" />
                                 @else
-                                    <input type="hidden" name="{{ $k }}" value="{{ json_encode($v) }}" />
+                                    <input type="hidden" @if($k === 'children') data-form-name="children" @else name="{{ $k }}" @endif value="{{ json_encode($v) }}" />
                                 @endif
                             @endforeach
                             <button id="confirm" type="submit" class="text-uppercase text-white w-100 border-0 h6 btn-primary p-3 mb-0">Confirm Selection & Proceed</button>

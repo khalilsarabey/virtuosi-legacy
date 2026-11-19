@@ -246,9 +246,9 @@
                             </div>
                             <div class="row my-4" style="font-size: 1rem">
                                 <div class="col text-uppercase">NAME<br><strong>{{ $hotel_name }}</strong></div>
-                                <div class="col text-uppercase">LOCATION<br><strong>{{ $hotel_location ?? $booking->dep_to_city ?? $booking->depFlight->depTo->city }}</strong></div>
-                                <div class="col text-uppercase">CHECK IN<br><strong>{{ $booking->dep_date ?? $booking->depFlight->dep_date }} at {{ $booking->hotel_check_in }}</strong></div>
-                                <div class="col text-uppercase">CHECK OUT<br><strong>{{ $booking->ret_date ?? $booking->retFlight->ret_date }} at {{ $booking->hotel_check_out }}</strong></div>
+                                <div class="col text-uppercase">LOCATION<br><strong>{{ $hotel_location ?? $booking->dep_to_city ?? $booking->depFlight?->depTo?->city }}</strong></div>
+                                <div class="col text-uppercase">CHECK IN<br><strong>{{ $booking->rooms->first()->check_in }} at {{ $booking->hotel_check_in }}</strong></div>
+                                <div class="col text-uppercase">CHECK OUT<br><strong>{{ $booking->rooms->first()->check_out }} at {{ $booking->hotel_check_out }}</strong></div>
                             </div>
                             <div class="">
                                 <div style="background: lightgrey; height:1px; width:100%"></div>

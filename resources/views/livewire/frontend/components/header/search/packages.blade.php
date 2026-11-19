@@ -112,9 +112,9 @@
                     </div>
                 </div>
             </div>
-            <input type="hidden" name="adults" wire:model.live="adults" />
-            <input type="hidden" name="infants" wire:model.live="infants"/>
-            <input type="hidden" data-form-name="children" wire:model.live="children" />
+            <input type="hidden" name="adults" value="{{ $adults }}" />
+            <input type="hidden" name="infants" value="{{ $infants }}" />
+            <input type="hidden" data-form-name="children" value="{{ $children }}" />
             <div class="col-12 col-lg-1">
                 <div class="btn-search text-center">
                     <button style="color:#fff" type="submit" id="submit" class="effect btn btn-primary btn-block btn-lg disable-styles" data-style="zoom-in">
