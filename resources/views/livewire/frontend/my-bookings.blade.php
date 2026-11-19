@@ -194,7 +194,7 @@
                                                             <div class="theme-search-results-item-flight-section-path-fly-time d-flex justify-content-between px-3">
                                                                 <div class="text-primary"><strong>{{ \Carbon\Carbon::parse($booking->ret_time ?? $booking->retFlight->dep_time ?? '')->format('H:i') }}</strong></div>
                                                                 <div class="text-success"><strong>{{ \Carbon\Carbon::parse($booking->ret_date ?? $booking->retFlight->dep_date ?? '')->format('D, j M y') }}</strong></div>
-                                                                <div class="text-primary"><strong>{{ \Carbon\Carbon::parse($booking->ret_arr_time ?? $booking->retFlight->dep_arr_time)->format('H:i') }}</strong></div>
+                                                                <div class="text-primary"><strong>{{ \Carbon\Carbon::parse($booking->ret_arr_time ?? $booking->retFlight->dep_arr_time ?? '')->format('H:i') }}</strong></div>
                                                             </div>
                                                             <div class="theme-search-results-item-flight-section-path-line"></div>
                                                             <div class="theme-search-results-item-flight-section-path-line-start">

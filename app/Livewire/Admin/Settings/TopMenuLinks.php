@@ -37,7 +37,6 @@ class TopMenuLinks extends Component
         $menu->link = $this->menu['link'];
         $menu->agency_id = auth()->user()->agency_id;
         $menu->save();
-        $this->mount();
         $this->create = false;
     }
 
